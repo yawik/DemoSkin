@@ -1,0 +1,18 @@
+<p>
+put your PIWIK code this view/.piwik.phtml
+</p>
+<p>
+you can overwite the location of this partial by writing the following code into <code>config/autoload/YawikDemoSkin.global.php</code>
+
+<code>
+<?php 
+echo highlight_string("
+return array('view_manager' => array(
+        'template_map' => array(
+                'piwik' => __DIR__ . '/../../module/YawikDemoSkin/view/.piwik.phtml'           
+                ),
+            )
+        );  
+");
+?>
+</code>
