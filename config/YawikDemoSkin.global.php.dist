@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * The location of the Piwik Code.
+ */
+return array('view_manager' => array(
+        'template_map' => array(
+                        'piwik' => '%%yawik.demoskin.piwik%%'
+                          )
+		)
+       );

@@ -2,7 +2,7 @@
 /**
  * YAWIK
  *
- * general layout template file
+ * General layout template file. Defines the general layout.
  * 
  * @copyright (c) 2014 Cross Solution (http://cross-solution.de)
  * @license   GPLv3
@@ -13,6 +13,7 @@
   <head>
     <meta charset="utf-8">
     <?php echo $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false) ?>
+    <meta name="keywords" value="Open Surce Bewerbermanagement System, Bewerberverwaltung"/>
     <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>    
     <?php echo $this->headScript()
                         ->prependFile($this->basepath('Core/js/core.init.js'))
@@ -35,7 +36,7 @@
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang'))?>">YAWIK</a>
+        <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang'))?>">YAWIK DEMO</a>
         <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang'))?>">Y</a>
       </div>
       <nav id="cam-main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">

@@ -1,0 +1,99 @@
+<?php 
+/**
+ * YAWIK
+ * 
+ * view sript of the start page for unauthenticated users
+ * 
+ * @copyright (c) 2013-2104 Cross Solution (http://cross-solution.de)
+ * @license   GPLv3
+ */
+?>
+<?php $this->headTitle($this->translate('Home'))?>
+<div class="jumbotron text-center">
+
+  <h1><?php echo $this->translate('Welcome to YAWIK!'); ?></h1>
+  <p><?php echo $this->translate("we're connecting recruiters and applicants");?></p>
+  <p><?php echo $this->translate("This is a DEMO. All data are reset once a day (2:00 CET).");?></p>
+  <div class="demo"></div>
+</div>
+<div class="container col-md-4">
+<aside class="panel panel-info">
+  <div class="panel-heading"><?php echo $this->translate("Login as a recruiter")?></div>
+  <div class="panel-body ">
+   <p><?php echo $this->translate("You can use the existing Account. Log in and take a look to some Test data.")?></p>
+   <p>
+   <?php echo $this->translate("User")?>: <b>demo</b><br/>
+   <?php echo $this->translate("Password")?>: <b>demo</b>
+   </p>
+    <form action="<?php echo $this->basePath()?>/de/login?ref=%2Fde" method="post" name="login-form" id="login-form" class="form-inline">
+      <fieldset id="credentials">
+        <div class="fieldset-content">
+          <div class="controls controls-row row">
+            <div class="col-md-3 yk-label">
+              <label for="credentials-login"><?php echo $this->translate("Login")?></label>
+            </div>
+            <div class="col-md-9" id="credentials-login-span">
+              <input name="credentials[login]" id="credentials-login" class=" form-control " type="text" value="">
+              <div id="credentials-login-errors"></div>
+            </div>
+          </div>
+          <div class="controls controls-row row">
+            <div class="col-md-3 yk-label">
+              <label for="credentials-credential"><?php echo $this->translate("Password")?></label>
+            </div>
+            <div class="col-md-9" id="credentials-credential-span">
+              <input type="password" name="credentials[credential]" id="credentials-credential" class="form-control" value="">
+              <div id="credentials-credential-errors"></div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <nav class="navbar">   
+        <input type="submit" name="buttons[button]" id="submit" class="btn btn-primary" value="<?php echo $this->translate("login")?>">
+        <div id="submit-errors"></div>            
+      </nav>
+    </form>
+  </div>
+</aside>
+</div>
+<div class="container col-md-4">
+<aside class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><?php echo $this->translate("Test application form")?></h3>
+  </div>
+  <div class="panel-body">
+  <p>
+  <?php echo $this->translate("Here you can test an application formular")?>.
+  </p>
+  <h2><?php echo sprintf($this->translate('%sapplication form%s.'), 
+       '<a href="' . $this->url('lang/apply/form', array('jobId' => 'software-developer'), /* reuse matched params*/ true) . '">',
+       '</a>') ?></h2>
+       
+  <h2><?php echo sprintf($this->translate('%sapplication form%s.'), 
+       '<a href="' . $this->url('lang/apply/form', array('jobId' => 'Projektmanager-produktentwicklung'), /* reuse matched params*/ true) . '">',
+       '</a>') ?></h2>
+       
+  </div>
+</aside>
+</div>
+
+<div class="container col-md-4">
+<aside class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><?php echo $this->translate("Create an Account")?></h3>
+  </div>
+  <div class="panel-body">
+    or create your own account using your favorit social network. But remember. The demo is reset once a day. Newly created accounts are silently removed at 2:00 CET.
+    
+    <?php echo $this->translate("Login to an open source applicant tracking system using your favorit social network");?>
+      <p>
+  <?php $ref = $this->buildReferer(array('logout', 'ref')); ?>
+  <?php foreach (array('facebook' => 'Facebook', 'linkedin' => 'LinkedIn', 'xing' => 'Xing') as $provider => $name): ?>
+          <a class="login-link btn btn-primary btn-lg" title="<?php echo sprintf($this->translate('Login with %s'), $name)?>" href="<?php echo $this->url('auth-provider', array('provider' => $provider), array('query' => array('ref' => urlencode($ref))))?>"><i class="fa fa-<?php echo $provider?>"></i> <?php echo $name?></a>
+  <?php endforeach ?>
+  </p>
+    
+  </div>
+</aside>
+</div>
+
