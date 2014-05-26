@@ -12,4 +12,14 @@ return array('view_manager' => array(
                      'piwik' => __DIR__ . '/../view/piwik.phtml'
                       ),
              ),
+             'translator' => array(
+                 'translation_file_patterns' => array(
+                      array(
+                          'type' => 'gettext',
+                           'base_dir' => __DIR__ . '/../language',
+                           'pattern' => '%s.mo',
+                            ),
+                      ),
+                 ),
+                                                                                                             
 );

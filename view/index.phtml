@@ -22,7 +22,7 @@
   <div class="panel-body ">
    <p><?php echo $this->translate("You can use the existing Account. Log in and take a look to some Test data.")?></p>
    <p>
-   <?php echo $this->translate("User")?>: <b>demo</b><br/>
+   <?php echo $this->translate("Username")?>: <b>demo</b><br/>
    <?php echo $this->translate("Password")?>: <b>demo</b>
    </p>
     <form action="<?php echo $this->basePath()?>/de/login?ref=%2Fde" method="post" name="login-form" id="login-form" class="form-inline">
@@ -30,7 +30,7 @@
         <div class="fieldset-content">
           <div class="controls controls-row row">
             <div class="col-md-3 yk-label">
-              <label for="credentials-login"><?php echo $this->translate("Login")?></label>
+              <label for="credentials-login"><?php echo $this->translate("Username")?></label>
             </div>
             <div class="col-md-9" id="credentials-login-span">
               <input name="credentials[login]" id="credentials-login" class=" form-control " type="text" value="">
