@@ -5,7 +5,7 @@
  * General layout template file. Defines the general layout.
  * 
  * @copyright (c) 2014 Cross Solution (http://cross-solution.de)
- * @license   GPLv3
+ * @license   MIT
  */
 ?>
 <?php echo $this->doctype(); ?>
@@ -41,11 +41,11 @@
       </div>
       <nav id="cam-main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
                      <?php 
-                        echo $this->navigation('main_navigation')
+                        echo $this->navigation('Core/Navigation')
                                   ->setAcl($this->services('acl'))
                                   ->setRole($this->auth('role'))
                                   ->menu()
-                                  ->setMaxDepth(0)
+                                  ->setMaxDepth(0)                        // only show the top level entries
                                   ->setUlClass('nav navbar-nav pull-left')//renderPartial(null, 'main-navigation')?>
 
                      <?php echo $this->loginInfo() ?>
