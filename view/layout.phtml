@@ -1,107 +1,127 @@
-<?php 
+<?php
 /**
  * YAWIK
  *
  * General layout template file. Defines the general layout.
- * 
+ *
  * @copyright (c) 2014 Cross Solution (http://cross-solution.de)
  * @license   MIT
  */
 ?>
 <?php echo $this->doctype(); ?>
-<html lang="<?php echo $this->params('lang')?>">
-  <head>
+<html lang="<?php echo $this->params('lang') ?>">
+<head>
     <meta charset="utf-8">
     <?php echo $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false) ?>
     <meta name="keywords" value="Open Surce Bewerbermanagement System, Bewerberverwaltung"/>
-    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>    
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
     <?php echo $this->headScript()
-                        ->prependFile($this->basepath('Core/js/core.init.js'))
-                        ->prependFile($this->basePath('js/bootstrap.min.js'))
-                        ->prependFile($this->basePath('js/jquery.min.js')) 
-                        ->appendScript('var lang="' . $this->params('lang') . '";'
-                                     . 'var basePath="' . $this->basePath() . '";');
-    ?>    
-    <?php echo $this->headLink() ->prependStylesheet($this->basePath() . '/css/yawik.css');?>
+        ->prependFile($this->basepath('Core/js/core.init.js'))
+        ->prependFile($this->basePath('js/bootstrap.min.js'))
+        ->prependFile($this->basePath('js/jquery.min.js'))
+        ->appendScript('var lang="' . $this->params('lang') . '";'
+            . 'var basePath="' . $this->basePath() . '";');
+    ?>
+    <?php echo $this->headLink()->prependStylesheet($this->basePath() . '/YawikDemoSkin/YawikDemoSkin.css'); ?>
     <?php echo $this->headStyle() ?>
-  </head>
-  <body>
-    <a class="sr-only" href="#content">Skip to main content</a>
-    <header id="cam-topbar" role="banner">
+</head>
+<body>
+<a class="sr-only" href="#content">Skip to main content</a>
+<header id="cam-topbar" role="banner">
     <div class="cam-container">
-      <div class="navbar-header">
-        <button class="navbar-toggle collapsed" data-target=".cam-navbar-collapse" data-toggle="collapse" type="button">
-        <span class="sr-only">Toggle navigation</span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang'))?>">YAWIK DEMO</a>
-        <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang'))?>">Y</a>
-      </div>
-      <nav id="cam-main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
-                     <?php 
-                        echo $this->navigation('Core/Navigation')
-                                  ->setAcl($this->services('acl'))
-                                  ->setRole($this->auth('role'))
-                                  ->menu()
-                                  ->setMaxDepth(0)                        // only show the top level entries
-                                  ->setUlClass('nav navbar-nav pull-left')//renderPartial(null, 'main-navigation')?>
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" data-target=".cam-navbar-collapse" data-toggle="collapse"
+                    type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">YAWIK
+                DEMO</a>
+            <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
+        </div>
+        <nav id="cam-main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
+            <?php
+            echo $this->navigation('Core/Navigation')
+                ->setAcl($this->services('acl'))
+                ->setRole($this->auth('role'))
+                ->menu()
+                ->setMaxDepth(0) // only show the top level entries
+                ->setUlClass('nav navbar-nav pull-left')//renderPartial(null, 'main-navigation')
+            ?>
 
-                     <?php echo $this->loginInfo() ?>
-                 </nav> <!-- /main-navigation -->
-		</div>
-            </header>
-          <div class="container row col-md-2">
-<!-- SIDEBAR -->
-<nav id="sidebar">
-<div class="btn-group" data-toggle="buttons-radio" id="language-switcher">
-    <?php $lang = $this->params('lang');
-    foreach (array('en', 'de', 'fr', 'es', 'it', 'ru') as $availableLang): ?>
-    <button type="button" class="btn btn-xs btn-default<?php echo $availableLang == $lang ? ' active' : ''?>" id="language-switcher-<?php echo $availableLang ?>">
-    <?php echo strtoupper($availableLang) ?></button>
-    <?php endforeach ?>
-</div>
-<p><a href="https://www.transifex.com/projects/p/yawik/">
-<?php echo $this->translate('Help to translate YAWIK');?></a></p>  
-<div id="sub-nav">               
-<?php
-    echo $this->navigation()->menu()
-              ->setOnlyActiveBranch(true)
-              ->setMaxDepth(null)
-              ->setMinDepth(1)
-              ->setRenderParents(false)
-              ->setUlClass('nav nav-pills nav-stacked');
-?>
-<?
-/**
- * you can put partials
- */
-foreach ($this->layout()->getChildren() as $child):
-    if (0 === strpos($child->captureTo(), "sidebar_")):
-        echo $this->{$child->captureTo()};
-    endif;
-endforeach;?>
+            <?php echo $this->loginInfo() ?>
+        </nav>
+        <!-- /main-navigation -->
+    </div>
+</header>
+<div class="container row col-md-2">
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+        <div class="btn-group" data-toggle="buttons-radio" id="language-switcher">
+            <?php $lang = $this->params('lang');
+            foreach (array('en', 'de', 'fr', 'es', 'it', 'ru') as $availableLang): ?>
+                <button type="button"
+                        class="btn btn-xs btn-default<?php echo $availableLang == $lang ? ' active' : '' ?>"
+                        id="language-switcher-<?php echo $availableLang ?>">
+                    <?php echo strtoupper($availableLang) ?></button>
+            <?php endforeach ?>
+        </div>
+        <p><a href="https://www.transifex.com/projects/p/yawik/">
+                <?php echo $this->translate('Help to translate YAWIK'); ?></a></p>
 
+        <div id="sub-nav">
+            <?php
+            echo $this->navigation()->menu()
+                ->setOnlyActiveBranch(true)
+                ->setMaxDepth(null)
+                ->setMinDepth(1)
+                ->setRenderParents(false)
+                ->setUlClass('nav nav-pills nav-stacked');
+            ?>
+            <?
+            /**
+             * you can put partials
+             */
+            foreach ($this->layout()->getChildren() as $child):
+                if (0 === strpos($child->captureTo(), "sidebar_")):
+                    echo $this->{$child->captureTo()};
+                endif;
+            endforeach;?>
+        </div>
+    </nav>
+    <!-- /SIDEBAR -->
 </div>
-</nav>
-<!-- /SIDEBAR -->
-                    </div>
-                    
+
 <main id="content" class="col-md-10">
-<?php echo $this->content; ?>
-</main> 
+    <?php echo $this->content; ?>
+</main>
 <!-- /container -->
-            <footer id="cam-footer">
-                <div class="container">
-                <span class="pull-left"><small>&copy; 2013-2014 <a href="http://cross-solution.de">Cross Solution</a>. <?php echo $this->translate('All rights reserved.') ?>
-                    | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]</small></span>
+<footer id="cam-footer">
+    <div class="container">
+           <span class="pull-left">
+               <small>
+
+                   <a href="http://www.jetbrains.com/phpstorm/"
+                      style="position: relative;display:block; float:left; width:230px; height:33px; border:0; margin:0;padding:0;text-decoration:none;text-indent:0;"><span
+                           style="margin: 0;padding: 0;position: absolute;top: 10px;left:4px;font-size: 11px;cursor:pointer;  background-image:none;border:0;color: #5854b5;font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Developed with</span><img
+                           src="http://www.jetbrains.com/phpstorm/documentation/phpstorm_banners/phpstorm1/phpstorm230x33_white.gif"
+                           alt="Developed with" border="0"/></a>
+
+               </small></span>
                 <span class="pull-right"><small>
-                    Powered by <a href="http://yawik.org">YAWIK</a>
-                               </small> </span>
-                
-                </div>
-            </footer>
-            <?php echo $this->partial("piwik")?>
-    </body>
+                        &copy; 2013-2014 <a href="http://cross-solution.de">
+
+
+                            Cross
+                            Solution</a>. <?php echo $this->translate('All rights reserved.') ?>
+                        | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]<br/>
+                        Powered by <a href="http://yawik.org">YAWIK</a>
+                    </small> </span>
+
+    </div>
+</footer>
+<?php echo $this->partial("piwik") ?>
+</body>
 </html>
