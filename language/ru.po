@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Vladimir <dvy2k@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-26 19:17+0200\n"
-"PO-Revision-Date: 2014-05-26 17:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-05-27 09:21+0200\n"
+"PO-Revision-Date: 2014-10-16 10:31+0000\n"
+"Last-Translator: Vladimir <dvy2k@yahoo.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/yawik/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +28,7 @@ msgstr "Добро пожаловать в YAWIK!"
 
 #: view/index.phtml:15
 msgid "we're connecting recruiters and applicants"
-msgstr "мы подключаемся рекрутеров и соискателей"
+msgstr "мы соединяем рекрутеров и соискателей"
 
 #: view/index.phtml:16
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
@@ -102,7 +103,7 @@ msgstr ""
 
 #: view/layout.phtml:66
 msgid "Help to translate YAWIK"
-msgstr ""
+msgstr "Помогите перевезти YAWIK"
 
 #: view/layout.phtml:97
 msgid "All rights reserved."

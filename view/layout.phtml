@@ -7,6 +7,10 @@
  * @copyright (c) 2014 Cross Solution (http://cross-solution.de)
  * @license   MIT
  */
+
+// See: http://yawik.readthedocs.org/en/latest/modules/core/notifications.html
+
+$notifications = $this->partial('core/notifications');
 ?>
 <?php echo $this->doctype(); ?>
 <html lang="<?php echo $this->params('lang') ?>">
@@ -50,7 +54,6 @@
                 ->setMaxDepth(0) // only show the top level entries
                 ->setUlClass('nav navbar-nav pull-left')//renderPartial(null, 'main-navigation')
             ?>
-
             <?php echo $this->loginInfo() ?>
         </nav>
         <!-- /main-navigation -->
@@ -95,7 +98,7 @@
 </div>
 
 <main id="content" class="col-md-10">
-    <?php echo $this->notifications?>
+    <?php echo $notifications?>
     <?php echo $this->content; ?>
 </main>
 <!-- /container -->

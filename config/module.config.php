@@ -1,5 +1,8 @@
 <?php
 
+
+\YawikDemoSkin\Module::$isLoaded = true;
+
 /**
  * create a config/autoload/YawikDemoSkin.global.php and put modifications there
  */
