@@ -19,7 +19,7 @@ $notifications = $this->partial('core/notifications');
     <?php echo $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false) ?>
     <meta name="keywords" value="Open Surce Bewerbermanagement System, Bewerberverwaltung"/>
     <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
-    <?php echo $this->headScript()
+    <?php echo $this->configheadScript()
         ->prependFile($this->basepath('Core/js/core.init.js'))
         ->prependFile($this->basePath('js/bootstrap.min.js'))
         ->prependFile($this->basePath('js/jquery.min.js'))
