@@ -27,7 +27,7 @@ msgid "Welcome to YAWIK!"
 msgstr "Bienvenue à YAWIK!"
 
 #: view/index.phtml:15
-msgid "we're connecting recruiters and applicants"
+msgid "we connect recruiters and applicants"
 msgstr "nous les recruteurs et les demandeurs de raccordement"
 
 #: view/index.phtml:16

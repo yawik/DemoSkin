@@ -26,8 +26,8 @@ msgid "Welcome to YAWIK!"
 msgstr "Welcome to YAWIK!"
 
 #: view/index.phtml:15
-msgid "we're connecting recruiters and applicants"
-msgstr "we're connecting recruiters and applicants"
+msgid "we connect recruiters and applicants"
+msgstr "we connect recruiters and applicants"
 
 #: view/index.phtml:16
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
