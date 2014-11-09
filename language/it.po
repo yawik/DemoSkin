@@ -73,7 +73,7 @@ msgstr ""
 
 #: view/index.phtml:87
 msgid ""
-"Login to an open source applicant tracking system using your favorit social "
+"Login to an open source applicant tracking system using your favorite social "
 "network"
 msgstr "Accedi ad un sistema di tracciamento fonte ricorrente aperta usando il tuo social network favorit"
 

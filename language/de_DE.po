@@ -74,7 +74,7 @@ msgstr "Einen Zugang erstellen"
 
 #: view/index.phtml:87
 msgid ""
-"Login to an open source applicant tracking system using your favorit social "
+"Login to an open source applicant tracking system using your favorite social "
 "network"
 msgstr "Melde Dich am Open Source Bewerbermanagement System an. Nutze dazu das Soziale Netzwerk Deiner Wahl."
 

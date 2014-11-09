@@ -74,7 +74,7 @@ msgstr "Créer un compte"
 
 #: view/index.phtml:87
 msgid ""
-"Login to an open source applicant tracking system using your favorit social "
+"Login to an open source applicant tracking system using your favorite social "
 "network"
 msgstr "Connectez-vous à un système de suivi source de demandeur ouvert en utilisant votre réseau social Favoris"
 
