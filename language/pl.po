@@ -3,65 +3,65 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Mario de la Ossa <mariodelaossa@gmail.com>, 2014
+# Carsten Bleek <cbleek@yawik.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-09 15:05+0100\n"
-"PO-Revision-Date: 2014-11-26 18:11+0000\n"
-"Last-Translator: Mario de la Ossa <mariodelaossa@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/yawik/language/es/)\n"
+"PO-Revision-Date: 2014-11-29 16:21+0000\n"
+"Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
+"Language-Team: Polish (http://www.transifex.com/projects/p/yawik/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: view/index.phtml:11
 msgid "Home"
-msgstr "Casa"
+msgstr ""
 
 #: view/index.phtml:13
 msgid "Welcome to YAWIK!"
-msgstr "Bienvenido a YAWIK! "
+msgstr "Zapraszamy do YAWIK!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr "estamos conectando reclutadores y solicitantes"
+msgstr "łączymy rekruterów i kandydatów"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
-msgstr "Este es un DEMO. Toda la informacion se reinicializa una ves al dia (2:00 CET)."
+msgstr "To jest DEMO. Wszystkie dane są kasowane raz dziennie (02:00 CET)."
 
 #: view/index.phtml:21
 msgid "Login as a recruiter"
-msgstr "Ingresar como reclutador"
+msgstr "Zaloguj jako rekruter"
 
 #: view/index.phtml:23
 msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
-msgstr "Puedes utilizar la cuenta existente. Ingresa y mira datos de prueba."
+msgstr "Możesz skorzystać z istniejącego konta. Zaloguj się i spojrzeć na niektóre dane testowe."
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr "Rol"
+msgstr ""
 
 #: view/index.phtml:27 view/index.phtml:47
 msgid "Username"
-msgstr "Nombre de usuario"
+msgstr "Nazwa użytkownika"
 
 #: view/index.phtml:28 view/index.phtml:56
 msgid "Password"
-msgstr "Contraseña"
+msgstr "Hasło"
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr "Reclutador"
+msgstr "Rekruter"
 
 #: view/index.phtml:36
 msgid "Applicant"
-msgstr "Solicitante"
+msgstr "Wnioskodawca"
 
 #: view/index.phtml:66
 msgid "login"
@@ -69,45 +69,45 @@ msgstr "login"
 
 #: view/index.phtml:77
 msgid "Test application form"
-msgstr "Formulario de aplicacion de prueba"
+msgstr "Formularz testu"
 
 #: view/index.phtml:81
 msgid "Here you can test an application formular"
-msgstr "Aqui puedes probar una aplicacion a un trabajo"
+msgstr "Tutaj można przetestować Formular aplikacji"
 
 #: view/index.phtml:83 view/index.phtml:87
 #, php-format
 msgid "%sapplication form%s."
-msgstr "%sformulario de aplicación%s"
+msgstr ""
 
 #: view/index.phtml:97
 msgid "Create an Account"
-msgstr "Crear una Cuenta"
+msgstr "Załóż konto"
 
 #: view/index.phtml:101
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr "Acceda a un sistema de seguimiento de candidatos de código abierto utilizando su red social favorita"
+msgstr "Zaloguj się do systemu otwartego wnioskodawca śledzenia źródła za pomocą ulubionej sieci społecznej"
 
 #: view/index.phtml:102
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
-msgstr "Recuerda, la base de datos de prueba se reinicializa una vez al dia. Las cuentas creadas son removidas a las 2:00 CET"
+msgstr "Ale pamiętaj, baza demo jest zresetować raz dziennie. Nowo utworzone konta są usuwane na 02:00 milczeniu CET."
 
 #: view/index.phtml:107
 #, php-format
 msgid "Login with %s"
-msgstr "Ingresar con %s"
+msgstr ""
 
 #: view/password.phtml:3 view/password.phtml:7
 msgid "My password"
-msgstr "Mi contraseña"
+msgstr "Moje hasło"
 
 #: view/password.phtml:9
 msgid "This is the demo account. Password cannot be changed"
-msgstr "Esta es la cuenta de prueba, la contraseña no puede ser cambiada"
+msgstr "Jest to konto demo. Hasło nie może być zmieniona"
 
 #: view/layout.phtml:19
 msgid "YAWIK DEMO"
@@ -115,8 +115,8 @@ msgstr "YAWIK DEMO"
 
 #: view/layout.phtml:75
 msgid "Help to translate YAWIK"
-msgstr "Ayuda a traducir YAWIK"
+msgstr "Pomóż przetłumaczyć YAWIK"
 
 #: view/layout.phtml:122
 msgid "All rights reserved."
-msgstr "Todos los derechos reservados."
+msgstr "Wszelkie prawa zastrzeżone."
