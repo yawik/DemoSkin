@@ -7,7 +7,7 @@ if (!\YawikDemoSkin\Module::$isLoaded) return array();
  */
 return array('view_manager' => array(
         'template_map' => array(
-                        'piwik' => '/../../module/YawikDemoSkin/view/.piwik.phtml'
+                        'piwik' => '%%yawik.demoskin.piwik%%'
                           )
 		),
 		 'acl' => array(

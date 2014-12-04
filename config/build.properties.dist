@@ -1,3 +1,10 @@
+/*
+* If YAWIK.bundled=true, the modules will be included in the tgz/zip package
+*/
+YAWIK.bundled=false
 
-yawik.demoskin.piwik=/../../module/YawikDemoSkin/view/piwik.phtml
+/*
+* Put a PIWIK Code into the partial
+*/
+yawik.demoskin.piwik=module/YawikDemoSkin/view/piwik.phtml
 
