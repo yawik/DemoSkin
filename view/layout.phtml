@@ -11,6 +11,8 @@
 // See: http://yawik.readthedocs.org/en/latest/modules/core/notifications.html
 
 $notifications = $this->partial('core/notifications');
+$languages = array('en', 'de', 'fr', 'es', 'it', 'ru', 'pl', 'tr', 'hi');
+
 ?>
 <?php echo $this->doctype(); ?>
 <html lang="<?php echo $this->params('lang') ?>">
@@ -18,7 +20,9 @@ $notifications = $this->partial('core/notifications');
     <meta charset="utf-8">
     <?php echo $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false) ?>
     <meta name="keywords" value="Open Surce Bewerbermanagement System, Bewerberverwaltung"/>
-    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+    <?php foreach ($languages as $lang) 
+       $this->headLink()->appendAlternate(preg_replace('~^/'.$this->params('lang').'~','/'.$lang,$_SERVER['REQUEST_URI']),'hreflang', $lang , array('hreflang'=>$lang)); ?>
+    <?php $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
     <?php echo $this->configheadScript()
         ->prependFile($this->basepath('Core/js/core.init.js'))
         ->prependFile($this->basePath('js/bootstrap.min.js'))
@@ -64,7 +68,7 @@ $notifications = $this->partial('core/notifications');
     <nav id="sidebar">
         <div class="btn-group" data-toggle="buttons-radio" id="language-switcher">
             <?php $lang = $this->params('lang');
-            foreach (array('en', 'de', 'fr', 'es', 'it', 'ru', 'pl', 'tr', 'hi') as $availableLang): ?>
+            foreach ( $languages as $availableLang): ?>
                 <button type="button"
                         class="btn btn-xs btn-default<?php echo $availableLang == $lang ? ' active' : '' ?>"
                         id="language-switcher-<?php echo $availableLang ?>">
