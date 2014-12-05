@@ -20,8 +20,11 @@ $languages = array('en', 'de', 'fr', 'es', 'it', 'ru', 'pl', 'tr', 'hi');
     <meta charset="utf-8">
     <?php echo $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false) ?>
     <meta name="keywords" value="Open Surce Bewerbermanagement System, Bewerberverwaltung"/>
-    <?php foreach ($languages as $lang) 
-       $this->headLink()->appendAlternate(preg_replace('~^/'.$this->params('lang').'~','/'.$lang,$_SERVER['REQUEST_URI']),'hreflang', $lang , array('hreflang'=>$lang)); ?>
+    <?php foreach ($languages as $lang)
+       $this->headLink()->appendAlternate(
+          preg_replace('~^'.$this->basepath('/'.$this->params('lang')).'~',
+          $this->basepath('/'.$lang),$_SERVER['REQUEST_URI']),
+          'hreflang', $lang , array('hreflang'=>$lang)); ?>
     <?php $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
     <?php echo $this->configheadScript()
         ->prependFile($this->basepath('Core/js/core.init.js'))
