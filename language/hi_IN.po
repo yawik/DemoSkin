@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 15:05+0100\n"
-"PO-Revision-Date: 2014-11-29 16:31+0000\n"
+"POT-Creation-Date: 2014-11-29 17:25+0100\n"
+"PO-Revision-Date: 2014-12-04 20:41+0000\n"
 "Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
-"Language-Team: Turkish (http://www.transifex.com/projects/p/yawik/language/tr/)\n"
+"Language-Team: Hindi (India) (http://www.transifex.com/projects/p/yawik/language/hi_IN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: hi_IN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: view/index.phtml:11
 msgid "Home"
@@ -24,56 +24,56 @@ msgstr ""
 
 #: view/index.phtml:13
 msgid "Welcome to YAWIK!"
-msgstr "YAWIK Hoşgeldiniz!"
+msgstr "YAWIK करने के लिए आपका स्वागत है!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr "Biz İşverenler ve başvuru bağlamak"
+msgstr "हम नियोक्ताओं और आवेदकों को कनेक्ट"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
-msgstr "Bu DEMO olduğunu. Tüm veriler bir kez sıfırlanır bir gün (02:00 CET)."
+msgstr "यह एक डेमो है। सभी डेटा एक बार फिर से कायम कर रहे हैं एक दिन (02:00 सीईटी)।"
 
 #: view/index.phtml:21
 msgid "Login as a recruiter"
-msgstr "Bir İşveren olarak Ol"
+msgstr "एक भर्ती के रूप लॉगिन"
 
 #: view/index.phtml:23
 msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
-msgstr "Varolan Hesap kullanabilirsiniz. Giriş yapın ve bazı test verilerine bir göz atın."
+msgstr "आप मौजूदा खाते का उपयोग कर सकते हैं। में प्रवेश करें और कुछ परीक्षण डेटा के लिए एक नज़र रखना।"
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr "Rol"
+msgstr ""
 
 #: view/index.phtml:27 view/index.phtml:47
 msgid "Username"
-msgstr "Kullanıcı adı"
+msgstr "यूजर का नाम"
 
 #: view/index.phtml:28 view/index.phtml:56
 msgid "Password"
-msgstr "Şifre"
+msgstr "पासवर्ड"
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr "İşveren"
+msgstr "भर्ती"
 
 #: view/index.phtml:36
 msgid "Applicant"
-msgstr "Başvuru sahibi"
+msgstr "आवेदक"
 
 #: view/index.phtml:66
 msgid "login"
-msgstr "oturum aç"
+msgstr ""
 
 #: view/index.phtml:77
 msgid "Test application form"
-msgstr "Testi başvuru formu"
+msgstr "परीक्षा आवेदन फार्म"
 
 #: view/index.phtml:81
 msgid "Here you can test an application formular"
-msgstr "Burada bir uygulama matbu test edebilirsiniz"
+msgstr "यहाँ आप एक आवेदन फ़ॉर्म्यूलर परीक्षण कर सकते हैं"
 
 #: view/index.phtml:83 view/index.phtml:87
 #, php-format
@@ -82,19 +82,19 @@ msgstr ""
 
 #: view/index.phtml:97
 msgid "Create an Account"
-msgstr "Bir hesap oluşturun"
+msgstr "खाता बनाएं"
 
 #: view/index.phtml:101
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr "En sevdiğiniz sosyal ağ kullanarak açık kaynak kodlu bir başvuranın izleme sistemine Girişi"
+msgstr ""
 
 #: view/index.phtml:102
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
-msgstr "Ama demo veritabanı günde bir kez sıfırlama olduğunu hatırlıyorum. Yeni oluşturulan hesaplar sessizce 02:00 CET kaldırılır."
+msgstr ""
 
 #: view/index.phtml:107
 #, php-format
@@ -103,20 +103,20 @@ msgstr ""
 
 #: view/password.phtml:3 view/password.phtml:7
 msgid "My password"
-msgstr "Benim şifre"
+msgstr "मेरा पासवर्ड"
 
 #: view/password.phtml:9
 msgid "This is the demo account. Password cannot be changed"
-msgstr "Bu demo hesabı. Şifre değiştirilemez"
+msgstr "इस डेमो खाता है। पासवर्ड बदला नहीं जा सकता"
 
 #: view/layout.phtml:19
 msgid "YAWIK DEMO"
-msgstr "YAWIK DEMO"
+msgstr "YAWIK डेमो"
 
 #: view/layout.phtml:75
 msgid "Help to translate YAWIK"
-msgstr "YAWIK çevirmek için yardım"
+msgstr "YAWIK अनुवाद करने के लिए मदद"
 
 #: view/layout.phtml:122
 msgid "All rights reserved."
-msgstr "Her hakkı saklıdır."
+msgstr ""

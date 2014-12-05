@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Carsten Bleek <cbleek@yawik.org>, 2014
 # Vladimir <dvy2k@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 15:05+0100\n"
-"PO-Revision-Date: 2014-11-19 18:41+0000\n"
+"POT-Creation-Date: 2014-11-29 17:25+0100\n"
+"PO-Revision-Date: 2014-12-04 20:51+0000\n"
 "Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/yawik/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -28,36 +29,36 @@ msgstr "Добро пожаловать в YAWIK!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr ""
+msgstr "мы связываем рекрутеров и соискателей"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
-msgstr ""
+msgstr "Это DEMO. Все данные будут сброшены один раз в день (2:00 ЕВТ)."
 
 #: view/index.phtml:21
 msgid "Login as a recruiter"
-msgstr ""
+msgstr "Войти как рекрутер"
 
 #: view/index.phtml:23
 msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
-msgstr ""
+msgstr "Вы можете использовать существующий аккаунт. Войти и взглянуть на некоторые тестовые данные."
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr ""
+msgstr "Роль"
 
 #: view/index.phtml:27 view/index.phtml:47
 msgid "Username"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: view/index.phtml:28 view/index.phtml:56
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr ""
+msgstr "Вербовщик"
 
 #: view/index.phtml:36
 msgid "Applicant"
@@ -65,15 +66,15 @@ msgstr "Заявитель"
 
 #: view/index.phtml:66
 msgid "login"
-msgstr ""
+msgstr "Войти"
 
 #: view/index.phtml:77
 msgid "Test application form"
-msgstr ""
+msgstr "Форма тестового приложения"
 
 #: view/index.phtml:81
 msgid "Here you can test an application formular"
-msgstr ""
+msgstr "Здесь вы можете испытать формуляр приложения"
 
 #: view/index.phtml:83 view/index.phtml:87
 #, php-format
@@ -82,19 +83,19 @@ msgstr ""
 
 #: view/index.phtml:97
 msgid "Create an Account"
-msgstr ""
+msgstr "Создать аккаунт"
 
 #: view/index.phtml:101
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr ""
+msgstr "Вход в открытой системе отслеживания заявитель источника с использованием вашей любимой социальной сети"
 
 #: view/index.phtml:102
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
-msgstr ""
+msgstr "Но помните, что демо-базы данных сбрасывается раз в день. Вновь созданные учетные записи молча удаляется в 2:00 по центральноевропейскому времени."
 
 #: view/index.phtml:107
 #, php-format
@@ -103,15 +104,15 @@ msgstr ""
 
 #: view/password.phtml:3 view/password.phtml:7
 msgid "My password"
-msgstr ""
+msgstr "Мой пароль"
 
 #: view/password.phtml:9
 msgid "This is the demo account. Password cannot be changed"
-msgstr ""
+msgstr "Это демо-счет. Пароль не может быть изменен"
 
 #: view/layout.phtml:19
 msgid "YAWIK DEMO"
-msgstr ""
+msgstr "YAWIK DEMO"
 
 #: view/layout.phtml:75
 msgid "Help to translate YAWIK"
