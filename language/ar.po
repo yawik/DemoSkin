@@ -9,71 +9,71 @@ msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-29 17:25+0100\n"
-"PO-Revision-Date: 2014-12-07 15:41+0000\n"
+"PO-Revision-Date: 2014-12-07 11:41+0000\n"
 "Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
-"Language-Team: Turkish (http://www.transifex.com/projects/p/yawik/language/tr/)\n"
+"Language-Team: Arabic (http://www.transifex.com/projects/p/yawik/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: view/index.phtml:11
 msgid "Home"
-msgstr "Ev"
+msgstr "منزل"
 
 #: view/index.phtml:13
 msgid "Welcome to YAWIK!"
-msgstr "YAWIK Hoşgeldiniz!"
+msgstr "مرحبا بكم في YAWIK!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr "Biz İşverenler ve başvuru bağlamak"
+msgstr "نحن ربط التوظيف والمتقدمين"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
-msgstr "Bu DEMO olduğunu. Tüm veriler bir kez sıfırlanır bir gün (02:00 CET)."
+msgstr ""
 
 #: view/index.phtml:21
 msgid "Login as a recruiter"
-msgstr "Bir İşveren olarak Ol"
+msgstr "سجل دخول المجند"
 
 #: view/index.phtml:23
 msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
-msgstr "Varolan Hesap kullanabilirsiniz. Giriş yapın ve bazı test verilerine bir göz atın."
+msgstr ""
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr "Rol"
+msgstr "دور"
 
 #: view/index.phtml:27 view/index.phtml:47
 msgid "Username"
-msgstr "Kullanıcı adı"
+msgstr "اسم المستخدم"
 
 #: view/index.phtml:28 view/index.phtml:56
 msgid "Password"
-msgstr "Şifre"
+msgstr "كلمة المرور"
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr "İşveren"
+msgstr "المجند"
 
 #: view/index.phtml:36
 msgid "Applicant"
-msgstr "Başvuru sahibi"
+msgstr "مقدم الطلب"
 
 #: view/index.phtml:66
 msgid "login"
-msgstr "oturum aç"
+msgstr "تسجيل الدخول"
 
 #: view/index.phtml:77
 msgid "Test application form"
-msgstr "Testi başvuru formu"
+msgstr "نموذج طلب الاختبار"
 
 #: view/index.phtml:81
 msgid "Here you can test an application formular"
-msgstr "Burada bir uygulama matbu test edebilirsiniz"
+msgstr "هنا يمكنك اختبار وتطبيق الاستمارة"
 
 #: view/index.phtml:83 view/index.phtml:87
 #, php-format
@@ -82,19 +82,19 @@ msgstr ""
 
 #: view/index.phtml:97
 msgid "Create an Account"
-msgstr "Bir hesap oluşturun"
+msgstr "إنشاء حساب"
 
 #: view/index.phtml:101
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr "En sevdiğiniz sosyal ağ kullanarak açık kaynak kodlu bir başvuranın izleme sistemine Girişi"
+msgstr ""
 
 #: view/index.phtml:102
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
-msgstr "Ama demo veritabanı günde bir kez sıfırlama olduğunu hatırlıyorum. Yeni oluşturulan hesaplar sessizce 02:00 CET kaldırılır."
+msgstr "ولكن تذكر، وقاعدة بيانات التجريبية يتم إعادة تعيين مرة واحدة في اليوم. تتم إزالة الحسابات التي تم إنشاؤها حديثا في صمت في الساعة 2:00 بتوقيت وسط أوروبا."
 
 #: view/index.phtml:107
 #, php-format
@@ -103,11 +103,11 @@ msgstr ""
 
 #: view/password.phtml:3 view/password.phtml:7
 msgid "My password"
-msgstr "Benim şifre"
+msgstr "كلمة المرور الخاصة بي"
 
 #: view/password.phtml:9
 msgid "This is the demo account. Password cannot be changed"
-msgstr "Bu demo hesabı. Şifre değiştirilemez"
+msgstr "هذا هو الحساب التجريبي. لا يمكن تغيير كلمة المرور"
 
 #: view/layout.phtml:19
 msgid "YAWIK DEMO"
@@ -115,8 +115,8 @@ msgstr "YAWIK DEMO"
 
 #: view/layout.phtml:75
 msgid "Help to translate YAWIK"
-msgstr "YAWIK çevirmek için yardım"
+msgstr "مساعدة لترجمة YAWIK"
 
 #: view/layout.phtml:122
 msgid "All rights reserved."
-msgstr "Her hakkı saklıdır."
+msgstr "جميع الحقوق محفوظة."

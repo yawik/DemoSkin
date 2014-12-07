@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cross Applicant Management - YawikDemoSkin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-05 08:59+0100\n"
+"POT-Creation-Date: 2014-12-07 16:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,14 +108,14 @@ msgstr ""
 msgid "This is the demo account. Password cannot be changed"
 msgstr ""
 
-#: view/layout.phtml:19
+#: view/layout.phtml:21
 msgid "YAWIK DEMO"
 msgstr ""
 
-#: view/layout.phtml:75
+#: view/layout.phtml:82
 msgid "Help to translate YAWIK"
 msgstr ""
 
-#: view/layout.phtml:122
+#: view/layout.phtml:129
 msgid "All rights reserved."
 msgstr ""
