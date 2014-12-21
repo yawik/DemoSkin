@@ -1,8 +1,8 @@
 <project name="YAWIK" default="install">
   <target name="install">
     <echo>YawikDemoSkin ${$target}</echo>
-    <copy todir="config/autoload" overwrite="true">
-      <fileset dir="module/YawikDemoSkin/config">
+    <copy todir="../../config/autoload" overwrite="true">
+      <fileset dir="config">
         <include name="**.dist"/>
       </fileset>   
       <mapper type="regexp" from="^(.*\.php)\.dist" to="\1"/>
