@@ -37,9 +37,10 @@ foreach ($languages as $lang) {
           array('hreflang'=>$lang)); 
 }
 
-$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'))
-                         ->prependFile($this->basePath('js/bootstrap.min.js'))
-                         ->prependFile($this->basePath('js/jquery.min.js'))  
+$this->configHeadScript()->setAllowArbitraryAttributes(true);
+$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'), 'text/javascript', array('async'=>true))
+                         ->prependFile($this->basePath('js/bootstrap.min.js'), 'text/javascript', array('async'=>true))
+                         ->prependFile($this->basePath('js/jquery.min.js'), 'text/javascript', array('async'=>true))  
                          ->appendScript('var lang="' . $this->params('lang') . '";'
                           . 'var basePath="' . $this->basePath() . '";');
 ?>
