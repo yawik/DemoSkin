@@ -38,11 +38,12 @@ foreach ($languages as $lang) {
 }
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
-$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'), 'text/javascript', array('async'=>true))
-                         ->prependFile($this->basePath('js/bootstrap.min.js'), 'text/javascript', array('async'=>true))
-                         ->prependFile($this->basePath('js/jquery.min.js'), 'text/javascript', array('async'=>true))  
+
+$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'),'text/javascript',array('async'=>true))
+                         ->prependFile($this->basePath('js/bootstrap.min.js'),'text/javascript',array('async'=>true))
                          ->appendScript('var lang="' . $this->params('lang') . '";'
                           . 'var basePath="' . $this->basePath() . '";');
+$this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
 ?>
 <?php echo $this->doctype(); ?>
 <html lang="<?php echo $this->params('lang') ?>">
@@ -55,7 +56,7 @@ $this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'), 
 </head>
 <body>
 <a class="sr-only" href="#content">Skip to main content</a>
-<header id="cam-topbar" role="banner">
+<header class="navbar navbar-inverse navbar-static-top" role="banner">
     <div class="cam-container">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target=".cam-navbar-collapse" data-toggle="collapse"
@@ -69,7 +70,7 @@ $this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'), 
                 DEMO</a>
             <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
         </div>
-        <nav id="cam-main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
+        <nav id="main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
             <?php
             echo $this->navigation('Core/Navigation')
                 ->setAcl($this->services('acl'))
