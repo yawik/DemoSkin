@@ -39,8 +39,8 @@ foreach ($languages as $lang) {
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
 
-$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'),'text/javascript',array('async'=>true))
-                         ->prependFile($this->basePath('js/bootstrap.min.js'),'text/javascript',array('async'=>true))
+$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js')),
+                         ->prependFile($this->basePath('js/bootstrap.min.js')),
                          ->appendScript('var lang="' . $this->params('lang') . '";'
                           . 'var basePath="' . $this->basePath() . '";');
 $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
