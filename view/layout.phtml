@@ -29,20 +29,20 @@ $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0
 $this->headLink()->prependStylesheet($this->basePath() . '/YawikDemoSkin/YawikDemoSkin.css');
 
 foreach ($languages as $lang) {
-       $this->headLink()->appendAlternate(
-          preg_replace('~^'.$this->basepath('/'.$this->params('lang')).'~',
-          $this->basepath('/'.$lang),$_SERVER['REQUEST_URI']),
-          'hreflang', 
-	  $this->headTitle()->setTranslator()->renderTitle() , 
-          array('hreflang'=>$lang)); 
+    $this->headLink()->appendAlternate(
+        preg_replace('~^'.$this->basepath('/'.$this->params('lang')).'~',
+            $this->basepath('/'.$lang),$_SERVER['REQUEST_URI']),
+        'hreflang',
+        $this->headTitle()->setTranslator()->renderTitle() ,
+        array('hreflang'=>$lang));
 }
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
 
 $this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'))
-                         ->prependFile($this->basePath('js/bootstrap.min.js'))
-                         ->appendScript('var lang="' . $this->params('lang') . '";'
-                          . 'var basePath="' . $this->basePath() . '";');
+    ->prependFile($this->basePath('js/bootstrap.min.js'))
+    ->appendScript('var lang="' . $this->params('lang') . '";'
+        . 'var basePath="' . $this->basePath() . '";');
 $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
 ?>
 <?php echo $this->doctype(); ?>
@@ -56,8 +56,8 @@ $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
 </head>
 <body>
 <a class="sr-only" href="#content">Skip to main content</a>
-<header class="navbar navbar-inverse navbar-static-top" role="banner">
-    <div class="cam-container">
+<header role="banner">
+    <div class=" navbar-inverse">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target=".cam-navbar-collapse" data-toggle="collapse"
                     type="button">
@@ -66,11 +66,10 @@ $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">YAWIK
-                DEMO</a>
+            <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">YAWIK DEMO</a>
             <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
         </div>
-        <nav id="main-navigation" class="navbar-collapse collapse cam-navbar-collapse" role="navigation">
+        <nav id="main-navigation" class="navbar-collapse collapse" role="navigation">
             <?php
             echo $this->navigation('Core/Navigation')
                 ->setAcl($this->services('acl'))
@@ -127,7 +126,7 @@ $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
     <?php echo $this->content; ?>
 </main>
 <!-- /container -->
-<footer id="cam-footer">
+<footer id="yk-footer">
     <div class="container">
            <span class="pull-left">
                <small>
@@ -140,7 +139,7 @@ $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
 
                </small></span>
                 <span class="pull-right"><small>
-                        &copy; 2013-2014 <a href="http://cross-solution.de">
+                        &copy; 2013-<?php echo date("Y")?> <a href="http://cross-solution.de">
 
 
                             Cross

@@ -39,7 +39,7 @@
                     </tr>
 
                 </table>
-                <form action="<?php echo $this->basePath()?>/de/login?ref=%2Fde" method="post" name="login-form" id="login-form" class="form-inline">
+                <form action="<?php echo $this->basePath()?>/<?php echo $this->params('lang') ?>/login?ref=%2F<?php echo $this->params('lang') ?>" method="post" name="login-form" id="login-form" class="form-inline">
                     <fieldset id="credentials">
                         <div class="fieldset-content">
                             <div class="controls controls-row row">
@@ -106,6 +106,9 @@
                     <?php foreach (array('facebook' => 'Facebook', 'linkedin' => 'LinkedIn', 'xing' => 'Xing') as $provider => $name): ?>
                         <a class="login-link btn btn-primary btn-lg" title="<?php echo sprintf($this->translate('Login with %s'), $name)?>" href="<?php echo $this->url('auth-provider', array('provider' => $provider), array('query' => array('ref' => urlencode($ref))))?>"><i class="fa fa-<?php echo $provider?>"></i> <?php echo $name?></a>
                     <?php endforeach ?>
+                </p>
+                <p>
+                    <?php echo sprintf($this->translate("You can also register to this demo using this %s"),'<a href="'.$this->basePath("/de/auth/register").'">'.$this->translate("registration form")."</a>");?>
                 </p>
 
             </div>
