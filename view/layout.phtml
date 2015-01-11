@@ -127,28 +127,36 @@ $this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
 </main>
 <!-- /container -->
 <footer id="yk-footer">
-    <div class="container">
-           <span class="pull-left">
+ <div class="container">
+    <div class="row">
+           <div class="col-md-4">
                <small>
-
                    <a href="http://www.jetbrains.com/phpstorm/"
                       style="position: relative;display:block; float:left; width:230px; height:33px; border:0; margin:0;padding:0;text-decoration:none;text-indent:0;"><span
                            style="margin: 0;padding: 0;position: absolute;top: 10px;left:4px;font-size: 11px;cursor:pointer;  background-image:none;border:0;color: #5854b5;font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Developed with</span><img
                            src="http://www.jetbrains.com/phpstorm/documentation/phpstorm_banners/phpstorm1/phpstorm230x33_white.gif"
                            alt="Developed with" border="0"/></a>
-
-               </small></span>
+               </small>
+           </div>
+	   <div class="col-md-4"><center>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="LB3Q3ES348HHG">
+<input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+</form></center>
+           </div>
+           <div class="col-md-4" align="right">
                 <span class="pull-right"><small>
                         &copy; 2013-<?php echo date("Y")?> <a href="http://cross-solution.de">
-
-
                             Cross
                             Solution</a>. <?php echo $this->translate('All rights reserved.') ?>
                         | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]<br/>
                         Powered by <a href="http://yawik.org">YAWIK</a>
-                    </small> </span>
-
+                 </small></span>
+           </div>
     </div>
+  </div>
 </footer>
 <?php echo $this->partial("piwik") ?>
 </body>
