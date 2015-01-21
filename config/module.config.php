@@ -11,7 +11,7 @@ return array('view_manager' => array(
                  'template_map' => array(
                      'layout/layout' => __DIR__ . '/../view/layout.phtml',
                      'core/index/index' => __DIR__ . '/../view/index.phtml',
-                     'auth/manage/password' => __DIR__ . '/../view/password.phtml', 
+                     'auth/password/index' => __DIR__ . '/../view/password.phtml', 
                      'piwik' => __DIR__ . '/../view/piwik.phtml'
                       ),
              ),

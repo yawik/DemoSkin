@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# BLU-IT, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-09 15:05+0100\n"
-"PO-Revision-Date: 2014-11-19 18:41+0000\n"
-"Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
+"POT-Creation-Date: 2014-11-29 17:25+0100\n"
+"PO-Revision-Date: 2015-01-15 13:11+0000\n"
+"Last-Translator: BLU-IT\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/yawik/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,28 +28,28 @@ msgstr "Benvenuti a YAWIK!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr ""
+msgstr "colleghiamo reclutatori e candidati"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
-msgstr ""
+msgstr "Si tratta di una DEMO. Tutti i dati vengono ripristinati una volta al giorno (02:00 CET)."
 
 #: view/index.phtml:21
 msgid "Login as a recruiter"
-msgstr ""
+msgstr "Entra come un reclutatore"
 
 #: view/index.phtml:23
 msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
-msgstr ""
+msgstr "È possibile utilizzare l'account esistente. Entra e dare un'occhiata ad alcuni dati di test."
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr ""
+msgstr "Ruolo"
 
 #: view/index.phtml:27 view/index.phtml:47
 msgid "Username"
-msgstr ""
+msgstr "Nome utente"
 
 #: view/index.phtml:28 view/index.phtml:56
 msgid "Password"
@@ -56,7 +57,7 @@ msgstr "Password"
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr ""
+msgstr "Reclutatore"
 
 #: view/index.phtml:36
 msgid "Applicant"
@@ -68,37 +69,37 @@ msgstr "login"
 
 #: view/index.phtml:77
 msgid "Test application form"
-msgstr ""
+msgstr "Modulo di richiesta di test"
 
 #: view/index.phtml:81
 msgid "Here you can test an application formular"
-msgstr ""
+msgstr "Qui è possibile verificare un formulario per una domanda di assunzione"
 
 #: view/index.phtml:83 view/index.phtml:87
 #, php-format
 msgid "%sapplication form%s."
-msgstr ""
+msgstr "%sapplication form%s."
 
 #: view/index.phtml:97
 msgid "Create an Account"
-msgstr ""
+msgstr "Creare un account"
 
 #: view/index.phtml:101
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr ""
+msgstr "Accesso ad un sistema di tracciamento richiedente open source utilizzando il tuo social network preferito"
 
 #: view/index.phtml:102
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
-msgstr ""
+msgstr "Ma ricordate, la database demo è ripristinata una volta al giorno. Account appena creati vengono rimossi silenziosamente alle 2:00 CET."
 
 #: view/index.phtml:107
 #, php-format
 msgid "Login with %s"
-msgstr ""
+msgstr "Accedi con %s"
 
 #: view/password.phtml:3 view/password.phtml:7
 msgid "My password"
@@ -106,11 +107,11 @@ msgstr "La mia password"
 
 #: view/password.phtml:9
 msgid "This is the demo account. Password cannot be changed"
-msgstr ""
+msgstr "Questo è l'account demo. La password non può essere modificato"
 
 #: view/layout.phtml:19
 msgid "YAWIK DEMO"
-msgstr ""
+msgstr "YAWIK DEMO"
 
 #: view/layout.phtml:75
 msgid "Help to translate YAWIK"
