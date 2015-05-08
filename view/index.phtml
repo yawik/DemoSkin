@@ -37,6 +37,11 @@
                         <td><b>applicant</b></td>
                         <td><b>applicant</b></td>
                     </tr>
+                    <tr>
+                        <td><?php echo $this->translate("Administrator")?></td>
+                        <td><b>admin</b></td>
+                        <td><b>admin</b></td>
+                    </tr>
 
                 </table>
                 <form action="<?php echo $this->basePath()?>/<?php echo $this->params('lang') ?>/login?ref=%2F<?php echo $this->params('lang') ?>" method="post" name="login-form" id="login-form" class="form-inline">
@@ -83,11 +88,12 @@
                 <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
                         '<a href="' . $this->url('lang/apply', array('applyId' => 'software-developer'), /* reuse matched params*/ true) . '">',
                         '</a>') ?></h2>
+                <p><?php echo $this->translate('Application is handled within the ATS');?></p>
 
                 <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
                         '<a href="' . $this->url('lang/apply', array('applyId' => 'Projektmanager-produktentwicklung'), /* reuse matched params*/ true) . '">',
                         '</a>') ?></h2>
-
+                <p><?php echo $this->translate('Application is send via E-Mail');?></p>
             </div>
         </aside>
     </div>
