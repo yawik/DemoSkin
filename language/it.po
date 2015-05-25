@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-04 19:05+0100\n"
-"PO-Revision-Date: 2015-02-10 22:31+0000\n"
-"Last-Translator: BLU-IT\n"
+"POT-Creation-Date: 2015-05-20 15:59+0200\n"
+"PO-Revision-Date: 2015-05-20 14:03+0000\n"
+"Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/yawik/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,11 +47,11 @@ msgstr "È possibile utilizzare l'account esistente. Entra e dare un'occhiata ad
 msgid "Role"
 msgstr "Ruolo"
 
-#: view/index.phtml:27 view/index.phtml:47
+#: view/index.phtml:27 view/index.phtml:52
 msgid "Username"
 msgstr "Nome utente"
 
-#: view/index.phtml:28 view/index.phtml:56
+#: view/index.phtml:28 view/index.phtml:61
 msgid "Password"
 msgstr "Password"
 
@@ -63,63 +63,75 @@ msgstr "Reclutatore"
 msgid "Applicant"
 msgstr "Richiedente"
 
-#: view/index.phtml:66
+#: view/index.phtml:41
+msgid "Administrator"
+msgstr ""
+
+#: view/index.phtml:71
 msgid "login"
 msgstr "login"
 
-#: view/index.phtml:77
+#: view/index.phtml:82
 msgid "Test application form"
 msgstr "Modulo di richiesta di test"
 
-#: view/index.phtml:81
+#: view/index.phtml:86
 msgid "Here you can test an application formular"
 msgstr "Qui è possibile verificare un formulario per una domanda di assunzione"
 
-#: view/index.phtml:83 view/index.phtml:87
+#: view/index.phtml:88 view/index.phtml:93
 #, php-format
 msgid "%sapplication form%s."
 msgstr "%sapplication form%s."
 
-#: view/index.phtml:97
+#: view/index.phtml:91
+msgid "Application is handled within the ATS"
+msgstr ""
+
+#: view/index.phtml:96
+msgid "Application is send via E-Mail"
+msgstr ""
+
+#: view/index.phtml:103
 msgid "Create an Account"
 msgstr "Creare un account"
 
-#: view/index.phtml:101
+#: view/index.phtml:107
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
 msgstr "Accesso ad un sistema di tracciamento richiedente open source utilizzando il tuo social network preferito"
 
-#: view/index.phtml:102
+#: view/index.phtml:108
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
 msgstr "Ma ricordate, la database demo è ripristinata una volta al giorno. Account appena creati vengono rimossi silenziosamente alle 2:00 CET."
 
-#: view/index.phtml:107
+#: view/index.phtml:113
 #, php-format
 msgid "Login with %s"
 msgstr "Accedi con %s"
 
-#: view/index.phtml:111
+#: view/index.phtml:117
 #, php-format
 msgid "You can also register to this demo using this %s"
 msgstr "È anche possibile registrarsi per la dimostrazione utilizzando questo %s"
 
-#: view/index.phtml:111
+#: view/index.phtml:117
 msgid "registration form"
 msgstr "modulo di iscrizione"
 
-#: view/index.phtml:122
+#: view/index.phtml:128
 msgid "YAWIK as a Jobboard"
 msgstr "YAWIK come Jobboard"
 
-#: view/index.phtml:127
+#: view/index.phtml:133
 #, php-format
 msgid "Take a look at YAWIK running as a %s"
 msgstr "Date un'occhiata a YAWIK funzionando come un %s"
 
-#: view/index.phtml:127
+#: view/index.phtml:133
 msgid "Jobboard"
 msgstr "Jobboard"
 

@@ -82,18 +82,27 @@
                 <h3 class="panel-title"><?php echo $this->translate("Test application form")?></h3>
             </div>
             <div class="panel-body">
-                <p>
-                    <?php echo $this->translate("Here you can test an application formular")?>.
-                </p>
-                <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
-                        '<a href="' . $this->url('lang/apply', array('applyId' => '5555f3ae4e197f2b077b23d8'), /* reuse matched params*/ true) . '">',
-                        '</a>') ?></h2>
-                <p><?php echo $this->translate('Application is handled within the ATS');?></p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <?php echo $this->translate("Here you can test an application formular")?>.
+                        </p>
+                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
+                                '<a href="' . $this->url('lang/apply', array('applyId' => '5555f3ae4e197f2b077b23d8'), /* reuse matched params*/ true) . '">',
+                                '</a>') ?></h2>
+                        <p><?php echo $this->translate('Application is handled within the ATS');?></p>
 
-                <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
-                        '<a href="' . $this->url('lang/apply', array('applyId' => '5555ec824e197fa97d7b23e2'), /* reuse matched params*/ true) . '">',
-                        '</a>') ?></h2>
-                <p><?php echo $this->translate('Application is send via E-Mail');?></p>
+                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
+                                '<a href="' . $this->url('lang/apply', array('applyId' => '5555ec824e197fa97d7b23e2'), /* reuse matched params*/ true) . '">',
+                                '</a>') ?></h2>
+                        <p><?php echo $this->translate('Application is send via E-Mail');?></p>
+                    </div>
+                    <div class="col-md-6 embed-responsive embed-responsive-16by9">
+                        <p>See a Demo on Youtube</p>
+                        <iframe src="https://www.youtube.com/embed/peoO-RVJM_0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
             </div>
         </aside>
     </div>
