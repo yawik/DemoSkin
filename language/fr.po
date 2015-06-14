@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Brice <vertebre@gmail.com>, 2015
 # Carsten Bleek <cbleek@yawik.org>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-20 15:59+0200\n"
-"PO-Revision-Date: 2015-05-20 14:03+0000\n"
-"Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
+"PO-Revision-Date: 2015-06-13 21:35+0000\n"
+"Last-Translator: Brice <vertebre@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/yawik/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,7 +29,7 @@ msgstr "Bienvenue à YAWIK!"
 
 #: view/index.phtml:14
 msgid "we connect recruiters and applicants"
-msgstr ""
+msgstr "nous connectons les recruteurs et les candidats"
 
 #: view/index.phtml:15
 msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
@@ -45,7 +46,7 @@ msgstr "Vous pouvez utiliser le compte existant. Connectez-vous et jetez un oeil
 
 #: view/index.phtml:26
 msgid "Role"
-msgstr ""
+msgstr "Rôle"
 
 #: view/index.phtml:27 view/index.phtml:52
 msgid "Username"
@@ -57,15 +58,15 @@ msgstr "  Mot de passe "
 
 #: view/index.phtml:31
 msgid "Recruiter"
-msgstr ""
+msgstr "Recruteur"
 
 #: view/index.phtml:36
 msgid "Applicant"
-msgstr "Demandeur"
+msgstr "Candidat"
 
 #: view/index.phtml:41
 msgid "Administrator"
-msgstr ""
+msgstr "Administrateur"
 
 #: view/index.phtml:71
 msgid "login"
@@ -82,15 +83,15 @@ msgstr "Ici vous pouvez tester un formular d'application"
 #: view/index.phtml:88 view/index.phtml:93
 #, php-format
 msgid "%sapplication form%s."
-msgstr ""
+msgstr "%sapplication form%s."
 
 #: view/index.phtml:91
 msgid "Application is handled within the ATS"
-msgstr ""
+msgstr "La candidature est traité au sein du SCC"
 
 #: view/index.phtml:96
 msgid "Application is send via E-Mail"
-msgstr ""
+msgstr "La candidature est envoyé par email"
 
 #: view/index.phtml:103
 msgid "Create an Account"
@@ -100,7 +101,7 @@ msgstr "Créer un compte"
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
-msgstr ""
+msgstr "Connectez-vous à un système de suivi des candidats open source en utilisant votre réseau social favori"
 
 #: view/index.phtml:108
 msgid ""
@@ -116,24 +117,24 @@ msgstr "Connectez-vous avec %s"
 #: view/index.phtml:117
 #, php-format
 msgid "You can also register to this demo using this %s"
-msgstr ""
+msgstr "Vous pouvez aussi vous enregistrer à cette démo en utilisant ceci %s"
 
 #: view/index.phtml:117
 msgid "registration form"
-msgstr ""
+msgstr "formulaire d'enregistrement"
 
 #: view/index.phtml:128
 msgid "YAWIK as a Jobboard"
-msgstr ""
+msgstr "YAWIK comme site d'emploi"
 
 #: view/index.phtml:133
 #, php-format
 msgid "Take a look at YAWIK running as a %s"
-msgstr ""
+msgstr "Jeter un coup d'œil à YAWIK en tant que %s"
 
 #: view/index.phtml:133
 msgid "Jobboard"
-msgstr ""
+msgstr "Site d'emploi"
 
 #: view/password.phtml:14 view/password.phtml:20
 msgid "My password"
