@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Brice <vertebre@gmail.com>, 2015
+# Carsten Bleek <cbleek@yawik.org>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: YAWIK\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-20 15:59+0200\n"
+"PO-Revision-Date: 2015-06-14 15:33+0000\n"
+"Last-Translator: Brice <vertebre@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/yawik/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: view/index.phtml:11
+msgid "Home"
+msgstr "Maison"
+
+#: view/index.phtml:13
+msgid "Welcome to YAWIK!"
+msgstr "Bienvenue à YAWIK!"
+
+#: view/index.phtml:14
+msgid "we connect recruiters and applicants"
+msgstr "nous connectons les recruteurs et les candidats"
+
+#: view/index.phtml:15
+msgid "This is a DEMO. All data are reset once a day (2:00 CET)."
+msgstr "Il s'agit d'une démo. Toutes les données sont réinitialisés une fois par jour (02h00 CET)."
+
+#: view/index.phtml:21
+msgid "Login as a recruiter"
+msgstr "Connectez-vous en tant que recruteur"
+
+#: view/index.phtml:23
+msgid ""
+"You can use the existing Account. Log in and take a look to some Test data."
+msgstr "Vous pouvez utiliser le compte existant. Connectez-vous et jetez un oeil à certaines données de test."
+
+#: view/index.phtml:26
+msgid "Role"
+msgstr "Rôle"
+
+#: view/index.phtml:27 view/index.phtml:52
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: view/index.phtml:28 view/index.phtml:61
+msgid "Password"
+msgstr "  Mot de passe "
+
+#: view/index.phtml:31
+msgid "Recruiter"
+msgstr "Recruteur"
+
+#: view/index.phtml:36
+msgid "Applicant"
+msgstr "Candidat"
+
+#: view/index.phtml:41
+msgid "Administrator"
+msgstr "Administrateur"
+
+#: view/index.phtml:71
+msgid "login"
+msgstr "Connexion"
+
+#: view/index.phtml:82
+msgid "Test application form"
+msgstr "formulaire de demande d'essai"
+
+#: view/index.phtml:86
+msgid "Here you can test an application formular"
+msgstr "Ici vous pouvez tester un formular d'application"
+
+#: view/index.phtml:88 view/index.phtml:93
+#, php-format
+msgid "%sapplication form%s."
+msgstr "%sapplication form%s."
+
+#: view/index.phtml:91
+msgid "Application is handled within the ATS"
+msgstr "La candidature est traité au sein du SSC"
+
+#: view/index.phtml:96
+msgid "Application is send via E-Mail"
+msgstr "La candidature est envoyé par email"
+
+#: view/index.phtml:103
+msgid "Create an Account"
+msgstr "Créer un compte"
+
+#: view/index.phtml:107
+msgid ""
+"Login to an open source applicant tracking system using your favorite social"
+" network"
+msgstr "Connectez-vous à un système de suivi des candidats open source en utilisant votre réseau social favori"
+
+#: view/index.phtml:108
+msgid ""
+"But remember, the demo database is reset once a day. Newly created accounts "
+"are silently removed at 2:00 CET."
+msgstr "Mais rappelez-vous, la base de données de démonstration est réinitialisé une fois par jour. Comptes nouvellement créés sont supprimés silencieusement à 02h00 CET."
+
+#: view/index.phtml:113
+#, php-format
+msgid "Login with %s"
+msgstr "Connectez-vous avec %s"
+
+#: view/index.phtml:117
+#, php-format
+msgid "You can also register to this demo using this %s"
+msgstr "Vous pouvez aussi vous enregistrer à cette démo en utilisant ceci %s"
+
+#: view/index.phtml:117
+msgid "registration form"
+msgstr "formulaire d'enregistrement"
+
+#: view/index.phtml:128
+msgid "YAWIK as a Jobboard"
+msgstr "YAWIK comme site d'emploi"
+
+#: view/index.phtml:133
+#, php-format
+msgid "Take a look at YAWIK running as a %s"
+msgstr "Jeter un coup d'œil à YAWIK en tant que %s"
+
+#: view/index.phtml:133
+msgid "Jobboard"
+msgstr "Site d'emploi"
+
+#: view/password.phtml:14 view/password.phtml:20
+msgid "My password"
+msgstr "  Mon mot de passe "
+
+#: view/password.phtml:17
+msgid "This is the demo account. Password cannot be changed"
+msgstr "C'est le compte de démonstration. Le mot de passe ne peut pas être changé"
+
+#: view/layout.phtml:21
+msgid "YAWIK DEMO"
+msgstr "YAWIK DEMO"
+
+#: view/layout.phtml:100
+msgid "Help to translate YAWIK"
+msgstr "Aide à traduire YAWIK"
+
+#: view/layout.phtml:154
+msgid "All rights reserved."
+msgstr "Tous droits réservés."
