@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 15:59+0200\n"
-"PO-Revision-Date: 2015-06-14 15:33+0000\n"
-"Last-Translator: Brice <vertebre@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/yawik/language/fr/)\n"
+"POT-Creation-Date: 2015-06-15 10:22+0200\n"
+"PO-Revision-Date: 2015-06-18 14:13+0000\n"
+"Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
+"Language-Team: French (Belgium) (http://www.transifex.com/projects/p/yawik/language/fr_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
+"Language: fr_BE\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: view/index.phtml:11
@@ -76,63 +76,63 @@ msgstr "Connexion"
 msgid "Test application form"
 msgstr "formulaire de demande d'essai"
 
-#: view/index.phtml:86
+#: view/index.phtml:88
 msgid "Here you can test an application formular"
 msgstr "Ici vous pouvez tester un formular d'application"
 
-#: view/index.phtml:88 view/index.phtml:93
+#: view/index.phtml:90 view/index.phtml:95
 #, php-format
 msgid "%sapplication form%s."
 msgstr "%sapplication form%s."
 
-#: view/index.phtml:91
+#: view/index.phtml:93
 msgid "Application is handled within the ATS"
 msgstr "La candidature est traité au sein du SSC"
 
-#: view/index.phtml:96
+#: view/index.phtml:98
 msgid "Application is send via E-Mail"
 msgstr "La candidature est envoyé par email"
 
-#: view/index.phtml:103
+#: view/index.phtml:112
 msgid "Create an Account"
 msgstr "Créer un compte"
 
-#: view/index.phtml:107
+#: view/index.phtml:116
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
 msgstr "Connectez-vous à un système de suivi des candidats open source en utilisant votre réseau social favori"
 
-#: view/index.phtml:108
+#: view/index.phtml:117
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
 msgstr "Mais rappelez-vous, la base de données de démonstration est réinitialisé une fois par jour. Comptes nouvellement créés sont supprimés silencieusement à 02h00 CET."
 
-#: view/index.phtml:113
+#: view/index.phtml:122
 #, php-format
 msgid "Login with %s"
 msgstr "Connectez-vous avec %s"
 
-#: view/index.phtml:117
+#: view/index.phtml:126
 #, php-format
 msgid "You can also register to this demo using this %s"
 msgstr "Vous pouvez aussi vous enregistrer à cette démo en utilisant ceci %s"
 
-#: view/index.phtml:117
+#: view/index.phtml:126
 msgid "registration form"
 msgstr "formulaire d'enregistrement"
 
-#: view/index.phtml:128
+#: view/index.phtml:137
 msgid "YAWIK as a Jobboard"
 msgstr "YAWIK comme site d'emploi"
 
-#: view/index.phtml:133
+#: view/index.phtml:142
 #, php-format
 msgid "Take a look at YAWIK running as a %s"
 msgstr "Jeter un coup d'œil à YAWIK en tant que %s"
 
-#: view/index.phtml:133
+#: view/index.phtml:142
 msgid "Jobboard"
 msgstr "Site d'emploi"
 

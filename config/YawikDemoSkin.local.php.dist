@@ -7,8 +7,8 @@ if (!\YawikDemoSkin\Module::$isLoaded) return array();
  */
 return array('view_manager' => array(
         'template_map' => array(
-                        'piwik' => '%%yawik.demoskin.piwik%%'
-                          )
+                        'piwik' => __DIR__ . '/../../module/YawikDemoSkin/view/piwik.phtml'
+                )
 		),
 		 'acl' => array(
                          'rules' => array(
