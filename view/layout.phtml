@@ -8,13 +8,17 @@
  * @license   MIT
  */
 
+/* @var $options \Core\Options\ModuleOptions */
+$options = $this->services('Core/Options');
+$languages = $options->getSupportedLanguages();
+
 // See: http://yawik.readthedocs.org/en/latest/modules/core/notifications.html
 
 $notifications = $this->partial('core/notifications');
 
 // set available languages
 
-$languages = array('en', 'de', 'fr', 'es', 'it', 'nl', 'ru', 'pl', 'tr', 'hi', 'ar', 'pt', 'zh');
+//$languages = array('us', 'de', 'fr', 'es', 'it', 'nl', 'ru', 'pl', 'tr', 'hi', 'ar', 'pt', 'zh');
 
 // set default page title
 
@@ -89,11 +93,11 @@ foreach ($languages as $lang) {
     <nav id="sidebar">
         <div class="btn-group" data-toggle="buttons-radio" id="language-switcher">
             <?php $lang = $this->params('lang');
-            foreach ( $languages as $availableLang): ?>
+            foreach ( $languages as $key=>$language): ?>
                 <button type="button"
-                        class="btn btn-xs btn-default<?php echo $availableLang == $lang ? ' active' : '' ?>"
-                        id="language-switcher-<?php echo $availableLang ?>">
-                    <?php echo strtoupper($availableLang) ?></button>
+                        class="btn btn-xs btn-default<?php echo $language == $lang ? ' active' : '' ?>"
+                        id="language-switcher-<?php echo $language ?>">
+                    <span class="flag-icon flag-icon-<?php echo  strtolower(substr($language,-2)) ?>"></span><?php echo strtoupper($key) ?></button>
             <?php endforeach ?>
         </div>
         <p><a href="https://www.transifex.com/projects/p/yawik/">
