@@ -96,7 +96,7 @@ foreach ($languages as $lang) {
             foreach ( $languages as $key=>$language): ?>
                 <button type="button"
                         class="btn btn-xs btn-default<?php echo $language == $lang ? ' active' : '' ?>"
-                        id="language-switcher-<?php echo $language ?>">
+                        id="language-switcher-<?php echo $key ?>">
                     <span class="flag-icon flag-icon-<?php echo  strtolower(substr($language,-2)) ?>"></span><?php echo strtoupper($key) ?></button>
             <?php endforeach ?>
         </div>
