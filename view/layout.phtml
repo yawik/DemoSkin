@@ -16,10 +16,6 @@ $languages = $options->getSupportedLanguages();
 
 $notifications = $this->partial('core/notifications');
 
-// set available languages
-
-//$languages = array('us', 'de', 'fr', 'es', 'it', 'nl', 'ru', 'pl', 'tr', 'hi', 'ar', 'pt', 'zh');
-
 // set default page title
 
 $this->headTitle($this->translate('YAWIK DEMO'))->setSeparator(' - ')->setAutoEscape(false);
@@ -64,7 +60,7 @@ foreach ($languages as $lang) {
 <header role="banner">
     <div class=" navbar-inverse">
         <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-target=".yk-navbar-collapse" data-toggle="collapse"
+            <button class="navbar-toggle collapsed" data-target=".navbar-collapse" data-toggle="collapse"
                     type="button">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -74,7 +70,7 @@ foreach ($languages as $lang) {
             <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">YAWIK DEMO</a>
             <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
         </div>
-        <nav id="main-navigation" class="navbar-collapse collapse yk-navbar-collapse" role="navigation">
+        <nav id="main-navigation" class="navbar-collapse collapse navbar-collapse" role="navigation">
             <?php
             echo $this->navigation('Core/Navigation')
                 ->setAcl($this->services('acl'))
