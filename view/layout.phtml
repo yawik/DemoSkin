@@ -151,7 +151,8 @@ foreach ($languages as $lang) {
                 <span class="pull-right"><small>
                         &copy; 2013-<?php echo date("Y")?> <a href="http://cross-solution.de">
                             Cross
-                            Solution</a>. <?php echo $this->translate('All rights reserved.') ?>
+                            Solution</a>.
+                        | <a href="<?php echo  $this->basePath($this->params('lang').'/content/imprint')?>"><?php echo $this->translate('Imprint') ?></a>
                         | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]<br/>
                         Powered by <a href="http://yawik.org">YAWIK</a>
                  </small></span>
