@@ -8,10 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: YAWIK\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 15:59+0200\n"
-"PO-Revision-Date: 2015-05-20 14:03+0000\n"
+"POT-Creation-Date: 2015-06-15 10:22+0200\n"
+"PO-Revision-Date: 2016-02-20 20:55+0000\n"
 "Last-Translator: Carsten Bleek <cbleek@yawik.org>\n"
-"Language-Team: Arabic (http://www.transifex.com/projects/p/yawik/language/ar/)\n"
+"Language-Team: Arabic (http://www.transifex.com/yawik/yawik/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,65 +75,65 @@ msgstr "تسجيل الدخول"
 msgid "Test application form"
 msgstr "نموذج طلب الاختبار"
 
-#: view/index.phtml:86
+#: view/index.phtml:88
 msgid "Here you can test an application formular"
 msgstr "هنا يمكنك اختبار وتطبيق الاستمارة"
 
-#: view/index.phtml:88 view/index.phtml:93
+#: view/index.phtml:90 view/index.phtml:95
 #, php-format
 msgid "%sapplication form%s."
 msgstr ""
 
-#: view/index.phtml:91
+#: view/index.phtml:93
 msgid "Application is handled within the ATS"
 msgstr ""
 
-#: view/index.phtml:96
+#: view/index.phtml:98
 msgid "Application is send via E-Mail"
 msgstr ""
 
-#: view/index.phtml:103
+#: view/index.phtml:112
 msgid "Create an Account"
 msgstr "إنشاء حساب"
 
-#: view/index.phtml:107
+#: view/index.phtml:116
 msgid ""
 "Login to an open source applicant tracking system using your favorite social"
 " network"
 msgstr ""
 
-#: view/index.phtml:108
+#: view/index.phtml:117
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
 msgstr "ولكن تذكر، وقاعدة بيانات التجريبية يتم إعادة تعيين مرة واحدة في اليوم. تتم إزالة الحسابات التي تم إنشاؤها حديثا في صمت في الساعة 2:00 بتوقيت وسط أوروبا."
 
-#: view/index.phtml:113
+#: view/index.phtml:122
 #, php-format
 msgid "Login with %s"
 msgstr ""
 
-#: view/index.phtml:117
+#: view/index.phtml:126
 #, php-format
 msgid "You can also register to this demo using this %s"
 msgstr ""
 
-#: view/index.phtml:117
+#: view/index.phtml:126
 msgid "registration form"
 msgstr ""
 
-#: view/index.phtml:128
+#: view/index.phtml:137
 msgid "YAWIK as a Jobboard"
 msgstr ""
 
-#: view/index.phtml:133
+#: view/index.phtml:142
 #, php-format
 msgid "Take a look at YAWIK running as a %s"
 msgstr ""
 
-#: view/index.phtml:133
+#: view/index.phtml:142
 msgid "Jobboard"
-msgstr ""
+msgstr "Jobboard"
 
 #: view/password.phtml:14 view/password.phtml:20
 msgid "My password"

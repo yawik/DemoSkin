@@ -4,7 +4,7 @@
  *
  * view sript of the start page for unauthenticated users
  *
- * @copyright (c) 2013-2015 Cross Solution (http://cross-solution.de)
+ * @copyright (c) 2013 - 2016 Cross Solution (http://cross-solution.de)
  * @license   MIT
  */
 ?>
@@ -106,7 +106,8 @@
             </div>
         </aside>
     </div>
-    <div class="container col-md-6">
+
+    <div class="container col-md-6 pull-right">
         <aside class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title"><?php echo $this->translate("Create an Account")?></h3>
@@ -130,7 +131,24 @@
         </aside>
     </div>
 
-    <div class="container col-md-6">
+    <div class="container col-md-3">
+        <aside class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <?php echo $this->translate("Integrate Jobs into your personal homepage");?>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    <?php echo sprintf($this->translate("You can add your active job openings into your personal homepage by using the %s"),'<a href="https://github.com/cbleek/YawikWidget">YawikWidget</a>')?>
+		    <a href="https://yawik.org/2016/01/einbinden-von-stellenanzeigen-in-die-eigene-homepage/">more informations</a>.
+                </p>
+            </div>
+        </aside>
+    </div>
+
+
+    <div class="container col-md-3">
         <aside class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">
@@ -145,4 +163,8 @@
             </div>
         </aside>
     </div>
+
+
+
+
 </div>
