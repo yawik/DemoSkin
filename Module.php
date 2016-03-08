@@ -2,7 +2,7 @@
 
 namespace YawikDemoSkin;
 
-use Zend\Mvc\MvcEvent;
+use Core\ModuleManager\ModuleConfigLoader;
 
 /**
  * Bootstrap class of our demo skin
@@ -17,10 +17,31 @@ class Module
      */
     public static $isLoaded=false;
 
-
-    function getConfig()
+    /**
+     * Tells the autoloader, where to search for the YawikDemoSkin classes
+     *
+     * @return array
+     */
+    public function getAutoloaderConfig()
     {
-        return include __DIR__ . '/config/module.config.php';
+
+        return array(
+            'Zend\Loader\StandardAutoloader' => array(
+                'namespaces' => array(
+                    __NAMESPACE__ => __DIR__ . '/src',
+                ),
+            ),
+        );
+    }
+
+    /**
+     * Using the ModuleConfigLoader allow you to split the modules.config.php into several files.
+     *
+     * @return array
+     */
+    public function getConfig()
+    {
+        return ModuleConfigLoader::load(__DIR__ . '/config');
     }
 
     function onBootstrap()

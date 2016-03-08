@@ -12,7 +12,9 @@ return array('view_manager' => array(
                      'layout/layout' => __DIR__ . '/../view/layout.phtml',
                      'core/index/index' => __DIR__ . '/../view/index.phtml',
                      'auth/password/index' => __DIR__ . '/../view/password.phtml',
-                     'piwik' => __DIR__ . '/../view/piwik.phtml'
+                     'piwik' => __DIR__ . '/../view/piwik.phtml',
+                     'iframe/iFrame.phtml'               => __DIR__ . '/../view/iFrame.phtml',
+                     'jobs/jobboard/index.ajax.phtml' => __DIR__ . '/../view/jobs/index.ajax.phtml',
                       ),
              ),
              'translator' => array(
@@ -24,5 +26,24 @@ return array('view_manager' => array(
                             ),
                       ),
                  ),
-                                                                                                             
+
+
+             'form_elements' => [
+                 'invokables' => [
+                     'YawikDemoSkin/ClassificationForm' => 'YawikDemoSkin\Form\ClassificationForm',
+                     'Jobs/Description' => 'YawikDemoSkin\Form\JobsDescription',
+                 ],
+                 'factories' => [
+                     'YawikDemoSkin/ClassificationFieldset' => 'YawikDemoSkin\Form\ClassificationFieldsetFactory',
+                 ],
+             ],
+             /**
+              * override the Jobs/Manage to inject the additional classification form into the view.
+              */
+             'controllers' => array(
+                 'factories' => [
+                     'Jobs/Manage' => 'YawikDemoSkin\Factory\Controller\ManageControllerFactory',
+                 ]
+             ),
+
 );
