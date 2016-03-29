@@ -37,13 +37,5 @@ return array('view_manager' => array(
                      'YawikDemoSkin/ClassificationFieldset' => 'YawikDemoSkin\Form\ClassificationFieldsetFactory',
                  ],
              ],
-             /**
-              * override the Jobs/Manage to inject the additional classification form into the view.
-              */
-             'controllers' => array(
-                 'factories' => [
-                     'Jobs/Manage' => 'YawikDemoSkin\Factory\Controller\ManageControllerFactory',
-                 ]
-             ),
 
 );
