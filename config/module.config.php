@@ -15,6 +15,7 @@ return array('view_manager' => array(
                      'piwik' => __DIR__ . '/../view/piwik.phtml',
                      'iframe/iFrame.phtml'               => __DIR__ . '/../view/iFrame.phtml',
                      'jobs/jobboard/index.ajax.phtml' => __DIR__ . '/../view/jobs/index.ajax.phtml',
+                     'auth/users/list.ajax.phtml' => __DIR__ . '/../view/auth/users/list.ajax.phtml', // hide email adresses, since this is is a public demo
                       ),
              ),
              'translator' => array(
