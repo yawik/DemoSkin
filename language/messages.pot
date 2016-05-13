@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Cross Applicant Management - YawikDemoSkin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 10:22+0200\n"
+"POT-Creation-Date: 2016-05-13 15:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "You can use the existing Account. Log in and take a look to some Test data."
 msgstr ""
 
-#: view/index.phtml:26
+#: view/index.phtml:26 view/auth/users/list.ajax.phtml:18
 msgid "Role"
 msgstr ""
 
@@ -91,47 +91,71 @@ msgstr ""
 msgid "Application is send via E-Mail"
 msgstr ""
 
-#: view/index.phtml:112
+#: view/index.phtml:113
 msgid "Create an Account"
 msgstr ""
 
-#: view/index.phtml:116
+#: view/index.phtml:117
 msgid ""
 "Login to an open source applicant tracking system using your favorite social "
 "network"
 msgstr ""
 
-#: view/index.phtml:117
+#: view/index.phtml:118
 msgid ""
 "But remember, the demo database is reset once a day. Newly created accounts "
 "are silently removed at 2:00 CET."
 msgstr ""
 
-#: view/index.phtml:122
+#: view/index.phtml:123
 #, php-format
 msgid "Login with %s"
 msgstr ""
 
-#: view/index.phtml:126
+#: view/index.phtml:127
 #, php-format
 msgid "You can also register to this demo using this %s"
 msgstr ""
 
-#: view/index.phtml:126
+#: view/index.phtml:127
 msgid "registration form"
 msgstr ""
 
-#: view/index.phtml:137
+#: view/index.phtml:138
+msgid "Integrate Jobs into your personal homepage"
+msgstr ""
+
+#: view/index.phtml:143
+#, php-format
+msgid ""
+"You can add your active job openings into your personal homepage by using "
+"the %s"
+msgstr ""
+
+#: view/index.phtml:155
 msgid "YAWIK as a Jobboard"
 msgstr ""
 
-#: view/index.phtml:142
+#: view/index.phtml:160
 #, php-format
 msgid "Take a look at YAWIK running as a %s"
 msgstr ""
 
-#: view/index.phtml:142
+#: view/index.phtml:160
 msgid "Jobboard"
+msgstr ""
+
+#: view/index.phtml:161 view/index.phtml:162
+#, php-format
+msgid "Here is an example of YAWIK running as a %s"
+msgstr ""
+
+#: view/index.phtml:161
+msgid "Jobboard for people with roots outside of Germany"
+msgstr ""
+
+#: view/index.phtml:162
+msgid "Click&Buy Portal"
 msgstr ""
 
 #: view/password.phtml:14 view/password.phtml:20
@@ -142,6 +166,20 @@ msgstr ""
 msgid "This is the demo account. Password cannot be changed"
 msgstr ""
 
+#: view/iFrame.phtml:6
+msgid "Job details"
+msgstr ""
+
+#: view/iFrame.phtml:17
+msgid ""
+"You are using a default template. You are free to create your own template, "
+"just contact the developing team for integration"
+msgstr ""
+
+#: view/iFrame.phtml:36
+msgid "Track applications"
+msgstr ""
+
 #: view/layout.phtml:21
 msgid "YAWIK DEMO"
 msgstr ""
@@ -150,6 +188,86 @@ msgstr ""
 msgid "Help to translate YAWIK"
 msgstr ""
 
-#: view/layout.phtml:154
-msgid "All rights reserved."
+#: view/layout.phtml:153
+msgid "Imprint"
+msgstr ""
+
+#: view/jobs/index.ajax.phtml:14
+msgid "Title of the job"
+msgstr ""
+
+#: view/jobs/index.ajax.phtml:14
+msgid "Companyname"
+msgstr ""
+
+#: view/jobs/index.ajax.phtml:15
+msgid "Location"
+msgstr ""
+
+#: view/jobs/index.ajax.phtml:15
+msgid "Date of receipt"
+msgstr ""
+
+#: view/jobs/index.ajax.phtml:16
+msgid "Apply"
+msgstr ""
+
+#: view/auth/users/list.ajax.phtml:14
+msgid "Name"
+msgstr ""
+
+#: view/auth/users/list.ajax.phtml:22
+msgid "Login"
+msgstr ""
+
+#: language/_annotated_strings.php:3
+msgid "Professions"
+msgstr ""
+
+#: language/_annotated_strings.php:6
+msgid "Contract"
+msgstr ""
+
+#: language/_annotated_strings.php:9
+msgid "Software Development"
+msgstr ""
+
+#: language/_annotated_strings.php:12
+msgid "System Administration"
+msgstr ""
+
+#: language/_annotated_strings.php:15
+msgid "Sales"
+msgstr ""
+
+#: language/_annotated_strings.php:18
+msgid "Marketing"
+msgstr ""
+
+#: language/_annotated_strings.php:21
+msgid "full time"
+msgstr ""
+
+#: language/_annotated_strings.php:24
+msgid "part time"
+msgstr ""
+
+#: language/_annotated_strings.php:27
+msgid "freelancer"
+msgstr ""
+
+#: language/_annotated_strings.php:30
+msgid "apprenticeship"
+msgstr ""
+
+#: language/_annotated_strings.php:33
+msgid "internship"
+msgstr ""
+
+#: language/_annotated_strings.php:36
+msgid "temporary"
+msgstr ""
+
+#: language/_annotated_strings.php:39
+msgid "mini job"
 msgstr ""
