@@ -52,25 +52,6 @@ class Module
         $eventManager = $e->getApplication()->getEventManager();
         $services     = $e->getApplication()->getServiceManager();
 
-        //$services->get('ViewTemplatePathStack')->setLfiProtection(False);
-
-        $viewManager = $services->get('ViewManager');
-        $viewModell1 = $viewManager->getViewModel();
-        $viewModell2 = $e->getViewModel();
-
-        /*
-        $eventManager->attach(
-            array(MvcEvent::EVENT_RENDER, MvcEvent::EVENT_RENDER_ERROR),
-            array(new InjectLoginInfoListener(), 'injectLoginInfo'), -1000
-        );
-
-        $checkPermissionsListener = $services->get('Auth/CheckPermissionsListener');
-        $checkPermissionsListener->attach($eventManager);
-
-        $unauthorizedAccessListener = $services->get('UnauthorizedAccessListener');
-        $unauthorizedAccessListener->attach($eventManager);
-         */
-
         /*
          * remove Submenu from "applications"
          */
@@ -82,7 +63,7 @@ class Module
 
         if (!Console::isConsole()) {
             $sharedManager = $eventManager->getSharedManager();
-            
+
             /*
              * use a neutral layout, when rendering the application form and its result page.
              * Also the application preview should be rendered in this layout.
