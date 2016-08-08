@@ -81,75 +81,8 @@ class Module
         $services->setAllowOverride(false);
 
         if (!Console::isConsole()) {
-            // add suffix for logins
             $sharedManager = $eventManager->getSharedManager();
-            $sharedManager->attach(
-                array('Auth','Jobs'),
-                'login.getSuffix',
-                function ($event) {
-                    return '@ams';
-                }
-            );
-
-            // own Interpretation of the Subscriber
-            $sharedManager->attach(
-                'CamMediaintown\Controller\ApplyController',
-                MvcEvent::EVENT_DISPATCH,
-                function ($event) {
-                    $request        = $event->getRequest();
-                    $query          = $request->getQuery();
-                    $serviceManager = $event->getTarget()->getServiceLocator();
-                    $config         = $serviceManager->get('config');
-                    if (isset($config['CamMediaintown']['subscriber_uri_tmpl'])) {
-                        $portal = $query->get('portal', 0);
-                        if (0 < $portal) {
-                            $url = sprintf($config['CamMediaintown']['subscriber_uri_tmpl'], $portal);
-                            $query->set('subscriber', $url);
-                        }
-                    }
-                },
-                1000
-            );
-
-            // Login-Mails sollen per BCC an Herr Rentsch gehen
-            $sharedManager->attach(
-                'Mail',
-                'template.pre',
-                function ($event) {
-                    $mail = $event->getParam('mail');
-                    if (isset($mail)) {
-                        $template = $event->getParam('template');
-                        if ($template == "first-login") {
-                            $controller = $mail->getController();
-                            $services = $controller->getServiceLocator();
-                            $config = $services->get('config');
-                            if (!empty($config['CamMediaintown.bcc'])) {
-                                $mail->setBcc($config['CamMediaintown.bcc']);
-                            }
-                        }
-                    }
-                    return;
-                }
-            );
-
-            $sharedManager->attach(
-                array('Applications'),
-                MvcEvent::EVENT_DISPATCH,
-                function ($event) use ($config) {
-                    $portal = $event->getRequest()->getQuery('portal', 0);
-                    if ($portal != 0) {
-                        if (array_key_exists('CamMediaintown.rest.portal', $config)) {
-                            $camMediaintown_rest_portal = sprintf($config['CamMediaintown.rest.portal'], $portal);
-                            $query = $event->getRequest()->getQuery();
-                            $query->set('subscriberUri', $camMediaintown_rest_portal);
-                            //$event->getRequest()->setQuery($query);
-                        }
-                    }
-                    return;
-                },
-                100
-            );
-
+            
             /*
              * use a neutral layout, when rendering the application form and its result page.
              * Also the application preview should be rendered in this layout.
