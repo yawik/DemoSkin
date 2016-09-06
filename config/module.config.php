@@ -7,7 +7,13 @@
  * create a config/autoload/YawikDemoSkin.global.php and put modifications there
  */
 
-return array('view_manager' => array(
+return array(
+    'service_manager' => [
+        'factories' => [
+            'Auth/Dependency/Manager' => 'YawikDemoSkin\Factory\Dependency\ManagerFactory',
+        ],
+    ],
+    'view_manager' => array(
                  'template_map' => array(
                      'layout/layout' => __DIR__ . '/../view/layout.phtml',
                      'layout/application-form' => __DIR__ . '/../view/application-form.phtml',
