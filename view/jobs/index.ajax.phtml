@@ -27,7 +27,7 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
     <td>
         <?php if ($org && $org->getImage() &&  $org->getOrganizationName()): ?>
             <div class="yk-logo-list">
-                <img class="yk-logo-sm" src="<?php echo $this->basePath().$org->getImage()->getUri() ?>">
+                <img class="yk-logo-sm" src="<?php echo $this->basePath($this->organizationImageCache->getUri($job->organization->image)) ?>">
             </div>
         <?php endif ?>
         <?php $href = $job->getLink() ? $job->getLink() : $this->url('lang/jobs/view', array(), array('query' => array('id' => $job->getId())), true); ?>
