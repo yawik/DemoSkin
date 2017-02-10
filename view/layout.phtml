@@ -11,6 +11,8 @@
 /* @var $options \Core\Options\ModuleOptions */
 $options = $this->services('Core/Options');
 $languages = $options->getSupportedLanguages();
+$lang = $this->params('lang');
+
 
 // See: http://yawik.readthedocs.org/en/latest/modules/core/notifications.html
 
@@ -29,8 +31,14 @@ $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
 $this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'));
 $this->configHeadScript()->prependFile($this->basePath('Core/js/pnotify.custom.min.js'), 'text/javascript');
-$this->configHeadScript()->prependFile($this->basePath('js/bootstrap.min.js'));
-$this->configHeadScript()->prependFile($this->basePath('js/jquery.min.js'));
+$this->configHeadScript()->prependFile($this->basePath('assets/bootstrap/js/bootstrap.min.js'));
+$this->configHeadScript()->prependFile($this->basePath('assets/jquery/jquery.min.js'));
+$this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/select2.min.js'));
+if ($lang!='en') {
+    $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/i18n/' . $lang . '.js'));
+}
+$this->headLink()->appendStylesheet($this->basePath('/assets/select2/css/select2.css'));
+
 $this->configHeadScript()->appendScript('var lang="' . $this->params('lang') . '";'
     . 'var basePath="' . $this->basePath() . '";');
 
@@ -87,15 +95,7 @@ foreach ($languages as $lang) {
 <div class="container col-md-2">
     <!-- SIDEBAR -->
     <nav id="sidebar">
-        <div class="btn-group" data-toggle="buttons-radio" id="language-switcher">
-            <?php $lang = $this->params('lang');
-            foreach ( $languages as $key=>$language): ?>
-                <button type="button"
-                        class="btn btn-xs btn-default<?php echo $language == $lang ? ' active' : '' ?>"
-                        id="language-switcher-<?php echo $key ?>">
-                    <span class="flag-icon flag-icon-<?php echo  strtolower(substr($language,-2)) ?>"></span><?php echo strtoupper($key) ?></button>
-            <?php endforeach ?>
-        </div>
+       <?=$this->languageSwitcher()?>
         <p><a href="https://www.transifex.com/projects/p/yawik/">
                 <?php echo $this->translate('Help to translate YAWIK'); ?></a></p>
 
