@@ -30,9 +30,9 @@ $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
 $this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'));
-$this->configHeadScript()->prependFile($this->basePath('Core/js/pnotify.custom.min.js'), 'text/javascript');
-$this->configHeadScript()->prependFile($this->basePath('assets/bootstrap/js/bootstrap.min.js'));
-$this->configHeadScript()->prependFile($this->basePath('assets/jquery/jquery.min.js'));
+$this->configHeadScript()->prependFile($this->basePath('/assets/pnotify/pnotify.custom.min.js'), 'text/javascript');
+$this->configHeadScript()->prependFile($this->basePath('/assets/bootstrap/js/bootstrap.min.js'));
+$this->configHeadScript()->prependFile($this->basePath('/assets/jquery/jquery.min.js'));
 $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/select2.min.js'));
 if ($lang!='en') {
     $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/i18n/' . $lang . '.js'));
@@ -43,7 +43,7 @@ $this->configHeadScript()->appendScript('var lang="' . $this->params('lang') . '
     . 'var basePath="' . $this->basePath() . '";');
 
 $this->headLink()->prependStylesheet($this->basePath() . '/YawikDemoSkin/YawikDemoSkin.css');
-$this->headLink()->prependStylesheet($this->basePath('/Core/css/pnotify.custom.min.css'));
+$this->headLink()->prependStylesheet($this->basePath('/assets/pnotify/pnotify.custom.min.css'));
 
 foreach ($languages as $lang) {
     $this->headLink()->appendAlternate(
