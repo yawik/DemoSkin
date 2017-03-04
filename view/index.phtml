@@ -119,7 +119,7 @@
                 </p><br>
                 <p>
                     <?php $ref = $this->buildReferer(array('logout', 'ref')); ?>
-                    <?php foreach (array('facebook' => 'Facebook', 'linkedin' => 'LinkedIn', 'xing' => 'Xing', 'github' => 'Github', 'google' => 'Google' ) as $provider => $name): ?>
+                    <?php foreach (array('facebook' => 'Facebook', 'linkedin' => 'LinkedIn', 'xing' => 'Xing', 'github' => 'Github', 'google' => 'Google', 'twitter' => 'Twitter') as $provider => $name): ?>
                         <a class="btn btn-social btn-<?php echo $provider ?>" title="<?php echo sprintf($this->translate('Login with %s'), $name)?>" href="<?php echo $this->url('auth-provider', array('provider' => $provider), array('query' => array('ref' => urlencode($ref))))?>"><i class="fa fa-<?php echo $provider?>"></i> <?php echo $name?></a>
                     <?php endforeach ?>
                 </p><br>

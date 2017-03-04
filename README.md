@@ -1,8 +1,24 @@
 YawikDemoSkin
 =============
 
-Skin for the Yawik Demo.
+Skin for the Yawik Demo at https://yawik.org/demo/
 
-We use this skin to put our Piwik Code into the layout.
+Installation
+------------
 
-You can use this Skin as starting point to write your own skin.
+You can install this skin into your running YAWIK by:
+
+```
+cd YAWIK/module
+git clone https://github.com/yawik/DemoSkin.git YawikDemoSkin
+```
+
+To activate the module, create a file in you `YAWIK/config/autoload` directory
+
+```
+<?php
+return ['YawikDemoSkin'];
+```
+
+
+
