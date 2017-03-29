@@ -9,6 +9,9 @@
 
 $hasFacets = $jobs instanceof \Solr\FacetsProviderInterface;
 ?>
+<?php if ($this->jobsByMailForm):?>
+    <?=$this->form($this->jobsByMailForm)?>
+<?php endif;?>
 <?php if (count($jobs)):?>
 
     <?php if ($hasFacets):?>
