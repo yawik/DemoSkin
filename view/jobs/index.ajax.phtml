@@ -9,9 +9,7 @@
 
 $hasFacets = $jobs instanceof \Solr\FacetsProviderInterface;
 ?>
-<?php if ($this->jobsByMailForm):?>
-    <?=$this->form($this->jobsByMailForm)?>
-<?php endif;?>
+<?=$this->proxy('jobsByMailSubscriptionForm')->render($jobs)?>
 <?php if (count($jobs)):?>
 
     <?php if ($hasFacets):?>
@@ -89,7 +87,7 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
     <td>
         <?php if ($org && $org->getImage() &&  $org->getOrganizationName()): ?>
             <div class="yk-logo-list">
-                <img class="yk-logo-sm" src="<?php echo $this->basePath($this->organizationImageCache->getUri($job->organization->image)) ?>">
+                <img class="yk-logo-sm" src="<?php echo $this->basePath($this->organizationImageCache->getUri($job->getOrganization()->getImage())) ?>">
             </div>
         <?php endif ?>
         <?php $href = $job->getLink() ? $job->getLink() : $this->url('lang/jobs/view', array(), array('query' => array('id' => $job->getId())), true); ?>
