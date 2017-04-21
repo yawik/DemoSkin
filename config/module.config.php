@@ -16,6 +16,7 @@ return array(
     'view_manager' => array(
                  'template_map' => array(
                      'layout/layout' => __DIR__ . '/../view/layout.phtml',
+                     'used_modules' => __DIR__ . '/../view/used_modules.phtml',
                      'layout/application-form' => __DIR__ . '/../view/application-form.phtml',
                      'core/index/index' => __DIR__ . '/../view/index.phtml',
                      'auth/password/index' => __DIR__ . '/../view/password.phtml',

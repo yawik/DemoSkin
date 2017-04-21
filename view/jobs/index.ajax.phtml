@@ -71,9 +71,9 @@ $hasFacets = $jobs instanceof \Solr\FacetsProviderInterface;
 <table class="pagination-content table table-striped table-bordered table-hover" id="jobs-list">
     <thead>
         <tr>
-            <th><?php echo $this->translate('Title of the job')?> / <?php echo $this->translate('Companyname')?></th>
-            <th><?php echo $this->translate('Location')?> / <?php echo $this->translate('Date of receipt')?></th>
-            <th><?php echo $this->translate('Apply')?></th>
+            <th><?=$this->translate('Title of the job')?> / <?=$this->translate('Companyname')?></th>
+            <th><?=$this->translate('Location')?> / <?=$this->translate('Date of receipt')?></th>
+            <th><?=$this->translate('Apply')?></th>
         </tr>
     </thead>
 <tbody>
@@ -87,11 +87,11 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
     <td>
         <?php if ($org && $org->getImage() &&  $org->getOrganizationName()): ?>
             <div class="yk-logo-list">
-                <img class="yk-logo-sm" src="<?php echo $this->basePath($this->organizationImageCache->getUri($job->getOrganization()->getImage())) ?>">
+                    <img class="yk-logo-sm" src="<?=$this->basePath($this->organizationImageCache->getUri($org->getImage(true))) ?>">
             </div>
         <?php endif ?>
         <?php $href = $job->getLink() ? $job->getLink() : $this->url('lang/jobs/view', array(), array('query' => array('id' => $job->getId())), true); ?>
-        <a href="<?php echo $href ?>" target="_blank"><?php echo strip_tags($job->getTitle())?></a>
+        <a href="<?=$href ?>" target="_blank"><?=strip_tags($job->getTitle())?></a>
         <br/><?php
             if ($org && $org->getOrganizationName() && $org->getOrganizationName()->getName()) {
                 echo $org->getOrganizationName()->getName();
@@ -99,7 +99,7 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
         ?>
     </td>
     <td>
-        <div><?php echo $job->getLocation()?></div>
+        <div><?=$job->getLocation()?></div>
         <small>
             <?php
             if ($job->getDatePublishStart()): echo $this->dateFormat($job->getDatePublishStart(), 'short', 'none');
@@ -107,14 +107,12 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
             endif?>
         </small>
          <?php $typeOfContract = $job->getTemplateValues()->get('types')?:'fulltime' ?>
-                            <span class="yk-contract yk-<?php echo $typeOfContract?>">
-                                <?php echo $typeOfContract; ?>
+                            <span class="yk-contract yk-<?=$typeOfContract?>">
+                                <?= $typeOfContract; ?>
                             </span>
     </td>
     <td>
-        <?php
-            echo $this->applyUrl($job);
-        ?>
+        <?=$this->applyUrl($job);?>
      </td>
 </tr>
 <?php endforeach?>

@@ -7,6 +7,12 @@
  * @copyright (c) 2013 - 2016 Cross Solution (http://cross-solution.de)
  * @license   MIT
  */
+
+$model = new \Zend\View\Model\ViewModel();
+$model->setTemplate('used_modules');
+$model->setCaptureTo('sidebar_homepage');
+$this->layout()->addChild($model, 'sidebar_homepage');
+
 ?>
 <?php $this->headTitle($this->translate('Home'))?>
 <div class="jumbotron text-center">
