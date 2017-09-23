@@ -52,6 +52,7 @@ class Module
         $eventManager = $e->getApplication()->getEventManager();
         $services     = $e->getApplication()->getServiceManager();
 
+
         /*
          * remove Submenu from "applications"
          */
@@ -71,10 +72,7 @@ class Module
              * We need a post dispatch hook on the controller here as we need to have
              * the application entity to determine how to set the layout in the preview page.
              */
-            $sharedManager->attach(
-                array('Applications','CamMediaintown'),
-                MvcEvent::EVENT_DISPATCH,
-                function ($event) {
+            $callback=function ($event) {               
                     $viewModel  = $event->getViewModel();
                     $template   = 'layout/application-form';
                     $controller = $event->getTarget();
@@ -97,9 +95,12 @@ class Module
                         }
                     }
 
-                },
-                -2 /*postDispatch, but before most of the other zf2 listener*/
-            );
+                };
+                
+            foreach (array('Applications','CamMediaintown') as $identifier) {
+                $sharedManager->attach($identifier, MvcEvent::EVENT_DISPATCH, $callback, -2 /*postDispatch, but before most of the other zf2 listener*/ );
+            }
+            
         }
 
     }
