@@ -6,8 +6,9 @@
 /**  */
 namespace YawikDemoSkin\Factory\Dependency;
 
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Interop\Container\ContainerInterface;
+use Zend\ServiceManager\Factory\FactoryInterface;
+
 
 /**
  *
@@ -16,12 +17,11 @@ use Zend\ServiceManager\ServiceLocatorInterface;
  */
 class ManagerFactory implements FactoryInterface
 {
-
-    public function createService(ServiceLocatorInterface $serviceLocator)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        $manager = new \YawikDemoSkin\Dependency\Manager($serviceLocator->get('Core/DocumentManager'));
-        $manager->setEventManager($serviceLocator->get('Auth/Dependency/Manager/Events'));
-        
+        $manager = new \YawikDemoSkin\Dependency\Manager($container->get('Core/DocumentManager'));
+        $manager->setEventManager($container->get('Auth/Dependency/Manager/Events'));
+
         return $manager;
     }
 }
