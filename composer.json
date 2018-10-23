@@ -1,0 +1,52 @@
+{
+    "type": "yawik-module",
+    "name": "yawik/demo-skin",
+    "description": "This module adds a billing address to the job posting entering wizard .",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carsten Bleek",
+            "email": "bleek@cross-solution.de"
+        },
+        {
+            "name": "Mathias Gelhausen",
+            "email": "gelhausen@cross-solution.de"
+        },
+        {
+            "name": "Anthonius Munthi",
+            "email": "me@itstoni.com"
+        }
+    ],
+    "keywords": [
+        "yawik", "billing"
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "yawik/core": "^0.32@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "yawik/behat": "~0.32@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "YawikDemoSkin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "": "test/"
+        }
+    },
+    "config": {
+        "platform": {
+            "ext-mongo": "1.6.16"
+        }
+    },
+    "scripts": {
+        "serve": "APPLICATION_ENV=development php -S localhost:8000 -t test/sandbox/public",
+        "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
+        "test": "phpunit"
+    }
+}

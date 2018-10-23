@@ -13,7 +13,7 @@ cd YAWIK/module
 git clone https://github.com/yawik/DemoSkin.git YawikDemoSkin
 ```
 
-To activate the module, create a file named `DemoSkin.module.php` in your `YAWIK/config/autoload` directory
+To activate the module, create a file in you `YAWIK/config/autoload` directory
 
 ```
 <?php

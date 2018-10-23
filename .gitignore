@@ -1,3 +1,5 @@
 *~
+behat.yml
 build.properties
 view/.*
+/vendor/

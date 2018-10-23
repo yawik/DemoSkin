@@ -12,58 +12,50 @@ $model = new \Zend\View\Model\ViewModel();
 $model->setTemplate('used_modules');
 $model->setCaptureTo('sidebar_homepage');
 $this->layout()->addChild($model, 'sidebar_homepage');
-$lang = $this->params('lang');
 
 ?>
 <?php $this->headTitle($this->translate('Home'))?>
 <div class="jumbotron text-center">
-    <h1><?= $this->translate('Welcome to YAWIK!'); ?></h1>
-    <p><?= $this->translate("we connect recruiters and applicants");?></p>
-    <p><?= $this->translate("This is a DEMO. All data are reset once a day (2:00 CET).");?></p>
+    <h1><?php echo $this->translate('Welcome to YAWIK!'); ?></h1>
+    <p><?php echo $this->translate("we connect recruiters and applicants");?></p>
+    <p><?php echo $this->translate("This is a DEMO. All data are reset once a day (2:00 CET).");?></p>
     <p>This Demo-Skin can be downloaded at: <a href="https://github.com/yawik/DemoSkin">https://github.com/yawik/DemoSkin</a></p>
 </div>
 <div class="row">
     <div class="container col-md-6">
         <aside class="panel panel-info">
-          <?php if ($this->auth()->isLoggedIn()):?>
-            <div class="panel-heading"><?= $this->translate(sprintf("You are logged in as %s", $this->translate($this->acl()->getUser()->getRole())))?></div>
+            <div class="panel-heading"><?php echo $this->translate("Login as a recruiter")?></div>
             <div class="panel-body ">
-              <p><?=$this->translate("You are currently logged in. To be logged out, click on \"Logout\".")?></p>
-              <a class="btn btn-primary" href="<?=$this->basePath("/logout")?>">Logout</a>
-            </div>
-          <?php else:?>
-            <div class="panel-heading"><?= $this->translate("Login as a recruiter")?></div>
-            <div class="panel-body ">
-                <p><?= $this->translate("You can use the existing Account. Log in and take a look to some Test data.")?></p>
+                <p><?php echo $this->translate("You can use the existing Account. Log in and take a look to some Test data.")?></p>
                 <table class="table table-bordered">
                     <tr>
-                        <th><?= $this->translate("Role")?></th>
-                        <th><?= $this->translate("Username")?></th>
-                        <th><?= $this->translate("Password")?></th>
+                        <th><?php echo $this->translate("Role")?></th>
+                        <th><?php echo $this->translate("Username")?></th>
+                        <th><?php echo $this->translate("Password")?></th>
                     </tr>
                     <tr>
-                        <td><?= $this->translate("Recruiter")?></td>
+                        <td><?php echo $this->translate("Recruiter")?></td>
                         <td><b>demo</b></td>
                         <td><b>demo</b></td>
                     </tr>
                     <tr>
-                        <td><?= $this->translate("Applicant")?></td>
+                        <td><?php echo $this->translate("Applicant")?></td>
                         <td><b>applicant</b></td>
                         <td><b>applicant</b></td>
                     </tr>
                     <tr>
-                        <td><?= $this->translate("Administrator")?></td>
+                        <td><?php echo $this->translate("Administrator")?></td>
                         <td><b>admin</b></td>
                         <td><b>admin</b></td>
                     </tr>
 
                 </table>
-                <form action="<?= $this->basePath()?>/<?=$lang?>/login?ref=%2F<?=$lang?>" method="post" name="login-form" id="login-form" class="form-inline">
+                <form action="<?php echo $this->basePath()?>/<?php echo $this->params('lang') ?>/login?ref=%2F<?php echo $this->params('lang') ?>" method="post" name="login-form" id="login-form" class="form-inline">
                     <fieldset id="credentials">
                         <div class="fieldset-content">
                             <div class="controls controls-row row">
                                 <div class="col-md-3 yk-label">
-                                    <label for="credentials-login"><?= $this->translate("Username")?></label>
+                                    <label for="credentials-login"><?php echo $this->translate("Username")?></label>
                                 </div>
                                 <div class="col-md-9" id="credentials-login-span">
                                     <input name="credentials[login]" id="credentials-login" class=" form-control " type="text" value="">
@@ -72,7 +64,7 @@ $lang = $this->params('lang');
                             </div>
                             <div class="controls controls-row row">
                                 <div class="col-md-3 yk-label">
-                                    <label for="credentials-credential"><?= $this->translate("Password")?></label>
+                                    <label for="credentials-credential"><?php echo $this->translate("Password")?></label>
                                 </div>
                                 <div class="col-md-9" id="credentials-credential-span">
                                     <input type="password" name="credentials[credential]" id="credentials-credential" class="form-control" value="">
@@ -82,41 +74,41 @@ $lang = $this->params('lang');
                         </div>
                     </fieldset>
                     <nav class="navbar">
-                        <input type="submit" name="buttons[button]" id="submit" class="btn btn-primary" value="<?= $this->translate("login")?>">
+                        <input type="submit" name="buttons[button]" id="submit" class="btn btn-primary" value="<?php echo $this->translate("login")?>">
                         <div id="submit-errors"></div>
                     </nav>
                 </form>
             </div>
-          <?php endif; ?>
         </aside>
     </div>
 
     <div class="container col-md-6">
         <aside class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title"><?= $this->translate("Test application form")?></h3>
+                <h3 class="panel-title"><?php echo $this->translate("Test application form")?></h3>
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-md-6">
                         <p>
-                            <?= $this->translate("Here you can test an application formular")?>.
+                            <?php echo $this->translate("Here you can test an application formular")?>.
                         </p>
-                        <h2><?= sprintf($this->translate('%sapplication form%s.'),
+                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
                                 '<a href="' . $this->url('lang/apply', array('applyId' => 'sw-devel'), /* reuse matched params*/ true) . '">',
                                 '</a>') ?></h2>
-                        <p><?= $this->translate('Application is handled within the ATS');?></p>
+                        <p><?php echo $this->translate('Application is handled within the ATS');?></p>
 
-                        <h2><?= sprintf($this->translate('%sapplication form%s.'),
+                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
                                 '<a href="' . $this->url('lang/apply', array('applyId' => 'administrator'), /* reuse matched params*/ true) . '">',
                                 '</a>') ?></h2>
-                        <p><?= $this->translate('Application is send via E-Mail');?></p>
+                        <p><?php echo $this->translate('Application is send via E-Mail');?></p>
                     </div>
                     <div class="col-md-6 embed-responsive embed-responsive-16by9">
                         <p>See a Demo on Youtube</p>
                         <iframe src="https://www.youtube.com/embed/peoO-RVJM_0" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
+
             </div>
         </aside>
     </div>
@@ -124,21 +116,21 @@ $lang = $this->params('lang');
     <div class="container col-md-6 pull-right">
         <aside class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title"><?= $this->translate("Create an Account")?></h3>
+                <h3 class="panel-title"><?php echo $this->translate("Create an Account")?></h3>
             </div>
             <div class="panel-body">
                 <p>
-                    <?= $this->translate("Login to an open source applicant tracking system using your favorite social network");?>
-                    <?= $this->translate("But remember, the demo database is reset once a day. Newly created accounts are silently removed at 2:00 CET.");?>
+                    <?php echo $this->translate("Login to an open source applicant tracking system using your favorite social network");?>
+                    <?php echo $this->translate("But remember, the demo database is reset once a day. Newly created accounts are silently removed at 2:00 CET.");?>
                 </p><br>
                 <p>
                     <?php $ref = $this->buildReferer(array('logout', 'ref')); ?>
                     <?php foreach (array('facebook' => 'Facebook', 'linkedin' => 'LinkedIn', 'xing' => 'Xing', 'github' => 'Github', 'google' => 'Google', 'twitter' => 'Twitter') as $provider => $name): ?>
-                        <a class="btn btn-social btn-<?= $provider ?>" title="<?= sprintf($this->translate('Login with %s'), $name)?>" href="<?= $this->url('auth-provider', array('provider' => $provider), array('query' => array('ref' => urlencode($ref))))?>"><i class="fa fa-<?= $provider?>"></i> <?= $name?></a>
+                        <a class="btn btn-social btn-<?php echo $provider ?>" title="<?php echo sprintf($this->translate('Login with %s'), $name)?>" href="<?php echo $this->url('auth-provider', array('provider' => $provider), array('query' => array('ref' => urlencode($ref))))?>"><i class="fa fa-<?php echo $provider?>"></i> <?php echo $name?></a>
                     <?php endforeach ?>
                 </p><br>
                 <p>
-                    <?= sprintf($this->translate("You can also register to this demo using this %s"),'<a href="'.$this->basePath("/de/auth/register").'">'.$this->translate("registration form")."</a>");?>
+                    <?php echo sprintf($this->translate("You can also register to this demo using this %s"),'<a href="'.$this->basePath("/de/auth/register").'">'.$this->translate("registration form")."</a>");?>
                 </p>
 
             </div>
@@ -149,12 +141,12 @@ $lang = $this->params('lang');
         <aside class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <?= $this->translate("Integrate Jobs into your personal homepage");?>
+                    <?php echo $this->translate("Integrate Jobs into your personal homepage");?>
                 </h3>
             </div>
             <div class="panel-body">
                 <p>
-                    <?= sprintf($this->translate("You can add your active job openings into your personal homepage by using the %s"),'<a href="https://github.com/cbleek/YawikWidget">YawikWidget</a>')?>
+                    <?php echo sprintf($this->translate("You can add your active job openings into your personal homepage by using the %s"),'<a href="https://github.com/cbleek/YawikWidget">YawikWidget</a>')?>
 		    <a href="https://yawik.org/2016/01/einbinden-von-stellenanzeigen-in-die-eigene-homepage/">more informations</a>.
                 </p>
             </div>
@@ -166,13 +158,14 @@ $lang = $this->params('lang');
         <aside class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <?= $this->translate("YAWIK as a Jobboard");?>
+                    <?php echo $this->translate("YAWIK as a Jobboard");?>
                 </h3>
             </div>
             <div class="panel-body">
                 <p>
-                    <?= sprintf($this->translate("Take a look at YAWIK running as a %s"),'<a href="http://jobs.yawik.org">'.$this->translate("Jobboard").'</a>. ')?>
-		    <?= sprintf($this->translate("Here is an example of YAWIK running as a %s"),'<a href="https://www.gastrojob24.ch/">'.$this->translate("a job portal for gastronomy in Switzerland").'</a>. ')?>
+                    <?php echo sprintf($this->translate("Take a look at YAWIK running as a %s"),'<a href="http://jobs.yawik.org">'.$this->translate("Jobboard").'</a>. ')?>
+		    <?php echo sprintf($this->translate("Here is an example of YAWIK running as a %s"),'<a href="https://mygreatjobs.de/">'.$this->translate("Jobboard for people with roots outside of Germany").'</a>. ')?>
+		    <?php echo sprintf($this->translate("Here is an example of YAWIK running as a %s"),'<a href="http://www.jobs-deutschland.de">'.$this->translate("Click&Buy Portal").'</a>. ')?>
                 </p>
             </div>
         </aside>

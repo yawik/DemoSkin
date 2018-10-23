@@ -29,21 +29,14 @@ $this->headMeta()->appendName("keywords", "Open Surce Bewerbermanagement System,
 $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0');
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
-$this->configHeadScript()->prependFile($this->basepath('Core/js/core.init.js'));
-$this->configHeadScript()->prependFile($this->basePath('/assets/pnotify/pnotify.custom.min.js'), 'text/javascript');
-$this->configHeadScript()->prependFile($this->basePath('/assets/bootstrap/js/bootstrap.min.js'));
-$this->configHeadScript()->prependFile($this->basePath('/assets/jquery/jquery.min.js'));
-$this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/select2.min.js'));
-if ($lang!='en') {
-    $this->configHeadScript()->appendFile($this->basePath('/assets/select2/js/i18n/' . $lang . '.js'));
-}
-$this->headLink()->appendStylesheet($this->basePath('/assets/select2/css/select2.css'));
+
+$this->configHeadScript()->prependFile($this->basepath($this->asset('build/yawik.js')));
+$this->configHeadScript()->appendFile($this->basepath('modules/Core/js/core.init.js'));
 
 $this->configHeadScript()->appendScript('var lang="' . $this->params('lang') . '";'
     . 'var basePath="' . $this->basePath() . '";');
 
-$this->headLink()->prependStylesheet($this->basePath() . '/YawikDemoSkin/YawikDemoSkin.css');
-$this->headLink()->prependStylesheet($this->basePath('/assets/pnotify/pnotify.custom.min.css'));
+$this->headLink()->prependStylesheet($this->basePath('modules/YawikDemoSkin/dist/YawikDemoSkin.css'));
 
 foreach ($languages as $lang) {
     $this->headLink()->appendAlternate(
@@ -54,18 +47,18 @@ foreach ($languages as $lang) {
         array('hreflang'=>$lang));
 }
 ?>
-<?= $this->doctype(); ?>
-<html lang="<?= $this->params('lang') ?>">
+<?php echo $this->doctype(); ?>
+<html lang="<?php echo $this->params('lang') ?>">
 <head>
-    <?= $this->headTitle() ?>
-    <?= $this->headMeta() ?>
-    <?= $this->configHeadScript() ?>
-    <?= $this->headLink() ?>
-    <?= $this->headStyle() ?>
-    <link rel="icon" href="<?=$this->basePath('/YawikDemoSkin/cropped-yawik-small-32x32.jpg')?>" sizes="32x32" />
-    <link rel="icon" href="<?=$this->basePath('/YawikDemoSkin/cropped-yawik-small-192x192.jpg')?>" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="<?=$this->basePath('/YawikDemoSkin/cropped-yawik-small-180x180.jpg')?>" />
-    <meta name="msapplication-TileImage" content="<?=$this->basePath('/YawikDemoSkin/cropped-yawik-small-270x270.jpg')?>" />
+    <?php echo $this->headTitle() ?>
+    <?php echo $this->headMeta() ?>
+    <?php echo $this->configHeadScript() ?>
+    <?php echo $this->headLink() ?>
+    <?php echo $this->headStyle() ?>
+    <link rel="icon" href="<?=$this->basePath('modules/YawikDemoSkin/img/cropped-yawik-small-32x32.jpg')?>" sizes="32x32" />
+    <link rel="icon" href="<?=$this->basePath('modules/YawikDemoSkin/img/cropped-yawik-small-192x192.jpg')?>" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="<?=$this->basePath('modules/YawikDemoSkin/img/cropped-yawik-small-180x180.jpg')?>" />
+    <meta name="msapplication-TileImage" content="<?=$this->basePath('modules/YawikDemoSkin/img/cropped-yawik-small-270x270.jpg')?>" />
 </head>
 <body>
 <a class="sr-only" href="#content">Skip to main content</a>
@@ -79,8 +72,9 @@ foreach ($languages as $lang) {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand hidden-xs" href="<?= $this->basepath('/' . $this->params('lang')) ?>">YAWIK DEMO</a>
-            <a class="navbar-brand visible-xs" href="<?= $this->basepath('/' . $this->params('lang')) ?>">Y</a>
+            <a class="navbar-brand hidden-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">YAWIK
+            ZF3 DEMO</a>
+            <a class="navbar-brand visible-xs" href="<?php echo $this->basepath('/' . $this->params('lang')) ?>">Y</a>
         </div>
         <nav id="main-navigation" class="navbar-collapse collapse navbar-collapse" role="navigation">
             <?php
@@ -91,7 +85,7 @@ foreach ($languages as $lang) {
                 ->setMaxDepth(0) // only show the top level entries
                 ->setUlClass('nav navbar-nav pull-left')//renderPartial(null, 'main-navigation')
             ?>
-            <?= $this->loginInfo() ?>
+            <?php echo $this->loginInfo() ?>
         </nav>
         <!-- /main-navigation -->
     </div>
@@ -101,7 +95,7 @@ foreach ($languages as $lang) {
     <nav id="sidebar">
        <?=$this->languageSwitcher()?>
         <p><a href="https://www.transifex.com/projects/p/yawik/">
-                <?= $this->translate('Help to translate YAWIK'); ?></a></p>
+                <?php echo $this->translate('Help to translate YAWIK'); ?></a></p>
 
         <div id="sub-nav">
             <?php
@@ -127,8 +121,8 @@ foreach ($languages as $lang) {
 </div>
 
 <main id="content" class="col-md-10">
-    <?= $notifications?>
-    <?= $this->content; ?>
+    <?php echo $notifications?>
+    <?php echo $this->content; ?>
 </main>
 <!-- /container -->
 <footer id="yk-footer">
@@ -137,7 +131,7 @@ foreach ($languages as $lang) {
            <div class="col-md-4">
                <small>
                    <a href="http://www.jetbrains.com/phpstorm/">
-                       <img src="<?= $this->basePath('/YawikDemoSkin/logo_PhpStorm.svg')?>"
+                       <img src="<?php echo $this->basePath('modules/YawikDemoSkin/logo_PhpStorm.svg')?>"
                            alt="Developed with PhpStorm" border="0" style="height: 30px"/></a>
                </small>
            </div>
@@ -151,10 +145,10 @@ foreach ($languages as $lang) {
            </div>
            <div class="col-md-4" align="right">
                 <span class="pull-right"><small>
-                        &copy; 2013-<?= date("Y")?> <a href="http://cross-solution.de">
+                        &copy; 2013-<?php echo date("Y")?> <a href="http://cross-solution.de">
                             Cross
                             Solution</a>.
-                        | <a href="<?=  $this->basePath($this->params('lang').'/content/imprint')?>"><?= $this->translate('Imprint') ?></a>
+                        | <a href="<?php echo  $this->basePath($this->params('lang').'/content/imprint')?>"><?php echo $this->translate('Imprint') ?></a>
                         | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]<br/>
                         Powered by <a href="http://yawik.org">YAWIK</a>
                  </small></span>
@@ -162,6 +156,6 @@ foreach ($languages as $lang) {
     </div>
   </div>
 </footer>
-<?= $this->partial("piwik") ?>
+<?php echo $this->partial("piwik") ?>
 </body>
 </html>
