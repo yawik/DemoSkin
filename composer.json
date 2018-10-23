@@ -48,5 +48,10 @@
         "serve": "APPLICATION_ENV=development php -S localhost:8000 -t test/sandbox/public",
         "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
         "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.32-dev"
+        }
     }
 }
