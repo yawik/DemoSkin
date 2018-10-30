@@ -1,4 +1,6 @@
 <?php
+
+chdir(__DIR__.'/../sandbox');
 return [
     'modules' => \Core\Bootstrap::generateModuleConfiguration([
         'Core',
@@ -21,26 +23,9 @@ return [
         'config_glob_paths' => array(
             __DIR__.'/autoload/{,*.}{global,local}.php',
         ),
-        'cache_dir' => __DIR__.'/../cache'
+        'cache_dir' => realpath(__DIR__.'/../sandbox').'/var/cache'
     ],
     'core_options' => [
-        'logDir' => __DIR__.'/../log',
-        'cacheDir' => __DIR__.'/../cache',
-        'publicDir' => __DIR__.'/../sandbox/public',
-        'system_message_email' => 'developer@yawik.org',
         'systemMessageEmail' => 'developer@yawik.org',
-    ],
-    'log' => [
-        'Core/Log' => [
-            'writers' => [
-                [
-                    'name' => 'stream',
-                    'priority' => 1000,
-                    'options' => array(
-                        'stream' => __DIR__.'/../log/yawik.log',
-                    ),
-                ]
-            ]
-        ]
     ],
 ];

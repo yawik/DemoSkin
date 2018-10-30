@@ -1,25 +1,19 @@
 {
-  "name": "@yawik/orders",
+  "name": "yawik-demo-skin",
   "version": "0.32.0",
-  "description": "Yawik Orders Module",
-  "main": "index.js",
-  "repository": "git@github.com:yawik/Orders",
-  "author": "Anthonius Munthi <me@itstoni.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@symfony/webpack-encore": "^0.20.1",
-    "copy-webpack-plugin": "^4.5.4",
-    "less": "^3.8.1",
-    "less-loader": "^4.1.0",
-    "yawik-dev": "~0.32.0"
-  },
   "scripts": {
-    "build-dist": "encore production --config-name demo",
-    "postinstall": "yarn build",
-    "dev-server": "encore dev-server",
-    "dev": "encore dev",
-    "watch": "encore dev --watch",
-    "build": "encore production",
-    "locales": "encore production"
+    "postinstall": "grunt"
+  },
+  "private": false,
+  "devDependencies": {
+    "yawik-core": "test/sandbox/public/modules/Core",
+    "grunt": "^1.0.3",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^4.0.0"
   }
 }

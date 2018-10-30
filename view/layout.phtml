@@ -30,8 +30,7 @@ $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0
 
 $this->configHeadScript()->setAllowArbitraryAttributes(true);
 
-$this->configHeadScript()->prependFile($this->basepath($this->asset('build/yawik.js')));
-$this->configHeadScript()->appendFile($this->basepath('modules/Core/js/core.init.js'));
+$this->configHeadScript()->prependFile($this->basepath('dist/js/core.js'));
 
 $this->configHeadScript()->appendScript('var lang="' . $this->params('lang') . '";'
     . 'var basePath="' . $this->basePath() . '";');
@@ -131,7 +130,7 @@ foreach ($languages as $lang) {
            <div class="col-md-4">
                <small>
                    <a href="http://www.jetbrains.com/phpstorm/">
-                       <img src="<?php echo $this->basePath('modules/YawikDemoSkin/logo_PhpStorm.svg')?>"
+                       <img src="<?php echo $this->basePath('modules/YawikDemoSkin/img/logo_PhpStorm.svg')?>"
                            alt="Developed with PhpStorm" border="0" style="height: 30px"/></a>
                </small>
            </div>

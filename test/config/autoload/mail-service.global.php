@@ -65,7 +65,7 @@ $config = [
             'options' => [
                 'username' => $username,
                 'transportClass' => $transport,
-                'path' => realpath(__DIR__.'/../../../build/mails')
+                'path' => realpath(__DIR__.'/../../sandbox').'/build/mails'
             ],
         ],
     ]

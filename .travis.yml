@@ -38,8 +38,6 @@ install:
   - pecl install -f ${PECLMONGO}
   - phpenv config-add .travis/phpenv.ini
   - composer install
-  - ./vendor/bin/yawik assets:install --relative
-  - yarn install
 
 before_script:
   # behat preparation

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62e2e1a0900a2a9ef2f5958470a95e3f",
+    "content-hash": "91cfe911828fdaa2a2129b771369c77c",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -1790,6 +1790,63 @@
             "time": "2018-10-02T16:33:53+00:00"
         },
         {
+            "name": "symfony/dotenv",
+            "version": "v3.4.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "fcc8c8c73899e65ec528aac439c49e7929cdb87b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/fcc8c8c73899e65ec528aac439c49e7929cdb87b",
+                "reference": "fcc8c8c73899e65ec528aac439c49e7929cdb87b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "require-dev": {
+                "symfony/process": "~3.2|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2018-07-26T11:19:56+00:00"
+        },
+        {
             "name": "symfony/filesystem",
             "version": "v3.4.17",
             "source": {
@@ -2172,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "7acb7473e543f5d78c987b6a837bceea1df58fbd"
+                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/7acb7473e543f5d78c987b6a837bceea1df58fbd",
-                "reference": "7acb7473e543f5d78c987b6a837bceea1df58fbd",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
+                "reference": "b84b5fcb0a77fd7905f1293bdaabca32dbf0b7c4",
                 "shasum": ""
             },
             "require": {
@@ -2221,7 +2278,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-29T12:49:54+00:00"
         },
         {
             "name": "yawik/auth",
@@ -2229,12 +2286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "05086d9da44db1f35c32f5b9fbe885f4c309155a"
+                "reference": "49b5355b4e515785b55ae7f61ae386569322c290"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/05086d9da44db1f35c32f5b9fbe885f4c309155a",
-                "reference": "05086d9da44db1f35c32f5b9fbe885f4c309155a",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/49b5355b4e515785b55ae7f61ae386569322c290",
+                "reference": "49b5355b4e515785b55ae7f61ae386569322c290",
                 "shasum": ""
             },
             "require": {
@@ -2279,7 +2336,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-24T03:53:44+00:00"
         },
         {
             "name": "yawik/core",
@@ -2287,27 +2344,28 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "811fefbf8665b3064214ae655c3d2317728dc823"
+                "reference": "962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/811fefbf8665b3064214ae655c3d2317728dc823",
-                "reference": "811fefbf8665b3064214ae655c3d2317728dc823",
+                "url": "https://api.github.com/repos/yawik/core/zipball/962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11",
+                "reference": "962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11",
                 "shasum": ""
             },
             "require": {
                 "alcaeus/mongo-php-adapter": "^1.0.0",
-                "doctrine/common": "2.7.*",
                 "doctrine/doctrine-mongo-odm-module": "^1.0.0",
                 "ext-intl": "*",
                 "ext-mongodb": "*",
                 "hybridauth/hybridauth": "^2.10",
-                "imagine/imagine": "^1.0.0",
-                "mikemix/zf2htmlpurifier": "^1.0.0",
-                "mikey179/vfsstream": "^1.6.0",
+                "imagine/imagine": "^1.0",
+                "jmikola/geojson": "^1.0",
+                "mikemix/zf2htmlpurifier": "^1.0",
+                "mikey179/vfsstream": "^1.6",
                 "mpdf/mpdf": "5.7.*",
                 "php": "^5.6 | ^7.0 | ^7.1 | 7.2",
                 "symfony/console": "^3.4",
+                "symfony/dotenv": "^3.4",
                 "symfony/filesystem": "^3.4",
                 "symfony/finder": "^3.4",
                 "symfony/process": "^3.4",
@@ -2394,7 +2452,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-23T04:27:45+00:00"
+            "time": "2018-10-29T16:08:46+00:00"
         },
         {
             "name": "yawik/cv",
@@ -2402,12 +2460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "4076febf16c72f235dfc19906d64270c6b10ed02"
+                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/4076febf16c72f235dfc19906d64270c6b10ed02",
-                "reference": "4076febf16c72f235dfc19906d64270c6b10ed02",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/b0b81748097dd5e2f5167102c9a53f15dea46961",
+                "reference": "b0b81748097dd5e2f5167102c9a53f15dea46961",
                 "shasum": ""
             },
             "require": {
@@ -2450,7 +2508,7 @@
                 "module",
                 "yawik"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-25T04:01:16+00:00"
         },
         {
             "name": "yawik/geo",
@@ -2458,12 +2516,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/geo.git",
-                "reference": "880b80b7f5bb582c2b386404436f0510f84548fa"
+                "reference": "f86539742ee1b512f9bdb36122e321352c1d545f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/geo/zipball/880b80b7f5bb582c2b386404436f0510f84548fa",
-                "reference": "880b80b7f5bb582c2b386404436f0510f84548fa",
+                "url": "https://api.github.com/repos/yawik/geo/zipball/f86539742ee1b512f9bdb36122e321352c1d545f",
+                "reference": "f86539742ee1b512f9bdb36122e321352c1d545f",
                 "shasum": ""
             },
             "require": {
@@ -2508,7 +2566,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-23T03:48:55+00:00"
+            "time": "2018-10-24T03:57:51+00:00"
         },
         {
             "name": "yawik/install",
@@ -2516,12 +2574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "0768aed3bac2626942b84bf9aecf0b2fae2a8e69"
+                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/0768aed3bac2626942b84bf9aecf0b2fae2a8e69",
-                "reference": "0768aed3bac2626942b84bf9aecf0b2fae2a8e69",
+                "url": "https://api.github.com/repos/yawik/install/zipball/6f36ffb32125490c674fc56ba20d3a0e06a98705",
+                "reference": "6f36ffb32125490c674fc56ba20d3a0e06a98705",
                 "shasum": ""
             },
             "require": {
@@ -2565,7 +2623,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-22T06:41:36+00:00"
+            "time": "2018-10-29T14:56:55+00:00"
         },
         {
             "name": "yawik/jobs",
@@ -2573,12 +2631,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "b7a1b07fab9a552a0fd61d430222f5848fcffe71"
+                "reference": "884fc3b7a3655429958366cb998fe7254528b145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/b7a1b07fab9a552a0fd61d430222f5848fcffe71",
-                "reference": "b7a1b07fab9a552a0fd61d430222f5848fcffe71",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/884fc3b7a3655429958366cb998fe7254528b145",
+                "reference": "884fc3b7a3655429958366cb998fe7254528b145",
                 "shasum": ""
             },
             "require": {
@@ -2622,7 +2680,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-23T03:48:55+00:00"
+            "time": "2018-10-29T14:56:55+00:00"
         },
         {
             "name": "yawik/organizations",
@@ -7965,12 +8023,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/behat.git",
-                "reference": "b541accec8a28a49da1f8259acaff7a4f917309f"
+                "reference": "c7a9639ef36e850b41db55d48e54957976352a78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/behat/zipball/b541accec8a28a49da1f8259acaff7a4f917309f",
-                "reference": "b541accec8a28a49da1f8259acaff7a4f917309f",
+                "url": "https://api.github.com/repos/yawik/behat/zipball/c7a9639ef36e850b41db55d48e54957976352a78",
+                "reference": "c7a9639ef36e850b41db55d48e54957976352a78",
                 "shasum": ""
             },
             "require": {
@@ -8024,7 +8082,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-23T04:16:45+00:00"
+            "time": "2018-10-29T17:07:10+00:00"
         }
     ],
     "aliases": [],
