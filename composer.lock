@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91cfe911828fdaa2a2129b771369c77c",
+    "content-hash": "4bb7af9de1b6de224150a4bf048dfdfc",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -2344,12 +2344,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11"
+                "reference": "ffda76ab8279f42676a27971f92732073b7842c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11",
-                "reference": "962eb86d959f59eb9f0b5ba0242bb6ee9bdb7a11",
+                "url": "https://api.github.com/repos/yawik/core/zipball/ffda76ab8279f42676a27971f92732073b7842c4",
+                "reference": "ffda76ab8279f42676a27971f92732073b7842c4",
                 "shasum": ""
             },
             "require": {
@@ -2452,7 +2452,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2018-10-29T16:08:46+00:00"
+            "time": "2018-10-31T12:58:04+00:00"
         },
         {
             "name": "yawik/cv",
