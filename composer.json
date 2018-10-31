@@ -23,7 +23,8 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "yawik/core": "^0.32@dev"
+        "yawik/core": "^0.32@dev",
+        "composer/installers": "~1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
