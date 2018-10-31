@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     var targetDir = grunt.config.get('targetDir');
     var nodeModulesPath = grunt.config.get('nodeModulesPath');
 
-    grunt.loadTasks(targetDir+'./modules/Core');
+    grunt.loadTasks(targetDir+'/modules/Core');
     grunt.config.merge({
         less: {
             demo: {
