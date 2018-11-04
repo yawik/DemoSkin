@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('yawik:demo',['copy','less:demo','concat','uglify','cssmin:demo']);
+    grunt.registerTask('yawik:demo',['copy','less','concat','uglify','cssmin']);
 
 
 };
