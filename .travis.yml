@@ -47,7 +47,6 @@ before_script:
       composer run serve --timeout=0 > /dev/null 2>&1 &
       sleep 3;
     fi'
-  - mkdir -p build/behat
 
 script:
   - ./vendor/bin/behat
@@ -58,10 +57,10 @@ after_failure:
   - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
   - "IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png"
 
-after_script:
-  - 'if [[ $COVERAGE = yes ]]; then
-        composer require php-coveralls/php-coveralls;
-        travis_retry ./vendor/bin/php-coveralls -vvv;
-        wget https://scrutinizer-ci.com/ocular.phar;
-        travis_retry php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.serialized;
-    fi'
+#after_script:
+#  - 'if [[ $COVERAGE = yes ]]; then
+#        composer require php-coveralls/php-coveralls;
+#        travis_retry ./vendor/bin/php-coveralls -vvv;
+#        wget https://scrutinizer-ci.com/ocular.phar;
+#        travis_retry php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.serialized;
+#    fi'

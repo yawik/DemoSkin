@@ -2,7 +2,7 @@
 
 chdir(__DIR__.'/../sandbox');
 return [
-    'modules' => \Core\Bootstrap::generateModuleConfiguration([
+    'modules' => \Core\Yawik::generateModuleConfiguration([
         'Core',
         'Cv',
         'Auth',

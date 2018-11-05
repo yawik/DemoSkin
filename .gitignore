@@ -3,3 +3,4 @@ behat.yml
 build.properties
 view/.*
 /vendor/
+composer.lock

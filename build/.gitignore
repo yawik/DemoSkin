@@ -1,0 +1,3 @@
+behat/*
+!behat/.gitkeep
+logs
