@@ -23,8 +23,7 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "yawik/core": "^0.32@dev",
-        "composer/installers": "~1.0"
+        "yawik/core": "^0.32@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -43,7 +42,8 @@
     "config": {
         "platform": {
             "ext-mongo": "1.6.16"
-        }
+        },
+        "process-timeout": 0
     },
     "scripts": {
         "auto-scripts": [
@@ -60,14 +60,12 @@
         "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
         "test": "phpunit"
     },
-
     "extra": {
         "zf": {
             "module": "YawikDemoSkin"
         },
         "branch-alias": {
-            "dev-develop": "0.32-dev",
-            "dev-master": "0.31-dev"
+            "dev-master": "0.32-dev"
         }
     }
 }

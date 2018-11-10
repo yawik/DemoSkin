@@ -40,7 +40,6 @@ default:
         user:
             contexts:
                 - Behat\MinkExtension\Context\MinkContext
-                - Yawik\Behat\CoreContext:
-                    config: "%paths.base%/test/config/config.php"
+                - Yawik\Behat\CoreContext
                 - Yawik\Behat\UserContext
                 - Yawik\Behat\SummaryFormContext

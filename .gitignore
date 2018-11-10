@@ -4,3 +4,4 @@ build.properties
 view/.*
 /vendor/
 composer.lock
+package-lock.json

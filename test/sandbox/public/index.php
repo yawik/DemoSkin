@@ -2,7 +2,8 @@
 
 require __DIR__.'/../../../vendor/autoload.php';
 
-// Retrieve configuration
-$appConfig = include __DIR__.'/../../config/config.php';
+use Core\Application;
 
-\Core\Yawik::runApplication($appConfig);
+// Retrieve configuration
+$appConfig = include __DIR__.'/../config/config.php';
+Application::init($appConfig)->run();
