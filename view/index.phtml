@@ -24,6 +24,14 @@ $this->layout()->addChild($model, 'sidebar_homepage');
 <div class="row">
     <div class="container col-md-6">
         <aside class="panel panel-info">
+            <?php if ($this->auth()->isLoggedIn()):?>
+                <div class="panel-heading"><?php echo $this->translate(sprintf("You are logged in as %s", $this->translate($this->acl()->getUser()->getRole())))?></div>
+                <div class="panel-body ">
+                    <p><?php echo $this->translate("You are currently logged in. To be logged out, click on \"Logout\".")?></p>
+                    <a class="btn btn-primary" href="<?php echo $this->basePath("/logout")?>">Logout</a>
+                </div>
+            <?php else:?>
+
             <div class="panel-heading"><?php echo $this->translate("Login as a recruiter")?></div>
             <div class="panel-body ">
                 <p><?php echo $this->translate("You can use the existing Account. Log in and take a look to some Test data.")?></p>
@@ -79,6 +87,7 @@ $this->layout()->addChild($model, 'sidebar_homepage');
                     </nav>
                 </form>
             </div>
+            <?php endif ?>
         </aside>
     </div>
 
