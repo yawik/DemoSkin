@@ -1,7 +1,7 @@
 {
     "type": "yawik-module",
     "name": "yawik/demo-skin",
-    "description": "This module adds a billing address to the job posting entering wizard .",
+    "description": "demo-skin modifies the startpage of a yawik installation.",
     "license": "MIT",
     "authors": [
         {
@@ -18,7 +18,7 @@
         }
     ],
     "keywords": [
-        "yawik", "billing"
+        "yawik"
     ],
     "prefer-stable": true,
     "minimum-stability": "dev",
