@@ -31,7 +31,7 @@ services:
 before_install:
   - sudo apt-get update > /dev/null
   - "mongo --eval 'db.runCommand({setParameter: 1, textSearchEnabled: true})' admin"
-  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini; fi;
+  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not available"; fi;
   - pecl channel-update pecl.php.net
 
 install:
