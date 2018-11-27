@@ -23,7 +23,13 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "yawik/core": "^0.32@dev"
+        "yawik/core": "^0.32@dev",
+        "yawik/auth": "^0.32@dev",
+        "yawik/jobs": "^0.32@dev",
+        "yawik/settings": "^0.32@dev",
+        "yawik/cv": "^0.32@dev",
+        "yawik/applications": "^0.32@dev",
+        "yawik/composer-plugin": "^0.32@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
@@ -47,7 +53,6 @@
     },
     "scripts": {
         "auto-scripts": [
-            "./vendor/bin/yawik assets-install --relative",
             "npm install"
         ],
         "post-install-cmd": [
@@ -56,7 +61,7 @@
         "post-update-cmd": [
             "@auto-scripts"
         ],
-        "serve": "APPLICATION_ENV=development php -S localhost:8000 -t test/sandbox/public",
+        "serve": "php -S localhost:8000 -t test/sandbox/public",
         "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
         "test": "phpunit"
     },
