@@ -23,6 +23,7 @@ matrix:
     - php: '7.0'
     - php: '7.1'
     - php: '7.2'
+    - php: '7.3'
 
 services:
   - mongodb
@@ -30,14 +31,14 @@ services:
 before_install:
   - sudo apt-get update > /dev/null
   - "mongo --eval 'db.runCommand({setParameter: 1, textSearchEnabled: true})' admin"
-  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini; fi;
+  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not available"; fi;
   - pecl channel-update pecl.php.net
 
 install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
   - phpenv config-add .travis/phpenv.ini
-  - composer install
+  - COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist
 
 before_script:
   # behat preparation
