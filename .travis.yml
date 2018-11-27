@@ -38,7 +38,7 @@ install:
   # install php packages required for running YAWIK phpunit tests
   - pecl install -f ${PECLMONGO}
   - phpenv config-add .travis/phpenv.ini
-  - composer install --prefer-dist
+  - COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist
 
 before_script:
   # behat preparation
