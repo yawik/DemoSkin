@@ -23,12 +23,7 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "yawik/core": "^0.32@dev",
-        "yawik/auth": "^0.32@dev",
-        "yawik/jobs": "^0.32@dev",
-        "yawik/settings": "^0.32@dev",
-        "yawik/cv": "^0.32@dev",
-        "yawik/applications": "^0.32@dev",
+	"yawik/application-pack":">=0.32@dev",
         "yawik/composer-plugin": "^0.32@dev"
     },
     "require-dev": {

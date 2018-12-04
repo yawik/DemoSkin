@@ -9,6 +9,7 @@ return [
         'Settings',
         'Cv',
         'Applications',
+        'Organizations',
         'YawikDemoSkin',
     ],
 ];
