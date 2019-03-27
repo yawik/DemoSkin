@@ -23,8 +23,15 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-	"yawik/application-pack":">=0.32@dev",
-        "yawik/composer-plugin": "^0.32@dev"
+        "yawik/core": "^0.33",
+        "yawik/jobs": "^0.33",
+        "yawik/orders": "^0.3",
+        "yawik/jobs-by-mail": "^0.2",
+        "yawik/solr": "^0.6",
+        "yawik/simple-import": "^0.1",
+        "yawik/organizations": "^0.33",
+        "yawik/pdf": "^0.33",
+        "yawik/composer-plugin": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
