@@ -25,6 +25,7 @@ before_install:
 - eval "$(ssh-agent -s)"
 - chmod 600 ~/.ssh/id_rsa
 - ssh-add ~/.ssh/id_rsa
+- ssh yawik@137.74.70.56 -v exit
 - sudo apt-get update > /dev/null
 - 'mongo --eval ''db.runCommand({setParameter: 1, textSearchEnabled: true})'' admin'
 - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not
