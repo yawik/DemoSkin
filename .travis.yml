@@ -1,5 +1,7 @@
 language: php
 addons:
+  ssh_known_hosts:
+  - 137.74.70.56
   apt:
     sources:
     - google-chrome
