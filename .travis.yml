@@ -55,4 +55,5 @@ after_failure:
 - ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "log/*.log"
 - ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "log/tracy/*.*"
 - IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png
-- deployer.phar -vvv deploy
+- ls -l
+- ./deployer.phar -vvv deploy
