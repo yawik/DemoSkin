@@ -34,9 +34,7 @@ before_install:
   available"; fi;
 - pecl channel-update pecl.php.net
 - curl -LO https://deployer.org/deployer.phar
-- mv deployer.phar /usr/local/bin/dep
-- chmod +x /usr/local/bin/dep
-- export PATH=$PATH:/usr/local/bin
+- chmod +x deployer.phar
 install:
 - pecl install -f ${PECLMONGO}
 - phpenv config-add .travis/phpenv.ini
@@ -44,7 +42,7 @@ install:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: dep -vvv deploy
+    script: deployer.phar -vvv deploy
     on:
       branch: deploy
 
