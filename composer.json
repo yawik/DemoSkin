@@ -36,7 +36,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
-        "yawik/behat": "~0.32@dev"
+        "yawik/behat": "^0.33"
     },
     "autoload": {
         "psr-4": {
