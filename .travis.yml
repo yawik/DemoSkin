@@ -1,65 +1,54 @@
 language: php
-
 addons:
   apt:
     sources:
-      - google-chrome
+    - google-chrome
     packages:
-      - google-chrome-stable
-
+    - google-chrome-stable
 cache:
-    directories:
-      - "$HOME/.composer/cache"
-      - "$HOME/.npm"
-
+  directories:
+  - "$HOME/.composer/cache"
+  - "$HOME/.npm"
 env:
   global:
-    - PECLMONGO="mongodb-stable"
-
+  - PECLMONGO="mongodb-stable"
 matrix:
   fast_finish: true
   include:
-    - php: '7.1'
-    - php: '7.2'
-    - php: '7.3'
-
+  - php: '7.2'
+  - php: '7.3'
 services:
-  - mongodb
-
+- mongodb
 before_install:
-  - sudo apt-get update > /dev/null
-  - "mongo --eval 'db.runCommand({setParameter: 1, textSearchEnabled: true})' admin"
-  - if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not available"; fi;
-  - pecl channel-update pecl.php.net
-
+- openssl aes-256-cbc -K $encrypted_97ce95dcb4bc_key -iv $encrypted_97ce95dcb4bc_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- cp .travis/id_rsa ~/.ssh/id_rsa
+- chmod 600 ~/.ssh/id_rsa
+- ssh-add ~/.ssh/id_rsa
+- sudo apt-get update > /dev/null
+- 'mongo --eval ''db.runCommand({setParameter: 1, textSearchEnabled: true})'' admin'
+- if [[ $COVERAGE != yes ]]; then phpenv config-rm xdebug.ini || echo "xdebug not
+  available"; fi;
+- pecl channel-update pecl.php.net
 install:
-  # install php packages required for running YAWIK phpunit tests
-  - pecl install -f ${PECLMONGO}
-  - phpenv config-add .travis/phpenv.ini
-  - COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist
+- pecl install -f ${PECLMONGO}
+- phpenv config-add .travis/phpenv.ini
+- COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: ssh yawik@137.74.70.56 -v exit
+    on:
+      branch: deploy
 
 before_script:
-  # behat preparation
-  - 'if [[ $COVERAGE != yes ]]; then
-      composer run start-selenium --timeout=0 > /dev/null 2>&1 &
-      sleep 5;
-      composer run serve --timeout=0 > /dev/null 2>&1 &
-      sleep 3;
-    fi'
-
+- if [[ $COVERAGE != yes ]]; then composer run start-selenium --timeout=0 > /dev/null
+  2>&1 & sleep 5; composer run serve --timeout=0 > /dev/null 2>&1 & sleep 3; fi
 script:
-  - ./vendor/bin/behat
-
+- "./vendor/bin/behat"
 after_failure:
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"build/behat/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/*.log\""
-  - "./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles \"log/tracy/*.*\""
-  - "IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png"
-
-#after_script:
-#  - 'if [[ $COVERAGE = yes ]]; then
-#        composer require php-coveralls/php-coveralls;
-#        travis_retry ./vendor/bin/php-coveralls -vvv;
-#        wget https://scrutinizer-ci.com/ocular.phar;
-#        travis_retry php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.serialized;
-#    fi'
+- ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "build/behat/*.log"
+- ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "log/*.log"
+- ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "log/tracy/*.*"
+- IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png
