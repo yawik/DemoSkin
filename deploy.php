@@ -4,7 +4,7 @@ namespace Deployer;
 require 'recipe/zend_framework.php';
 
 // Project name
-set('application', '137.74.70.56');
+set('application', 'YAWIK');
 
 // Project repository
 set('repository', 'https://github.com/yawik/DemoSkin.git');
@@ -33,7 +33,7 @@ set('default_stage', 'prod');
 
 // Hosts
 
-host('137.74.70.56')
+host('upcoming.yawik.org')
     ->user('yawik')
     ->stage('prod')
     ->multiplexing(false) 
