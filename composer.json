@@ -32,7 +32,10 @@
         "yawik/cv": "^0.33",
         "yawik/organizations": "^0.33",
         "yawik/pdf": "^0.33",
-        "yawik/composer-plugin": "^1.0"
+        "yawik/composer-plugin": "^1.0",
+        "yawik/solr": "^0.8.0",
+        "yawik/jobs-by-mail": "^0.2.2",
+        "yawik/orders": "^0.3.2"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",

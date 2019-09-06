@@ -10,6 +10,9 @@ return [
         'Cv',
         'Applications',
         'Organizations',
+        'Geo',
+        'Orders',
+        'JobsByMail',
         'YawikDemoSkin',
     ],
 ];

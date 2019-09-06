@@ -3,7 +3,6 @@ behat.yml
 build.properties
 view/.*
 /vendor/
-composer.lock
 package-lock.json
 node_modules
 public/dist
