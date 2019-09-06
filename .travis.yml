@@ -33,6 +33,10 @@ before_install:
 - chmod +x deployer.phar
 install:
 - pecl install -f ${PECLMONGO}
+- export HASH=de1d724299780d927cb9ed14268449ac8a28204b;
+- curl --location https://github.com/php/pecl-search_engine-solr/archive/${HASH}.tar.gz -o solr.tgz;
+- sh -c "tar xfz solr.tgz";
+- sh -c "cd pecl-search_engine-solr-${HASH} && phpize && ./configure && make && sudo make install";
 - phpenv config-add .travis/phpenv.ini
 - COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist
 deploy:
