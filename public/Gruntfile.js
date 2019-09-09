@@ -8,8 +8,8 @@ module.exports = function(grunt) {
                 options: {
                     compress: false,
                     modifyVars: {
-                        "fa-font-path": "/dist/fonts",
-                        "flag-icon-css-path": "/dist/flags"
+                        "fa-font-path": "/demo/dist/fonts",
+                        "flag-icon-css-path": "/demo/dist/flags"
                     }
                 },
                 files: [
