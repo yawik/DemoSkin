@@ -2,6 +2,8 @@
 
 namespace YawikDemoSkin;
 
+use Core\ModuleManager\Feature\VersionProviderInterface;
+use Core\ModuleManager\Feature\VersionProviderTrait;
 use Core\ModuleManager\ModuleConfigLoader;
 use Zend\Console\Console;
 use Zend\Mvc\MvcEvent;
@@ -9,8 +11,12 @@ use Zend\Mvc\MvcEvent;
 /**
  * Bootstrap class of our demo skin
  */
-class Module
+class Module implements VersionProviderInterface
 {
+    use VersionProviderTrait;
+
+    const VERSION = '1.0.0';
+
     /**
      * indicates, that the autoload configuration for this module should be loaded.
      * @see
@@ -55,7 +61,7 @@ class Module
              * We need a post dispatch hook on the controller here as we need to have
              * the application entity to determine how to set the layout in the preview page.
              */
-            $callback=function ($event) {               
+            $callback=function ($event) {
                     $viewModel  = $event->getViewModel();
                     $template   = 'layout/application-form';
                     $controller = $event->getTarget();
@@ -79,11 +85,11 @@ class Module
                     }
 
                 };
-                
+
             foreach (array('Applications','CamMediaintown') as $identifier) {
                 $sharedManager->attach($identifier, MvcEvent::EVENT_DISPATCH, $callback, -2 /*postDispatch, but before most of the other zf2 listener*/ );
             }
-            
+
         }
 
     }

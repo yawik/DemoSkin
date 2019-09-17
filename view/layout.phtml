@@ -147,8 +147,8 @@ foreach ($languages as $lang) {
                             Cross
                             Solution</a>.
                         | <a href="<?php echo  $this->basePath($this->params('lang').'/content/imprint')?>"><?php echo $this->translate('Imprint') ?></a>
-                        | <?php passthru('git describe') ?> [<?php passthru('git rev-parse --abbrev-ref HEAD') ?>]<br/>
-                        Powered by <a href="http://yawik.org">YAWIK</a>
+                        | <?php echo $this->moduleVersion('YawikDemoSkin')->full() ?><br/>
+                        Powered by <a href="http://yawik.org">YAWIK</a> <?=$this->moduleVersion('Core') ?>
                  </small></span>
            </div>
     </div>
