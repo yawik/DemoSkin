@@ -15,7 +15,7 @@ class Module implements VersionProviderInterface
 {
     use VersionProviderTrait;
 
-    const VERSION = '1.0.0';
+    const VERSION = '1.1.0';
 
     /**
      * indicates, that the autoload configuration for this module should be loaded.
