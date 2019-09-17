@@ -1,7 +1,7 @@
 language: php
 addons:
   ssh_known_hosts:
-  - upcoming.yawik.org
+  - yawik.org
   apt:
     sources:
     - google-chrome
