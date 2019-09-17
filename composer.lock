@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0068b804fb4cc6e3ae5f50a5a1de81f3",
+    "content-hash": "e4a51856f22f06712e255faa885e03c6",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -318,16 +318,16 @@
         },
         {
             "name": "doctrine/common",
-            "version": "v2.10.0",
+            "version": "v2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "30e33f60f64deec87df728c02b107f82cdafad9d"
+                "reference": "b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/30e33f60f64deec87df728c02b107f82cdafad9d",
-                "reference": "30e33f60f64deec87df728c02b107f82cdafad9d",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff",
+                "reference": "b8ca1dcf6b0dc8a2af7a09baac8d0c48345df4ff",
                 "shasum": ""
             },
             "require": {
@@ -343,14 +343,16 @@
             },
             "require-dev": {
                 "doctrine/coding-standard": "^1.0",
-                "phpunit/phpunit": "^6.3",
+                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpunit/phpunit": "^7.0",
                 "squizlabs/php_codesniffer": "^3.0",
                 "symfony/phpunit-bridge": "^4.0.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -364,16 +366,16 @@
             ],
             "authors": [
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
                     "name": "Benjamin Eberlei",
                     "email": "kontakt@beberlei.de"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com"
                 },
                 {
                     "name": "Jonathan Wage",
@@ -395,7 +397,7 @@
                 "doctrine",
                 "php"
             ],
-            "time": "2018-11-21T01:24:55+00:00"
+            "time": "2019-09-10T10:10:14+00:00"
         },
         {
             "name": "doctrine/doctrine-module",
@@ -2542,16 +2544,16 @@
         },
         {
             "name": "yawik/applications",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "149850db56749fd77d0ebcc27810246a8c3d6386"
+                "reference": "1404fd8429b0fb1b29f326e09a49ca9af9c2b10d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/149850db56749fd77d0ebcc27810246a8c3d6386",
-                "reference": "149850db56749fd77d0ebcc27810246a8c3d6386",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/1404fd8429b0fb1b29f326e09a49ca9af9c2b10d",
+                "reference": "1404fd8429b0fb1b29f326e09a49ca9af9c2b10d",
                 "shasum": ""
             },
             "require": {
@@ -2595,20 +2597,20 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-07-19T16:38:27+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/auth",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "edd27de7c02cb3b7ebc325d5bf0eacb2cd904318"
+                "reference": "e7ef0f67b1b0e1aeb80ebce5f2bd39ffc881ffb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/edd27de7c02cb3b7ebc325d5bf0eacb2cd904318",
-                "reference": "edd27de7c02cb3b7ebc325d5bf0eacb2cd904318",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/e7ef0f67b1b0e1aeb80ebce5f2bd39ffc881ffb7",
+                "reference": "e7ef0f67b1b0e1aeb80ebce5f2bd39ffc881ffb7",
                 "shasum": ""
             },
             "require": {
@@ -2654,7 +2656,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-06-04T09:46:31+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/composer-plugin",
@@ -2724,16 +2726,16 @@
         },
         {
             "name": "yawik/core",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "03fc14b49b2cbe205d3a1a15d4211dff29b29549"
+                "reference": "cab91c8ec40a8d0aec0025ed9e7ded2405364fed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/03fc14b49b2cbe205d3a1a15d4211dff29b29549",
-                "reference": "03fc14b49b2cbe205d3a1a15d4211dff29b29549",
+                "url": "https://api.github.com/repos/yawik/core/zipball/cab91c8ec40a8d0aec0025ed9e7ded2405364fed",
+                "reference": "cab91c8ec40a8d0aec0025ed9e7ded2405364fed",
                 "shasum": ""
             },
             "require": {
@@ -2824,20 +2826,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-05T14:42:34+00:00"
+            "time": "2019-09-17T13:14:16+00:00"
         },
         {
             "name": "yawik/cv",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "1ec99afa9a4dc3461440bd7d75d44a4e0f9ab8eb"
+                "reference": "00e55446e21f297680aaadd2bf6e0736fa35ea39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/1ec99afa9a4dc3461440bd7d75d44a4e0f9ab8eb",
-                "reference": "1ec99afa9a4dc3461440bd7d75d44a4e0f9ab8eb",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/00e55446e21f297680aaadd2bf6e0736fa35ea39",
+                "reference": "00e55446e21f297680aaadd2bf6e0736fa35ea39",
                 "shasum": ""
             },
             "require": {
@@ -2880,25 +2882,25 @@
                 "module",
                 "yawik"
             ],
-            "time": "2019-04-09T06:04:08+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/geo",
-            "version": "v0.33.16",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/geo.git",
-                "reference": "b7915908e5ef218d8ecfa37c647abbd662306227"
+                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/geo/zipball/b7915908e5ef218d8ecfa37c647abbd662306227",
-                "reference": "b7915908e5ef218d8ecfa37c647abbd662306227",
+                "url": "https://api.github.com/repos/yawik/geo/zipball/569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
+                "reference": "569e6b4eb38cbf31f668bf9f00aafa61877d40f0",
                 "shasum": ""
             },
             "require": {
                 "jmikola/geojson": "^1.0.0",
-                "yawik/core": ">=0.33"
+                "yawik/core": ">=0.33@dev"
             },
             "type": "yawik-module",
             "extra": {
@@ -2920,16 +2922,16 @@
             ],
             "authors": [
                 {
+                    "name": "Anthonius Munthi",
+                    "email": "me@itstoni.com"
+                },
+                {
                     "name": "Mathias Gelhausen",
                     "email": "gelhausen@cross-solution.de"
                 },
                 {
                     "name": "Carsten Bleek",
                     "email": "bleek@cross-solution.de"
-                },
-                {
-                    "name": "Anthonius Munthi",
-                    "email": "me@itstoni.com"
                 }
             ],
             "description": "This package provide a Geo modules for yawik.",
@@ -2938,20 +2940,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-06-05T07:06:29+00:00"
+            "time": "2019-05-06T09:57:07+00:00"
         },
         {
             "name": "yawik/jobs",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "54c9cec44a4662c9ed510d174feb3c3197c8b4c9"
+                "reference": "4bd06275db2805a24b465a63bc8daf7376ca408a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/54c9cec44a4662c9ed510d174feb3c3197c8b4c9",
-                "reference": "54c9cec44a4662c9ed510d174feb3c3197c8b4c9",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/4bd06275db2805a24b465a63bc8daf7376ca408a",
+                "reference": "4bd06275db2805a24b465a63bc8daf7376ca408a",
                 "shasum": ""
             },
             "require": {
@@ -2995,7 +2997,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-09-05T14:37:40+00:00"
+            "time": "2019-09-17T13:12:11+00:00"
         },
         {
             "name": "yawik/jobs-by-mail",
@@ -3134,16 +3136,16 @@
         },
         {
             "name": "yawik/organizations",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/organizations.git",
-                "reference": "9b2896225b18c8d6a2486a22790e314db8ce35ba"
+                "reference": "11aff7c771417cc621bdba575ec2935b9809ffdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/organizations/zipball/9b2896225b18c8d6a2486a22790e314db8ce35ba",
-                "reference": "9b2896225b18c8d6a2486a22790e314db8ce35ba",
+                "url": "https://api.github.com/repos/yawik/organizations/zipball/11aff7c771417cc621bdba575ec2935b9809ffdf",
+                "reference": "11aff7c771417cc621bdba575ec2935b9809ffdf",
                 "shasum": ""
             },
             "require": {
@@ -3187,20 +3189,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-08-08T12:29:57+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/pdf",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/pdf.git",
-                "reference": "817e00ae6ad6da7625f3dc1c80078570b3e6e940"
+                "reference": "aa995ed1e1ec134b1e1c58dcc20a83d44d3466bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/pdf/zipball/817e00ae6ad6da7625f3dc1c80078570b3e6e940",
-                "reference": "817e00ae6ad6da7625f3dc1c80078570b3e6e940",
+                "url": "https://api.github.com/repos/yawik/pdf/zipball/aa995ed1e1ec134b1e1c58dcc20a83d44d3466bf",
+                "reference": "aa995ed1e1ec134b1e1c58dcc20a83d44d3466bf",
                 "shasum": ""
             },
             "require": {
@@ -3245,20 +3247,20 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-04-09T06:04:08+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/settings",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/settings.git",
-                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf"
+                "reference": "c1d02d7de5c09531fab96109119a8680cfe334d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/settings/zipball/fc49d14a5eec21fcc074ce29b1428d91191efecf",
-                "reference": "fc49d14a5eec21fcc074ce29b1428d91191efecf",
+                "url": "https://api.github.com/repos/yawik/settings/zipball/c1d02d7de5c09531fab96109119a8680cfe334d6",
+                "reference": "c1d02d7de5c09531fab96109119a8680cfe334d6",
                 "shasum": ""
             },
             "require": {
@@ -3302,7 +3304,7 @@
                 "yawik",
                 "zf3"
             ],
-            "time": "2019-04-09T06:04:08+00:00"
+            "time": "2019-09-17T13:05:18+00:00"
         },
         {
             "name": "yawik/solr",
@@ -6819,35 +6821,33 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6"
+                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
-                "reference": "21bdeb5f65d7ebf9f43b1b25d404f87deab5bfb6",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
+                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.6"
+                "phpunit/phpunit": "~6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6869,30 +6869,30 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2017-09-11T18:02:19+00:00"
+            "time": "2018-08-07T13:53:10+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "4.3.1",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c"
+                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
-                "reference": "bdd9f737ebc2a01c06ea7ff4308ec6697db9b53c",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
+                "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "phpdocumentor/reflection-common": "^1.0.0",
-                "phpdocumentor/type-resolver": "^0.4.0",
+                "phpdocumentor/reflection-common": "^1.0.0 || ^2.0.0",
+                "phpdocumentor/type-resolver": "~0.4 || ^1.0.0",
                 "webmozart/assert": "^1.0"
             },
             "require-dev": {
-                "doctrine/instantiator": "~1.0.5",
+                "doctrine/instantiator": "^1.0.5",
                 "mockery/mockery": "^1.0",
                 "phpunit/phpunit": "^6.4"
             },
@@ -6920,41 +6920,40 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2019-04-30T17:48:53+00:00"
+            "time": "2019-09-12T14:27:41+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.4.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7"
+                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/9c977708995954784726e25d0cd1dddf4e65b0f7",
-                "reference": "9c977708995954784726e25d0cd1dddf4e65b0f7",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
+                "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5 || ^7.0",
-                "phpdocumentor/reflection-common": "^1.0"
+                "php": "^7.1",
+                "phpdocumentor/reflection-common": "^2.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "^5.2||^4.8.24"
+                "ext-tokenizer": "^7.1",
+                "mockery/mockery": "~1",
+                "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "phpDocumentor\\Reflection\\": [
-                        "src/"
-                    ]
+                    "phpDocumentor\\Reflection\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6967,7 +6966,8 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-07-14T14:27:02+00:00"
+            "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
+            "time": "2019-08-22T18:11:29+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -8670,7 +8670,7 @@
         },
         {
             "name": "yawik/behat",
-            "version": "v0.33.16",
+            "version": "v0.33.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/behat.git",

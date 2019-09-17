@@ -17,6 +17,9 @@
             "email": "me@itstoni.com"
         }
     ],
+    "support": {
+        "source": "https://github.com/yawik/DemoSkin"
+    },
     "keywords": [
         "yawik"
     ],
@@ -28,7 +31,7 @@
         "yawik/auth": "^0.33",
         "yawik/applications": "^0.33",
         "yawik/settings": "^0.33",
-        "yawik/geo": "^0.33",
+        "yawik/geo": "^1.1",
         "yawik/cv": "^0.33",
         "yawik/organizations": "^0.33",
         "yawik/pdf": "^0.33",
