@@ -44,7 +44,7 @@ deploy:
     skip_cleanup: true
     script: deployer.phar -vvv deploy
     on:
-      branch: deploy
+      branch: master
 
 before_script:
 - if [[ $COVERAGE != yes ]]; then composer run start-selenium --timeout=0 > /dev/null
