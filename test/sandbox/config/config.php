@@ -11,6 +11,7 @@ return [
         'Applications',
         'Organizations',
         'Geo',
+        'Solr',
         'Orders',
         'JobsByMail',
         'YawikDemoSkin',
