@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4a51856f22f06712e255faa885e03c6",
+    "content-hash": "93cdb560170656e23807672ccceb49ed",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -3308,16 +3308,16 @@
         },
         {
             "name": "yawik/solr",
-            "version": "v0.8.0",
+            "version": "v0.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Solr.git",
-                "reference": "79ebc5bf4bb77cac7c797fd52d36959101e5ce55"
+                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Solr/zipball/79ebc5bf4bb77cac7c797fd52d36959101e5ce55",
-                "reference": "79ebc5bf4bb77cac7c797fd52d36959101e5ce55",
+                "url": "https://api.github.com/repos/yawik/Solr/zipball/d113064b6b873149b6922c00913ff1e555b02a8c",
+                "reference": "d113064b6b873149b6922c00913ff1e555b02a8c",
                 "shasum": ""
             },
             "require": {
@@ -3377,7 +3377,7 @@
                 "yawik",
                 "zf"
             ],
-            "time": "2019-07-22T12:09:48+00:00"
+            "time": "2019-09-18T16:35:21+00:00"
         },
         {
             "name": "zendframework/zend-authentication",
@@ -5211,12 +5211,6 @@
                 "url": "https://github.com/zendframework/zend-mvc-plugins.git",
                 "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-mvc-plugins/zipball/b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
-                "reference": "b00cda46b0a95cbd32ea0743d6d7dc3fd2263f1b",
-                "shasum": ""
-            },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-mvc-plugin-fileprg": "^1.0",
@@ -6643,13 +6637,13 @@
             "authors": [
                 {
                     "name": "Justin Bishop",
-                    "role": "Developer",
-                    "email": "jubishop@gmail.com"
+                    "email": "jubishop@gmail.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Anthon Pang",
-                    "role": "Fork Maintainer",
-                    "email": "apang@softwaredevelopment.ca"
+                    "email": "apang@softwaredevelopment.ca",
+                    "role": "Fork Maintainer"
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
