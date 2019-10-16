@@ -47,7 +47,6 @@ deploy:
       branch: master
 
 before_script:
-- chromedriver-update 73.0.3683.68
 - if [[ $COVERAGE != yes ]]; then composer run start-selenium --timeout=0 > /dev/null
   2>&1 & sleep 5; composer run serve --timeout=0 > /dev/null 2>&1 & sleep 3; fi
 script:
