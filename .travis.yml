@@ -37,7 +37,7 @@ install:
 deploy:
   - provider: script
     skip_cleanup: true
-    script: deployer.phar -vvv deploy
+    script: ./deployer.phar deploy
     on:
       branch: master
 
@@ -52,4 +52,4 @@ after_failure:
 - ./vendor/lakion/mink-debug-extension/travis/tools/upload-textfiles "log/tracy/*.*"
 - IMGUR_CLIENT_ID=bec050c54e1bb52 ./vendor/bin/imgur-uploader build/behat/*.png
 - ls -l
-- ./deployer.phar deploy
+
