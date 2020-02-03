@@ -38,7 +38,8 @@
         "yawik/composer-plugin": "^1.0",
         "yawik/solr": "dev-master",
         "yawik/jobs-by-mail": "^0.2.2",
-        "yawik/orders": "^0.3.2"
+        "yawik/orders": "^0.3.2",
+	"ezyang/htmlpurifier": "^4.12"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
