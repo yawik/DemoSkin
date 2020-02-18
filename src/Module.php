@@ -5,8 +5,8 @@ namespace YawikDemoSkin;
 use Core\ModuleManager\Feature\VersionProviderInterface;
 use Core\ModuleManager\Feature\VersionProviderTrait;
 use Core\ModuleManager\ModuleConfigLoader;
-use Zend\Console\Console;
-use Zend\Mvc\MvcEvent;
+use Laminas\Console\Console;
+use Laminas\Mvc\MvcEvent;
 
 /**
  * Bootstrap class of our demo skin

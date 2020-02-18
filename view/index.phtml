@@ -9,7 +9,7 @@
  * @license   MIT
  */
 
-$model = new \Zend\View\Model\ViewModel();
+$model = new \Laminas\View\Model\ViewModel();
 $model->setTemplate('used_modules');
 $model->setCaptureTo('sidebar_homepage');
 $this->layout()->addChild($model, 'sidebar_homepage');

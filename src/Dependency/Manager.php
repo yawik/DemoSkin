@@ -20,7 +20,7 @@ class Manager extends AuthDependencyManager
     /**
      * @param User $user
      * @param Router $router
-     * @return \Zend\EventManager\ResponseCollection
+     * @return \Laminas\EventManager\ResponseCollection
      */
     public function removeItems(User $user)
     {
