@@ -6022,7 +6022,7 @@
         },
         {
             "name": "yawik/applications",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
@@ -6079,7 +6079,7 @@
         },
         {
             "name": "yawik/auth",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
@@ -6205,16 +6205,16 @@
         },
         {
             "name": "yawik/core",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "b925644695d4db420c3e8908c84e7aedc2e6089c"
+                "reference": "ae63c072c34f90d4c57ef94df40e396512534d0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/b925644695d4db420c3e8908c84e7aedc2e6089c",
-                "reference": "b925644695d4db420c3e8908c84e7aedc2e6089c",
+                "url": "https://api.github.com/repos/yawik/core/zipball/ae63c072c34f90d4c57ef94df40e396512534d0b",
+                "reference": "ae63c072c34f90d4c57ef94df40e396512534d0b",
                 "shasum": ""
             },
             "require": {
@@ -6315,20 +6315,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-06-05T17:33:38+00:00"
+            "time": "2020-06-09T17:17:54+00:00"
         },
         {
             "name": "yawik/cv",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "f5076785e709e093c12f9c1fe6bb766f080117c4"
+                "reference": "4d1c598eb89f72a0ed3d1075e9df0d91c5a7ba6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/f5076785e709e093c12f9c1fe6bb766f080117c4",
-                "reference": "f5076785e709e093c12f9c1fe6bb766f080117c4",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/4d1c598eb89f72a0ed3d1075e9df0d91c5a7ba6e",
+                "reference": "4d1c598eb89f72a0ed3d1075e9df0d91c5a7ba6e",
                 "shasum": ""
             },
             "require": {
@@ -6433,7 +6433,7 @@
         },
         {
             "name": "yawik/jobs",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
@@ -6625,7 +6625,7 @@
         },
         {
             "name": "yawik/organizations",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/organizations.git",
@@ -6740,7 +6740,7 @@
         },
         {
             "name": "yawik/settings",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/settings.git",
@@ -9581,16 +9581,16 @@
         },
         {
             "name": "yawik/install",
-            "version": "v0.34.3",
+            "version": "v0.34.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "3e0b3dbccee8d23f1d2287513d93981e1cb4cc9e"
+                "reference": "3a4d0809c6964d84950c584cb25139eb36b3275d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/3e0b3dbccee8d23f1d2287513d93981e1cb4cc9e",
-                "reference": "3e0b3dbccee8d23f1d2287513d93981e1cb4cc9e",
+                "url": "https://api.github.com/repos/yawik/install/zipball/3a4d0809c6964d84950c584cb25139eb36b3275d",
+                "reference": "3a4d0809c6964d84950c584cb25139eb36b3275d",
                 "shasum": ""
             },
             "require": {
