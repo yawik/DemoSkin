@@ -32,7 +32,7 @@
         "yawik/pdf": "^0.34",
         "yawik/solr": "^0.9",
         "yawik/jobs-by-mail": "^0.3",
-        "yawik/orders": "^0.3.2",
+        "yawik/orders": "^0.4",
         "laminas/laminas-dependency-plugin": "^1.0"
     },
     "require-dev": {
