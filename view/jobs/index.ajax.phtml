@@ -99,7 +99,7 @@ foreach ($jobs as $job): /* @var \Jobs\Entity\Job $job */
         ?>
     </td>
     <td>
-        <div><?=$job->getLocation()?></div>
+        <div><?=$this->formatLocation($job->getLocations())?></div>
         <small>
             <?php
             if ($job->getDatePublishStart()): echo $this->dateFormat($job->getDatePublishStart(), 'short', 'none');
