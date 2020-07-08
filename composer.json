@@ -30,7 +30,7 @@
         "yawik/core": "^0.34",
         "yawik/geo": "^1.1",
         "yawik/pdf": "^0.34",
-        "yawik/solr": "^0.9",
+        "yawik/solr": "^1.0",
         "yawik/jobs-by-mail": "^0.3",
         "yawik/orders": "^0.4",
         "laminas/laminas-dependency-plugin": "^1.0"
