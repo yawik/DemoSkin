@@ -253,6 +253,20 @@
                 "redis",
                 "xcache"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-07-07T18:54:01+00:00"
         },
         {
@@ -317,6 +331,20 @@
                 "collections",
                 "iterators",
                 "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcollections",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-06-22T19:14:02+00:00"
         },
@@ -400,6 +428,20 @@
                 "common",
                 "doctrine",
                 "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-06-05T16:46:05+00:00"
         },
@@ -750,6 +792,20 @@
                 "uppercase",
                 "words"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finflector",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-29T07:19:59+00:00"
         },
         {
@@ -805,6 +861,20 @@
             "keywords": [
                 "constructor",
                 "instantiate"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Finstantiator",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-29T17:27:14+00:00"
         },
@@ -867,6 +937,20 @@
                 "lexer",
                 "parser",
                 "php"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-25T17:44:05+00:00"
         },
@@ -1030,6 +1114,20 @@
                 "odm",
                 "persistence"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fmongodb-odm",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-22T21:21:59+00:00"
         },
         {
@@ -1112,6 +1210,20 @@
                 "odm",
                 "orm",
                 "persistence"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fpersistence",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-03-21T15:13:52+00:00"
         },
@@ -1910,6 +2022,12 @@
                 "BSD-3-Clause"
             ],
             "description": "Replace zendframework and zfcampus packages with their Laminas Project equivalents.",
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
             "time": "2020-05-20T13:45:39+00:00"
         },
         {
@@ -2208,16 +2326,16 @@
         },
         {
             "name": "laminas/laminas-form",
-            "version": "2.14.6",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-form.git",
-                "reference": "c19b62ed8394bcf2038ab3f51a49b7d0ef4e1700"
+                "reference": "359cd372c565e18a17f32ccfeacdf21bba091ce2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-form/zipball/c19b62ed8394bcf2038ab3f51a49b7d0ef4e1700",
-                "reference": "c19b62ed8394bcf2038ab3f51a49b7d0ef4e1700",
+                "url": "https://api.github.com/repos/laminas/laminas-form/zipball/359cd372c565e18a17f32ccfeacdf21bba091ce2",
+                "reference": "359cd372c565e18a17f32ccfeacdf21bba091ce2",
                 "shasum": ""
             },
             "require": {
@@ -2260,8 +2378,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.14.x-dev",
-                    "dev-develop": "2.15.x-dev"
+                    "dev-master": "2.15.x-dev",
+                    "dev-develop": "2.16.x-dev"
                 },
                 "laminas": {
                     "component": "Laminas\\Form",
@@ -2286,7 +2404,13 @@
                 "form",
                 "laminas"
             ],
-            "time": "2020-06-22T20:17:02+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-07-14T13:53:27+00:00"
         },
         {
             "name": "laminas/laminas-http",
@@ -2343,6 +2467,12 @@
                 "http",
                 "http client",
                 "laminas"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
             ],
             "time": "2020-06-23T15:14:37+00:00"
         },
@@ -2836,6 +2966,12 @@
             "keywords": [
                 "laminas",
                 "mail"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
             ],
             "time": "2020-06-30T20:17:23+00:00"
         },
@@ -4016,6 +4152,12 @@
                 "service-manager",
                 "servicemanager"
             ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
             "time": "2020-05-11T14:43:22+00:00"
         },
         {
@@ -4520,6 +4662,12 @@
                 "autoloading",
                 "laminas",
                 "zf"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
             ],
             "time": "2020-05-20T16:45:56+00:00"
         },
@@ -5126,6 +5274,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-30T20:06:45+00:00"
         },
         {
@@ -5183,6 +5345,20 @@
                 "env",
                 "environment"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-26T09:42:42+00:00"
         },
         {
@@ -5233,6 +5409,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-30T18:50:54+00:00"
         },
         {
@@ -5282,20 +5472,34 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-27T16:54:36+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.17.1",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d"
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/1c302646f6efc070cd46856e600e5e0684d6b454",
+                "reference": "1c302646f6efc070cd46856e600e5e0684d6b454",
                 "shasum": ""
             },
             "require": {
@@ -5307,7 +5511,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5344,20 +5548,34 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.17.1",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7"
+                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7110338d81ce1cbc3e273136e4574663627037a7",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a6977d63bf9a0ad4c65cd352709e230876f9904a",
+                "reference": "a6977d63bf9a0ad4c65cd352709e230876f9904a",
                 "shasum": ""
             },
             "require": {
@@ -5369,7 +5587,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5407,20 +5625,34 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.17.1",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fa0837fe02d617d31fbb25f990655861bb27bd1a"
+                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fa0837fe02d617d31fbb25f990655861bb27bd1a",
-                "reference": "fa0837fe02d617d31fbb25f990655861bb27bd1a",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
+                "reference": "fffa1a52a023e782cdcc221d781fe1ec8f87fcca",
                 "shasum": ""
             },
             "require": {
@@ -5429,7 +5661,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5469,20 +5701,34 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.17.1",
+            "version": "v1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2"
+                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4a5b6bba3259902e386eb80dd1956181ee90b5b2",
-                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/d87d5766cbf48d72388a9f6b85f280c8ad51f981",
+                "reference": "d87d5766cbf48d72388a9f6b85f280c8ad51f981",
                 "shasum": ""
             },
             "require": {
@@ -5491,7 +5737,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -5535,7 +5781,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/process",
@@ -5584,6 +5844,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-30T20:06:45+00:00"
         },
         {
@@ -5645,6 +5919,20 @@
                 "interfaces",
                 "interoperability",
                 "standards"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-07-06T13:23:11+00:00"
         },
@@ -5769,16 +6057,16 @@
         },
         {
             "name": "yawik/applications",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "0651677230cd4947f92099c2b9a55fe13f8ad6da"
+                "reference": "2d710f29aa9ad1d19dcee589641d0442acaa5cae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/0651677230cd4947f92099c2b9a55fe13f8ad6da",
-                "reference": "0651677230cd4947f92099c2b9a55fe13f8ad6da",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/2d710f29aa9ad1d19dcee589641d0442acaa5cae",
+                "reference": "2d710f29aa9ad1d19dcee589641d0442acaa5cae",
                 "shasum": ""
             },
             "require": {
@@ -5818,24 +6106,27 @@
             ],
             "description": "This package provide an Applications modules for yawik.",
             "keywords": [
-                "module",
-                "yawik",
-                "zf"
+                "ATS",
+                "Human Resource",
+                "applicant",
+                "laminas",
+                "php",
+                "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-06-24T08:06:04+00:00"
         },
         {
             "name": "yawik/auth",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "064adddf8b149be797fee5089f6671ef0b0ae51d"
+                "reference": "0993f6b71b32cd7f74aa0c3256a81783e7a46d00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/064adddf8b149be797fee5089f6671ef0b0ae51d",
-                "reference": "064adddf8b149be797fee5089f6671ef0b0ae51d",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/0993f6b71b32cd7f74aa0c3256a81783e7a46d00",
+                "reference": "0993f6b71b32cd7f74aa0c3256a81783e7a46d00",
                 "shasum": ""
             },
             "require": {
@@ -5877,11 +6168,12 @@
             ],
             "description": "This package provide an Auth modules for Yawik.",
             "keywords": [
-                "module",
-                "yawik",
-                "zf"
+                "Human Resource",
+                "laminas",
+                "php",
+                "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-07-20T11:23:40+00:00"
         },
         {
             "name": "yawik/composer-plugin",
@@ -5952,16 +6244,16 @@
         },
         {
             "name": "yawik/core",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "9f50ffa3c77238e3be391050c698b2773750afa2"
+                "reference": "a3acd16255cc1f1992576027ad43bae9a921bdb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/9f50ffa3c77238e3be391050c698b2773750afa2",
-                "reference": "9f50ffa3c77238e3be391050c698b2773750afa2",
+                "url": "https://api.github.com/repos/yawik/core/zipball/a3acd16255cc1f1992576027ad43bae9a921bdb3",
+                "reference": "a3acd16255cc1f1992576027ad43bae9a921bdb3",
                 "shasum": ""
             },
             "require": {
@@ -6052,24 +6344,34 @@
             ],
             "description": "This package provide a Core Module for yawik",
             "keywords": [
+                "ATS",
+                "Human Resource",
+                "applicant",
+                "jobboard",
                 "laminas",
-                "module",
+                "php",
                 "yawik"
             ],
-            "time": "2020-06-12T14:43:13+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/cbleek",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-20T12:15:00+00:00"
         },
         {
             "name": "yawik/cv",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "de08ccd5013a124079d3dbadcf53b13176497eaf"
+                "reference": "6bed1c1ea09f58e551f1982e876ead0eae4a817d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/de08ccd5013a124079d3dbadcf53b13176497eaf",
-                "reference": "de08ccd5013a124079d3dbadcf53b13176497eaf",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/6bed1c1ea09f58e551f1982e876ead0eae4a817d",
+                "reference": "6bed1c1ea09f58e551f1982e876ead0eae4a817d",
                 "shasum": ""
             },
             "require": {
@@ -6109,10 +6411,14 @@
             ],
             "description": "This package provide a CV modules for yawik.",
             "keywords": [
-                "module",
+                "ATS",
+                "Human Resource",
+                "Talent",
+                "laminas",
+                "php",
                 "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-06-24T08:06:04+00:00"
         },
         {
             "name": "yawik/geo",
@@ -6174,16 +6480,16 @@
         },
         {
             "name": "yawik/jobs",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "3c1535bb287d971bd75dddd2c7c73e61c34c7b9a"
+                "reference": "f37a7c015699850f981f6570d7450fc0c01c57d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/3c1535bb287d971bd75dddd2c7c73e61c34c7b9a",
-                "reference": "3c1535bb287d971bd75dddd2c7c73e61c34c7b9a",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/f37a7c015699850f981f6570d7450fc0c01c57d7",
+                "reference": "f37a7c015699850f981f6570d7450fc0c01c57d7",
                 "shasum": ""
             },
             "require": {
@@ -6223,11 +6529,12 @@
             ],
             "description": "This package provide a Jobs module for yawik.",
             "keywords": [
-                "module",
-                "yawik",
-                "zf3"
+                "Human Resource",
+                "laminas",
+                "php",
+                "yawik"
             ],
-            "time": "2020-06-12T14:33:19+00:00"
+            "time": "2020-07-09T12:31:30+00:00"
         },
         {
             "name": "yawik/jobs-by-mail",
@@ -6367,16 +6674,16 @@
         },
         {
             "name": "yawik/organizations",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/organizations.git",
-                "reference": "4c6948047a61d9ec0ae47ea96664f8a8ccba4bfc"
+                "reference": "4b10e745a80fb712c9e531283ebe28944c006202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/organizations/zipball/4c6948047a61d9ec0ae47ea96664f8a8ccba4bfc",
-                "reference": "4c6948047a61d9ec0ae47ea96664f8a8ccba4bfc",
+                "url": "https://api.github.com/repos/yawik/organizations/zipball/4b10e745a80fb712c9e531283ebe28944c006202",
+                "reference": "4b10e745a80fb712c9e531283ebe28944c006202",
                 "shasum": ""
             },
             "require": {
@@ -6416,11 +6723,12 @@
             ],
             "description": "This package provide an Organizations module for yawik.",
             "keywords": [
-                "module",
-                "yawik",
-                "zf3"
+                "Human Resource",
+                "laminas",
+                "php",
+                "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-07-20T10:38:19+00:00"
         },
         {
             "name": "yawik/pdf",
@@ -6482,16 +6790,16 @@
         },
         {
             "name": "yawik/settings",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/settings.git",
-                "reference": "5d5419f55e7c39b04a6caaaf60218f28cab48549"
+                "reference": "7fd9a877545ee915dc63794067114064a3d52bc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/settings/zipball/5d5419f55e7c39b04a6caaaf60218f28cab48549",
-                "reference": "5d5419f55e7c39b04a6caaaf60218f28cab48549",
+                "url": "https://api.github.com/repos/yawik/settings/zipball/7fd9a877545ee915dc63794067114064a3d52bc4",
+                "reference": "7fd9a877545ee915dc63794067114064a3d52bc4",
                 "shasum": ""
             },
             "require": {
@@ -6531,11 +6839,12 @@
             ],
             "description": "This package provide a Settings module for yawik.",
             "keywords": [
-                "module",
-                "yawik",
-                "zf3"
+                "Human Resource",
+                "laminas",
+                "php",
+                "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-06-24T08:06:04+00:00"
         },
         {
             "name": "yawik/solr",
@@ -7238,6 +7547,12 @@
                 "object",
                 "object graph"
             ],
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-29T13:22:24+00:00"
         },
         {
@@ -7340,28 +7655,27 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e"
+                "reference": "3170448f5769fe19f456173d833734e0ff1b84df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
+                "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
                 "shasum": ""
             },
             "require": {
-                "ext-filter": "^7.1",
-                "php": "^7.2",
-                "phpdocumentor/reflection-common": "^2.0",
-                "phpdocumentor/type-resolver": "^1.0",
-                "webmozart/assert": "^1"
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "doctrine/instantiator": "^1",
-                "mockery/mockery": "^1"
+                "mockery/mockery": "~1.3.2"
             },
             "type": "library",
             "extra": {
@@ -7389,7 +7703,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-02-22T12:28:44+00:00"
+            "time": "2020-07-20T20:05:34+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -8456,6 +8770,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-22T17:28:00+00:00"
         },
         {
@@ -8520,6 +8848,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-23T09:11:46+00:00"
         },
         {
@@ -8573,6 +8915,20 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-20T17:43:50+00:00"
         },
         {
@@ -8646,6 +9002,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-12T07:37:04+00:00"
         },
         {
@@ -8707,6 +9077,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-23T00:03:06+00:00"
         },
         {
@@ -8777,6 +9161,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-20T08:37:50+00:00"
         },
         {
@@ -8838,6 +9236,20 @@
                 "interfaces",
                 "interoperability",
                 "standards"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-07-06T13:19:58+00:00"
         },
@@ -8915,6 +9327,20 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-30T20:06:45+00:00"
         },
         {
@@ -8976,6 +9402,20 @@
                 "interoperability",
                 "standards"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-07-06T13:23:11+00:00"
         },
         {
@@ -9035,24 +9475,38 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-20T08:37:50+00:00"
         },
         {
             "name": "webmozart/assert",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451"
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.3 || ^7.0",
+                "php": "^5.3.3 || ^7.0 || ^8.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -9084,7 +9538,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-06-16T10:16:42+00:00"
+            "time": "2020-07-08T17:02:28+00:00"
         },
         {
             "name": "yawik/application-pack",
@@ -9205,16 +9659,16 @@
         },
         {
             "name": "yawik/install",
-            "version": "v0.34.5",
+            "version": "0.34.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "bdd1ed57d53f35384683438a1cb4d9e5a36e5208"
+                "reference": "e8d4479d5339e23b0937c1ac8fd626bd36ede7c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/bdd1ed57d53f35384683438a1cb4d9e5a36e5208",
-                "reference": "bdd1ed57d53f35384683438a1cb4d9e5a36e5208",
+                "url": "https://api.github.com/repos/yawik/install/zipball/e8d4479d5339e23b0937c1ac8fd626bd36ede7c0",
+                "reference": "e8d4479d5339e23b0937c1ac8fd626bd36ede7c0",
                 "shasum": ""
             },
             "require": {
@@ -9251,11 +9705,11 @@
             ],
             "description": "This package provide an Install module for yawik.",
             "keywords": [
+                "laminas",
                 "module",
-                "yawik",
-                "zf3"
+                "yawik"
             ],
-            "time": "2020-06-12T12:10:33+00:00"
+            "time": "2020-06-24T08:06:04+00:00"
         }
     ],
     "aliases": [],
@@ -9267,5 +9721,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "ext-mongo": "1.6.16"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
