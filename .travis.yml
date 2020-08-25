@@ -2,6 +2,8 @@ language: php
 addons:
   ssh_known_hosts:
   - yawik.org
+  chrome: stable
+
 cache:
   directories:
   - "$HOME/.composer/cache"
