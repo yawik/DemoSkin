@@ -27,7 +27,7 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "require": {
-        "yawik/core": "^0.34",
+        "yawik/core": "dev-master as 0.34.7",
         "yawik/geo": "^1.1",
         "yawik/pdf": "^0.34",
         "yawik/solr": "^1.0",
@@ -38,7 +38,8 @@
     "require-dev": {
         "phpunit/phpunit": "^5.7",
         "yawik/application-pack": "^1.0",
-        "yawik/behat": "^0.33"
+        "enm1989/chromedriver": "^84.0",
+        "yawik/behat": "^0.34"
     },
     "autoload": {
         "psr-4": {
@@ -66,7 +67,7 @@
         "post-update-cmd": [
             "@auto-scripts"
         ],
-        "serve": "php -S localhost:8000 -t test/sandbox/public",
+        "serve": "php -S 0.0.0.0:8000 -t test/sandbox/public test/sandbox/public/router.php",
         "start-selenium": "./vendor/bin/selenium-server-standalone -p 4444 -Dwebdriver.chrome.driver=./vendor/bin/chromedriver",
         "test": "phpunit"
     },
@@ -75,7 +76,7 @@
             "module": "YawikDemoSkin"
         },
         "branch-alias": {
-            "dev-develop": "0.32-dev"
+            "dev-master": "0.34.x-dev"
         }
     }
 }
