@@ -15,5 +15,6 @@ return [
         'Orders',
         'JobsByMail',
         'YawikDemoSkin',
+        'YkSentry'
     ],
 ];

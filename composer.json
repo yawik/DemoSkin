@@ -33,7 +33,8 @@
         "yawik/solr": "^1.0",
         "yawik/jobs-by-mail": "^0.3",
         "yawik/orders": "^0.4",
-        "laminas/laminas-dependency-plugin": "^1.0"
+        "laminas/laminas-dependency-plugin": "^1.0",
+        "yawik/sentry": "^0.0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7",
