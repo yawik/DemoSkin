@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "55c3fdd69f552077ea0567c9638554c1",
+    "content-hash": "fed89dd4d76b2f43aec116fabee894c5",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -8259,7 +8259,7 @@
         },
         {
             "name": "yawik/core",
-            "version": "dev-master",
+            "version": "v0.34.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
@@ -8805,16 +8805,16 @@
         },
         {
             "name": "yawik/sentry",
-            "version": "v0.0.1",
+            "version": "v0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/sentry.git",
-                "reference": "787acb509efd936af8ad7e4d1bcf7b26870e3f27"
+                "reference": "ab1c81228f30d760e0ee6696314667bd1b7881a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/sentry/zipball/787acb509efd936af8ad7e4d1bcf7b26870e3f27",
-                "reference": "787acb509efd936af8ad7e4d1bcf7b26870e3f27",
+                "url": "https://api.github.com/repos/yawik/sentry/zipball/ab1c81228f30d760e0ee6696314667bd1b7881a3",
+                "reference": "ab1c81228f30d760e0ee6696314667bd1b7881a3",
                 "shasum": ""
             },
             "require": {
@@ -8869,7 +8869,7 @@
                 "sentry",
                 "yawik"
             ],
-            "time": "2020-08-27T16:34:07+00:00"
+            "time": "2020-08-28T07:04:55+00:00"
         },
         {
             "name": "yawik/settings",
@@ -11742,18 +11742,9 @@
             "time": "2020-06-24T08:06:04+00:00"
         }
     ],
-    "aliases": [
-        {
-            "alias": "0.34.7",
-            "alias_normalized": "0.34.7.0",
-            "version": "9999999-dev",
-            "package": "yawik/core"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "yawik/core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
