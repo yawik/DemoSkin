@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <php>
+        <env name="APPLICATION_ENV" value="test"/>
+    </php>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="DemoTest">
+            <directory>./test/DemoTest</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
