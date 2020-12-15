@@ -1,0 +1,59 @@
+image: yawik/build
+
+# Cache libraries in between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - "$CI_PROJECT_DIR/vendor/"
+    - "$CI_PROJECT_DIR/node_modules//"
+    - "$HOME/.composer/cache"
+    - "$HOME/.npm"     
+
+stages:
+  - build
+  - test
+
+services:
+  - mongo:latest
+
+before_script:
+  - mkdir -p /var/www/cache/
+  - chown yawik /var/www/cache/
+  - mkdir -p config/autoload
+  - chown -R yawik /builds/yawik/yawik
+
+composer:
+  stage: build
+  cache:
+    key: build-cache
+    paths:
+    - vendor/
+  script:
+    - pwd
+    - su yawik -c "composer install"
+
+phpunit:
+  stage: test
+  cache:
+    key: build-cache
+    paths:
+      - vendor/
+  script:
+    - cp ./etc/travis/autoload/*.* config/autoload
+    - ./vendor/bin/phpunit
+
+behat:
+  stage: test
+  cache:
+    key: build-cache
+    paths:
+      - vendor/
+  script:
+    - su yawik -c "composer install"
+    - cp ./etc/travis/autoload/*.* config/autoload
+    - mkdir -p build/behat
+    - mkdir -p build/mails
+    - ./bin/start-selenium > /dev/null 2>&1 &
+    - sleep 5
+    - composer run serve --timeout=0 > /dev/null 2>&1 &
+    - ./vendor/bin/behat --strict --no-interaction
