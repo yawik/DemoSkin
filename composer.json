@@ -18,7 +18,7 @@
         }
     ],
     "support": {
-        "source": "https://github.com/yawik/DemoSkin"
+        "source": "https://gitlab.com/yawik/modules/DemoSkin.git"
     },
     "keywords": [
         "yawik",
@@ -39,7 +39,7 @@
         "phpunit/phpunit": "^5.7",
         "yawik/application-pack": "^1.1",
         "enm1989/chromedriver": "^84.0",
-        "yawik/behat": "^0.34"
+        "yawik/behat": "^0.35"
     },
     "autoload": {
         "psr-4": {
