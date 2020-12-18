@@ -15,7 +15,8 @@ stages:
 
 services:
   - mongo:latest
-
+  - selenium/standalone-chrome
+  
 before_script:
   - ls -la
 
