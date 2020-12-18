@@ -12,6 +12,7 @@ cache:
 stages:
   - build
   - test
+  - deploy
 
 services:
   - mongo:latest
@@ -41,6 +42,7 @@ phpunit:
 
 behat:
   stage: test
+  allow_failure: true
   cache:
     key: build-cache
     paths:
@@ -52,3 +54,14 @@ behat:
     - cp .gitlab/autoload/*.* test/sandbox/config/autoload/
     - composer run serve --timeout=0 > /dev/null 2>&1 &
     - ./vendor/bin/behat --strict --no-interaction
+
+deploy_master:
+  stage: deploy
+  environment:
+    name: live/$CI_COMMIT_REF_NAME
+    url: https://yawik.org/demo/
+  only:
+    - master
+  script:
+    - dep deploy
+  resource_group: production
