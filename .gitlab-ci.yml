@@ -48,6 +48,6 @@ behat:
     - su yawik -c "composer install"
     - mkdir -p build/behat
     - mkdir -p build/mails
-    - cp .gitlab/auloload/*.* test/sandbox/config/autoload/
+    - cp .gitlab/autoload/*.* test/sandbox/config/autoload/
     - composer run serve --timeout=0 > /dev/null 2>&1 &
     - ./vendor/bin/behat --strict --no-interaction
