@@ -12,10 +12,12 @@ cache:
 stages:
   - build
   - test
+  - deploy
 
 services:
   - mongo:latest
-
+  - selenium/standalone-chrome
+  
 before_script:
   - ls -la
 
@@ -40,6 +42,7 @@ phpunit:
 
 behat:
   stage: test
+  allow_failure: true
   cache:
     key: build-cache
     paths:
@@ -48,5 +51,22 @@ behat:
     - su yawik -c "composer install"
     - mkdir -p build/behat
     - mkdir -p build/mails
+    - cp .gitlab/autoload/*.* test/sandbox/config/autoload/
     - composer run serve --timeout=0 > /dev/null 2>&1 &
     - ./vendor/bin/behat --strict --no-interaction
+
+deploy_master:
+  stage: deploy
+  environment:
+    name: live/$CI_COMMIT_REF_NAME
+    url: https://yawik.org/demo/
+  only:
+    - master
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts
+    - dep deploy
+  resource_group: production
