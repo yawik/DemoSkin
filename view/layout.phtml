@@ -35,7 +35,12 @@ $this->configHeadScript()->prependFile($this->basepath('dist/js/core.js'));
 $this->configHeadScript()->appendScript('var lang="' . $this->params('lang') . '";'
     . 'var basePath="' . $this->basePath() . '";');
 
-$this->headLink()->prependStylesheet($this->basePath('modules/YawikDemoSkin/dist/YawikDemoSkin.css'));
+
+if (getenv('CORE_CSS') && !empty(getenv('CORE_CSS'))) {
+  $this->headLink()->prependStylesheet(getenv('CORE_CSS'));
+}else{
+  $this->headLink()->prependStylesheet($this->basePath('modules/YawikDemoSkin/dist/YawikDemoSkin.css'));
+}
 
 foreach ($languages as $lang) {
     $this->headLink()->appendAlternate(
