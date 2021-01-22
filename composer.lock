@@ -4582,30 +4582,29 @@
         },
         {
             "name": "laminas/laminas-math",
-            "version": "3.2.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-math.git",
-                "reference": "dd603c7d151d46eafd243a405d5b7eefa4222d74"
+                "reference": "0921d16529e00b37927ba96129e49567d8bfaf31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-math/zipball/dd603c7d151d46eafd243a405d5b7eefa4222d74",
-                "reference": "dd603c7d151d46eafd243a405d5b7eefa4222d74",
+                "url": "https://api.github.com/repos/laminas/laminas-math/zipball/0921d16529e00b37927ba96129e49567d8bfaf31",
+                "reference": "0921d16529e00b37927ba96129e49567d8bfaf31",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "paragonie/random_compat": "^2.0.11 || 9.99.99",
-                "php": "^5.6 || ^7.0"
+                "php": "^7.3 || ~8.0.0"
             },
             "replace": {
-                "zendframework/zend-math": "self.version"
+                "zendframework/zend-math": "^3.2.0"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2"
+                "phpunit/phpunit": "^9.3"
             },
             "suggest": {
                 "ext-bcmath": "If using the bcmath functionality",
@@ -4641,7 +4640,13 @@
                 "rss": "https://github.com/laminas/laminas-math/releases.atom",
                 "source": "https://github.com/laminas/laminas-math"
             },
-            "time": "2019-12-31T17:24:18+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2021-01-22T09:29:45+00:00"
         },
         {
             "name": "laminas/laminas-mime",
@@ -6771,20 +6776,20 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v9.99.99",
+            "version": "v9.99.100",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/996434e5492cb4c3edcb9168db6fbb1359ef965a",
+                "reference": "996434e5492cb4c3edcb9168db6fbb1359ef965a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7"
+                "php": ">= 7"
             },
             "require-dev": {
                 "phpunit/phpunit": "4.*|5.*",
@@ -6817,7 +6822,7 @@
                 "issues": "https://github.com/paragonie/random_compat/issues",
                 "source": "https://github.com/paragonie/random_compat"
             },
-            "time": "2018-07-02T15:55:56+00:00"
+            "time": "2020-10-15T08:29:30+00:00"
         },
         {
             "name": "paypal/rest-api-sdk-php",
@@ -9164,16 +9169,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "37c238d08db44f2cd6f21f7d97e5cea11d631fae"
+                "reference": "7794de6c53ee85f24cf8d7fa79a9ba32441914cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/37c238d08db44f2cd6f21f7d97e5cea11d631fae",
-                "reference": "37c238d08db44f2cd6f21f7d97e5cea11d631fae",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/7794de6c53ee85f24cf8d7fa79a9ba32441914cd",
+                "reference": "7794de6c53ee85f24cf8d7fa79a9ba32441914cd",
                 "shasum": ""
             },
             "require": {
@@ -9232,9 +9237,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/tracy/issues",
-                "source": "https://github.com/nette/tracy/tree/v2.8.1"
+                "source": "https://github.com/nette/tracy/tree/v2.8.2"
             },
-            "time": "2021-01-01T22:21:23+00:00"
+            "time": "2021-01-21T16:36:22+00:00"
         },
         {
             "name": "true/punycode",
@@ -9347,16 +9352,16 @@
         },
         {
             "name": "yawik/applications",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/applications.git",
-                "reference": "dd77eeb605ba2becfd78d665e9baa0c6e84a8878"
+                "reference": "bdd015c6ef20cd0b952403ad5afe21d1d8864668"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/applications/zipball/dd77eeb605ba2becfd78d665e9baa0c6e84a8878",
-                "reference": "dd77eeb605ba2becfd78d665e9baa0c6e84a8878",
+                "url": "https://api.github.com/repos/yawik/applications/zipball/bdd015c6ef20cd0b952403ad5afe21d1d8864668",
+                "reference": "bdd015c6ef20cd0b952403ad5afe21d1d8864668",
                 "shasum": ""
             },
             "require": {
@@ -9404,22 +9409,22 @@
                 "yawik"
             ],
             "support": {
-                "source": "https://github.com/yawik/applications/tree/v0.35.2"
+                "source": "https://github.com/yawik/applications/tree/v0.35.3"
             },
-            "time": "2020-12-29T17:16:08+00:00"
+            "time": "2021-01-21T12:22:39+00:00"
         },
         {
             "name": "yawik/auth",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/auth.git",
-                "reference": "1ea3de44cf2b8361bee63019aeaea0ae6dc09eb5"
+                "reference": "88313be6c617185a1bff1a1ba7112560d7a69f32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/auth/zipball/1ea3de44cf2b8361bee63019aeaea0ae6dc09eb5",
-                "reference": "1ea3de44cf2b8361bee63019aeaea0ae6dc09eb5",
+                "url": "https://api.github.com/repos/yawik/auth/zipball/88313be6c617185a1bff1a1ba7112560d7a69f32",
+                "reference": "88313be6c617185a1bff1a1ba7112560d7a69f32",
                 "shasum": ""
             },
             "require": {
@@ -9467,9 +9472,9 @@
                 "yawik"
             ],
             "support": {
-                "source": "https://github.com/yawik/auth/tree/v0.35.2"
+                "source": "https://github.com/yawik/auth/tree/v0.35.3"
             },
-            "time": "2020-11-11T11:51:24+00:00"
+            "time": "2021-01-20T21:27:34+00:00"
         },
         {
             "name": "yawik/composer-plugin",
@@ -9544,16 +9549,16 @@
         },
         {
             "name": "yawik/core",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/core.git",
-                "reference": "5762b98740925ba939db1cc8167671a227c707fa"
+                "reference": "2d01f2c605cb52f77edb9480d68c71725bb0f7ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/core/zipball/5762b98740925ba939db1cc8167671a227c707fa",
-                "reference": "5762b98740925ba939db1cc8167671a227c707fa",
+                "url": "https://api.github.com/repos/yawik/core/zipball/2d01f2c605cb52f77edb9480d68c71725bb0f7ad",
+                "reference": "2d01f2c605cb52f77edb9480d68c71725bb0f7ad",
                 "shasum": ""
             },
             "require": {
@@ -9652,7 +9657,7 @@
                 "yawik"
             ],
             "support": {
-                "source": "https://github.com/yawik/core/tree/v0.35.2"
+                "source": "https://github.com/yawik/core/tree/v0.35.3"
             },
             "funding": [
                 {
@@ -9660,20 +9665,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-30T10:16:33+00:00"
+            "time": "2021-01-21T12:23:43+00:00"
         },
         {
             "name": "yawik/cv",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/cv.git",
-                "reference": "d53e360bfc5feb1ba57adde023ffa9c552dca26a"
+                "reference": "dc88e732e9e69e31ed4181241ca05bb6769b800e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/cv/zipball/d53e360bfc5feb1ba57adde023ffa9c552dca26a",
-                "reference": "d53e360bfc5feb1ba57adde023ffa9c552dca26a",
+                "url": "https://api.github.com/repos/yawik/cv/zipball/dc88e732e9e69e31ed4181241ca05bb6769b800e",
+                "reference": "dc88e732e9e69e31ed4181241ca05bb6769b800e",
                 "shasum": ""
             },
             "require": {
@@ -9721,9 +9726,9 @@
                 "yawik"
             ],
             "support": {
-                "source": "https://github.com/yawik/cv/tree/v0.35.2"
+                "source": "https://github.com/yawik/cv/tree/v0.35.3"
             },
-            "time": "2020-06-24T08:06:04+00:00"
+            "time": "2021-01-20T21:27:34+00:00"
         },
         {
             "name": "yawik/geo",
@@ -9789,16 +9794,16 @@
         },
         {
             "name": "yawik/jobs",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/jobs.git",
-                "reference": "7a6aafade02398dc85942ffd8e99e76e850839fa"
+                "reference": "0c0dff156f53b8c4adefa90f3cd104791e975fb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/jobs/zipball/7a6aafade02398dc85942ffd8e99e76e850839fa",
-                "reference": "7a6aafade02398dc85942ffd8e99e76e850839fa",
+                "url": "https://api.github.com/repos/yawik/jobs/zipball/0c0dff156f53b8c4adefa90f3cd104791e975fb2",
+                "reference": "0c0dff156f53b8c4adefa90f3cd104791e975fb2",
                 "shasum": ""
             },
             "require": {
@@ -9845,9 +9850,9 @@
             ],
             "support": {
                 "issues": "https://github.com/yawik/jobs/issues",
-                "source": "https://github.com/yawik/jobs/tree/v0.35.2"
+                "source": "https://github.com/yawik/jobs/tree/v0.35.3"
             },
-            "time": "2020-12-15T18:11:09+00:00"
+            "time": "2021-01-20T21:27:34+00:00"
         },
         {
             "name": "yawik/jobs-by-mail",
@@ -9994,16 +9999,16 @@
         },
         {
             "name": "yawik/organizations",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/organizations.git",
-                "reference": "27583474eb9debcccec419f77e48d61f3897a3a0"
+                "reference": "9dad68e97b9ea73b9ac47814513dfba46b765e21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/organizations/zipball/27583474eb9debcccec419f77e48d61f3897a3a0",
-                "reference": "27583474eb9debcccec419f77e48d61f3897a3a0",
+                "url": "https://api.github.com/repos/yawik/organizations/zipball/9dad68e97b9ea73b9ac47814513dfba46b765e21",
+                "reference": "9dad68e97b9ea73b9ac47814513dfba46b765e21",
                 "shasum": ""
             },
             "require": {
@@ -10050,13 +10055,13 @@
             ],
             "support": {
                 "issues": "https://github.com/yawik/organizations/issues",
-                "source": "https://github.com/yawik/organizations/tree/v0.35.2"
+                "source": "https://github.com/yawik/organizations/tree/v0.35.3"
             },
-            "time": "2020-12-15T18:10:01+00:00"
+            "time": "2021-01-20T21:45:12+00:00"
         },
         {
             "name": "yawik/pdf",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/pdf.git",
@@ -10188,16 +10193,16 @@
         },
         {
             "name": "yawik/settings",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/settings.git",
-                "reference": "7fd9a877545ee915dc63794067114064a3d52bc4"
+                "reference": "f6337296b585cc108adab28b18871746e9b59608"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/settings/zipball/7fd9a877545ee915dc63794067114064a3d52bc4",
-                "reference": "7fd9a877545ee915dc63794067114064a3d52bc4",
+                "url": "https://api.github.com/repos/yawik/settings/zipball/f6337296b585cc108adab28b18871746e9b59608",
+                "reference": "f6337296b585cc108adab28b18871746e9b59608",
                 "shasum": ""
             },
             "require": {
@@ -10244,9 +10249,9 @@
             ],
             "support": {
                 "issues": "https://github.com/yawik/settings/issues",
-                "source": "https://github.com/yawik/settings/tree/v0.35.2"
+                "source": "https://github.com/yawik/settings/tree/v0.35.3"
             },
-            "time": "2020-06-24T08:06:04+00:00"
+            "time": "2021-01-20T21:45:12+00:00"
         },
         {
             "name": "yawik/solr",
@@ -13080,12 +13085,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -13123,8 +13128,8 @@
                 "validate"
             ],
             "support": {
-                "issues": "https://github.com/webmozart/assert/issues",
-                "source": "https://github.com/webmozart/assert/tree/master"
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/1.9.1"
             },
             "time": "2020-07-08T17:02:28+00:00"
         },
@@ -13253,16 +13258,16 @@
         },
         {
             "name": "yawik/install",
-            "version": "v0.35.2",
+            "version": "v0.35.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/install.git",
-                "reference": "ef7278969c32ec66af35f7034cc2facbf4850b60"
+                "reference": "76c2e83276b94e1d1941d9ba1e0f8d802bddb9bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/install/zipball/ef7278969c32ec66af35f7034cc2facbf4850b60",
-                "reference": "ef7278969c32ec66af35f7034cc2facbf4850b60",
+                "url": "https://api.github.com/repos/yawik/install/zipball/76c2e83276b94e1d1941d9ba1e0f8d802bddb9bb",
+                "reference": "76c2e83276b94e1d1941d9ba1e0f8d802bddb9bb",
                 "shasum": ""
             },
             "require": {
@@ -13305,9 +13310,9 @@
             ],
             "support": {
                 "issues": "https://github.com/yawik/install/issues",
-                "source": "https://github.com/yawik/install/tree/v0.35.2"
+                "source": "https://github.com/yawik/install/tree/v0.35.3"
             },
-            "time": "2020-06-24T08:06:04+00:00"
+            "time": "2021-01-20T21:45:12+00:00"
         }
     ],
     "aliases": [],
