@@ -99,24 +99,31 @@ $this->layout()->addChild($model, 'sidebar_homepage');
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <p>
-                            <?php echo $this->translate("Here you can test an application formular")?>.
+                            <?=$this->translate("Here you can test an application formular")?>.
                         </p>
-                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
+                        <h2> <span style="color:red">NEU</span>
+                          <?=sprintf($this->translate('%sapplication form%s.'),
+                                '<a href="https://form.yawik.org">',
+                                '</a>') ?>
+                        </h2>
+                        <p><?php echo $this->translate('An application form as a standalone SPA. Customizable and ready to use in conjunction with Yawik. Works in all modern browsers and on mobile devices.');?></p>
+<!--  Ein Bewerbungsformular als eingenständige SPA. Individuell anpassbar und in Verbindung mit Yawik sofort einsetzbar. Funktioniert in allen modernen Browsern und auf mobilen Endgeräten. -->
+                        <h5><?php echo sprintf($this->translate('%sapplication form%s.'),
                                 '<a href="' . $this->url('lang/apply', array('applyId' => 'sw-devel'), /* reuse matched params*/ true) . '">',
                                 '</a>') ?></h2>
                         <p><?php echo $this->translate('Application is handled within the ATS');?></p>
 
-                        <h2><?php echo sprintf($this->translate('%sapplication form%s.'),
+                        <h5><?php echo sprintf($this->translate('%sapplication form%s.'),
                                 '<a href="' . $this->url('lang/apply', array('applyId' => 'administrator'), /* reuse matched params*/ true) . '">',
                                 '</a>') ?></h2>
                         <p><?php echo $this->translate('Application is send via E-Mail');?></p>
                     </div>
-                    <div class="col-md-6 embed-responsive embed-responsive-16by9">
+                    <!--<div class="col-md-6 embed-responsive embed-responsive-16by9">
                         <p>See a Demo on Youtube</p>
                         <iframe src="https://www.youtube.com/embed/peoO-RVJM_0" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                    </div>-->
                 </div>
 
             </div>
