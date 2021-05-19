@@ -13,8 +13,10 @@ return [
         'Geo',
         'Solr',
         'Orders',
+        'SlmQueue',
         'JobsByMail',
+        'Form2Mail',
         'YawikDemoSkin',
-        'YkSentry'
+        'YkSentry',
     ],
 ];
