@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa1d7b098e5bb89b378fe37182b32e76",
+    "content-hash": "13cb73bc09ddd7bba03611422684abc8",
     "packages": [
         {
             "name": "alcaeus/mongo-php-adapter",
@@ -9684,16 +9684,16 @@
         },
         {
             "name": "yawik/form2mail",
-            "version": "0.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Form2Mail.git",
-                "reference": "86faea82c58ac23d621a4eaac0cebf029fa86745"
+                "reference": "84b65798415073a679022df684226851dcd4061c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Form2Mail/zipball/86faea82c58ac23d621a4eaac0cebf029fa86745",
-                "reference": "86faea82c58ac23d621a4eaac0cebf029fa86745",
+                "url": "https://api.github.com/repos/yawik/Form2Mail/zipball/84b65798415073a679022df684226851dcd4061c",
+                "reference": "84b65798415073a679022df684226851dcd4061c",
                 "shasum": ""
             },
             "require": {
@@ -9715,6 +9715,7 @@
                 "yawik/application-pack": "^1.1",
                 "yawik/behat": "^0.34"
             },
+            "default-branch": true,
             "type": "yawik-module",
             "extra": {
                 "branch-alias": {
@@ -9754,7 +9755,7 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2021-05-18T13:47:20+00:00"
+            "time": "2021-05-20T17:32:02+00:00"
         },
         {
             "name": "yawik/geo",
@@ -13349,7 +13350,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "yawik/form2mail": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
