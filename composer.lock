@@ -9688,12 +9688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yawik/Form2Mail.git",
-                "reference": "84b65798415073a679022df684226851dcd4061c"
+                "reference": "9f7d70ed19e68902548dbeb27571dabe33e84923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yawik/Form2Mail/zipball/84b65798415073a679022df684226851dcd4061c",
-                "reference": "84b65798415073a679022df684226851dcd4061c",
+                "url": "https://api.github.com/repos/yawik/Form2Mail/zipball/9f7d70ed19e68902548dbeb27571dabe33e84923",
+                "reference": "9f7d70ed19e68902548dbeb27571dabe33e84923",
                 "shasum": ""
             },
             "require": {
@@ -9755,7 +9755,7 @@
                     "type": "ko_fi"
                 }
             ],
-            "time": "2021-05-20T17:32:02+00:00"
+            "time": "2021-05-20T18:11:14+00:00"
         },
         {
             "name": "yawik/geo",
